@@ -39,7 +39,7 @@
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    padding: 14px 370px 11px 370px;
+    padding: 1% 15% 1% 15%;
     display: flex;
     justify-content: space-between;
 }
@@ -54,7 +54,7 @@
 
 .barra nav ul {
     margin-bottom: 0;
-    padding: 3px 370px 0px 370px;
+    padding: 0.2% 15% 0% 15%;
     display: flex;
     gap: 10px;
     justify-content: flex-end;
@@ -63,6 +63,7 @@
 .barra nav ul li a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 .barra nav ul li a:hover {
@@ -79,7 +80,7 @@
 }
 
 .menu nav {
-    padding: 20px 370px 20px 370px;
+    padding: 1% 15% 1% 15%;
     display: flex;
     justify-content: space-between;
 }
