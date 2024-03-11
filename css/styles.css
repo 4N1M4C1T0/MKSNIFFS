@@ -1,0 +1,52 @@
+* {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.fw300 {
+    font-weight: 300;
+}
+
+.fw400 {
+    font-weight: 400;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.fw600 {
+    font-weight: 600;
+}
+
+.fw900 {
+    font-weight: 900;
+}
+
+.logos {
+    background-color: white;
+    padding: 10px 175px 10px 175px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.barra {
+    background-color: #4F9C49;
+    padding: 5px 175px 5px 175px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.barra ul {
+    gap: 5px;
+    display: flex;
+    list-style: none;
+    height: 15px;
+}
+
+.barra a {
+    text-decoration: none;
+    color: white;
+}
