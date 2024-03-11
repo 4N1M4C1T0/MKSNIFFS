@@ -47,7 +47,7 @@
                     </div>
                     <div class="menu">
                         <nav>
-                            <a href="#">
+                            <a href="https://sniffs.serfor.gob.pe/conocimiento/">
                                 <img src="img/logo_mmpf_2.png" alt="">
                             </a>
                             <ul>
@@ -67,7 +67,7 @@
                                     </a>
                                 </li>
                                 <li id="sniffs">
-                                    <a href="#">
+                                    <a href="https://sniffs.serfor.gob.pe/inicio/">
                                         SNIFFS
                                     </a>
                                 </li>
