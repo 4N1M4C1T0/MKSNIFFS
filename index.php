@@ -14,39 +14,70 @@
     </head>
     <body>
         <div id="container">
-            <div data-anchor="Page 1" class="bg-success">
-                <div class="logos">
-                    <a href="https://www.gob.pe/midagri" target="_blank">
-					    <img src="img/logo_ministerio.jpg" class="logo-ministerio" height="40px" alt="Ministerio de Agricultura y Riego">
-				    </a>
-                    <a href="https://www.serfor.gob.pe" target="_blank">
-					    <img src="img/serfor-1-1.png" class="logo-serfor" alt="">
-				    </a>
-                </div>
-                <div class="barra">
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#" onclick="#" class="ico-line" title="Contacto">
-                                    <i class="fa-solid fa-envelope"></i>
-					            </a>
-                            </li>
-                            <li>
-                                <a href="#" class="ico-line" title="Idioma" onclick="#">
-                                    <i class="fa-solid fa-globe"></i>
-					            </a>
-                            </li>
-                            <li>
-                                <a href="#" data-src="#" data-fancybox="" class="ico-line" title="Iniciar Sesión">
-                                    <i class="fa-solid fa-user"></i>
-					            </a>
-                            </li>
-                        </ul>
-                    </nav>					
-                </div>
+            <div data-anchor="Page 1" class="header">
+                <header>
+                    <div class="logos">
+                        <a href="https://www.gob.pe/midagri" target="_blank">
+				            <img src="img/logo_ministerio.jpg" class="logo-ministerio" height="40px" alt="Ministerio de Agricultura y Riego">
+			            </a>
+                        <a href="https://www.serfor.gob.pe" target="_blank">
+				            <img src="img/serfor-1-1.png" class="logo-serfor" alt="">
+			            </a>
+                    </div>
+                    <div class="barra">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-globe"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <a href="#">
+                                <img src="img/logo_mmpf_2.png" alt="">
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        INICIO
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        TEMATICAS
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        ACERCA DE
+                                    </a>
+                                </li>
+                                <li id="sniffs">
+                                    <a href="#">
+                                        SNIFFS
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
             </div>
             <div data-anchor="Page 2" class="bg-primary">
-                <h1>LALALA</h1>
+                <h1>CONTENEDOR 2</h1>
             </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

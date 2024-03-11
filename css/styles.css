@@ -1,3 +1,5 @@
+/*GENERAL*/
+
 * {
     overflow: hidden;
     margin: 0;
@@ -25,28 +27,79 @@
     font-weight: 900;
 }
 
+.header {
+    background-color: beige;
+}
+
+/*SOLO MENU DE LOGOS*/
+
 .logos {
     background-color: white;
-    padding: 10px 175px 10px 175px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 14px 370px 11px 370px;
     display: flex;
     justify-content: space-between;
 }
 
 .barra {
     background-color: #4F9C49;
-    padding: 5px 175px 5px 175px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.barra nav ul {
+    margin-bottom: 0;
+    padding: 3px 370px 0px 370px;
     display: flex;
+    gap: 10px;
     justify-content: flex-end;
 }
 
-.barra ul {
-    gap: 5px;
-    display: flex;
-    list-style: none;
-    height: 15px;
-}
-
-.barra a {
+.barra nav ul li a {
     text-decoration: none;
     color: white;
+}
+
+.barra nav ul li a:hover {
+    color: #E3E3E3;
+    cursor: pointer;
+}
+
+.menu {
+    background-color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.menu nav {
+    padding: 20px 370px 20px 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu nav ul {
+    margin-bottom: 0;
+    margin-top: 15px;
+    gap: 20PX;
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav ul li a {
+    color: #4F9C49;
+    text-decoration: none;
+}
+
+#sniffs a{
+    padding: 5px 5px 2px 5px;
+    background-color: #4F9C49;
+    color: white;
+
 }
