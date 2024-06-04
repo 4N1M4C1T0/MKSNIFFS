@@ -53,7 +53,7 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        INICIO SISISIS
+                                        INICIO
                                     </a>
                                 </li>
                                 <li>
