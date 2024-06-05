@@ -10,18 +10,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/629fd9ff7b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/styles.css">
-        <title>MK-SNIFFS</title>
+        <title>MK-SNIFFS borrador</title>
+        <link rel="icon" href="img/icono-foco.png">
     </head>
     <body>
         <div id="container">
             <div data-anchor="Page 1" class="header">
                 <header>
                     <div class="logos">
-                        <a href="https://www.gob.pe/midagri" target="_blank">
+                        <a href="https://www.gob.pe/midagri" target="_blank" title="Ministerio de Agricultura y Riego">
 				            <img src="img/logo_ministerio.jpg" class="logo-ministerio" height="40px" alt="Ministerio de Agricultura y Riego">
 			            </a>
-                        <a href="https://www.serfor.gob.pe" target="_blank">
-				            <img src="img/serfor-1-1.png" class="logo-serfor" alt="">
+                        <a href="https://www.serfor.gob.pe" target="_blank" title="SERFOR">
+				            <img src="img/serfor-1-1.png" class="logo-serfor" alt="SERFOR">
 			            </a>
                     </div>
                     <div class="barra">
@@ -74,8 +75,22 @@
                             </ul>
                         </nav>
                     </div>
+                    <div class="slider-frame">
+                        <ul>
+                            <li><img src="./img/slider1.jpg" alt=""></li>
+                            <li><img src="./img/slider2.jpg" alt=""></li>
+                            <li><img src="./img/slider3.jpg" alt=""></li>
+                        </ul>
+                    </div>
                 </header>
             </div>
+            
+            
+            
+            
+            
+            
+            
             <div data-anchor="Page 2" class="bg-primary">
                 <h1>CONTENEDOR 2</h1>
             </div>
@@ -86,3 +101,61 @@
         <script src="js/pageable.js"></script>
     </body>
 </html>
+
+<div class="contenedor">
+    <ul class="senal">
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+    </ul>
+</div>
+<div class="contenedor">
+    <ul class="senal">
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+    </ul>
+</div>
+<div class="contenedor">
+    <ul class="senal">
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+        <li class="lista">
+            <p id="texto"></p>
+        </li>
+    </ul>
+</div>
