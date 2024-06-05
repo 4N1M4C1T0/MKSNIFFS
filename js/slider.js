@@ -1,4 +1,4 @@
-let items = document.querySelectorAll('.slider .item');
+let items = document.querySelectorAll('.slider .list .item');
 let next = document. getElementById('next');
 let prev = document. getElementById('prev');
 let miniatura = document.querySelectorAll('.miniatura .item')
@@ -16,5 +16,10 @@ next.onclick = function(){
 }
 function showSlider(){
     //remove item active old
-    let itemActiveOld = document.querySelector
+    let itemActiveOld = document.querySelector('Slider . list .item.activate');
+    let miniaturaActiveOld = document.querySelector('Slider . list .item.activate');
+    itemActiveOld.classList.remove('active');
+    miniaturaActiveOld.classList.remove8('active');
+    // active new item
+    items[itemActive].classList.add('active');
 }

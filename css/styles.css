@@ -136,7 +136,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 
 .miniatura{
     position: absolute;
-    bottom: 50 px;
+    bottom: 50px;
     z-index: 11;
     display: flex;
     gap: 10px;
