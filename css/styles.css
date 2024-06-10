@@ -29,13 +29,15 @@
 .contenedor-cards .contenedor-card .seccion1 {
     position: relative;
     overflow: hidden;
+    height: 250px;
+    max-height: 50%;
     border-radius: 10px 10px 0px 0px; /* Agrega un borde redondeado de 5px al contenedor */
 }
 
 .botones {
     position: absolute; /* Posiciona los botones absolutamente dentro del contenedor */
-    top: 10%; /* Centra verticalmente los botones */
-    left: 10px;
+    top: 15%; /* Centra verticalmente los botones */
+    left: 20px;
     transform: translateY(-15%); /* Corrige el centrado vertical */
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
@@ -47,7 +49,7 @@
     max-width: calc(50% - 10px);
     display: flex; /* Para que tenga la propiedad flex */
     align-items: center; /* Centra verticalmente el contenido */
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     border-radius: 5px;
     padding: 15px 10px;
     text-decoration: none; /* Quita el subrayado de los enlaces */
@@ -73,7 +75,7 @@
 .seccion2 .titulo {
     flex: 1; /* El título ocupa todo el espacio disponible */
     background-color: none; /* Solo para visualización */
-    padding: 10px;
+    padding: 20px;
 }
 
 .listado {
@@ -110,11 +112,11 @@
     margin-right: 5px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1334px) {
     .contenedor-cards {
         margin: 0px 0px 0px 0px;
-        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-        max-width: calc(100% - 10px);
+        width: calc(80% - 10px);
+        max-width: calc(80% - 10px);
     }
     .contenedor-cards .contenedor-card {
         width: calc(50% - 20px); /* Cambia a dos contenedores por fila */
@@ -122,10 +124,10 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 794px) {
     .contenedor-cards {
         margin: 0px 0px 0px 0px;
-        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+        width: calc(100% - 10px);
         max-width: calc(100% - 10px);
     }
 
