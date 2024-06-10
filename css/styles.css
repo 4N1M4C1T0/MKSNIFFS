@@ -1,106 +1,109 @@
-/*GENERAL*/
+.contenedor-centralizado {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+}
 
-* {
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap; /* Los contenedores flex se envuelven cuando no hay suficiente espacio */
+    justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
+    width: calc(70% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(70% - 10px);
+}
+
+.contenedor-cards .contenedor-card {
+    width: calc(33.33% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(33.33% - 10px);
+    margin-right: 10px; /* Espacio entre los contenedores */
+    margin-bottom: 10px; /* Espacio debajo de los contenedores */
+}
+
+.contenedor-cards .contenedor-card .seccion1 {
+    position: relative;
     overflow: hidden;
-    margin: 0;
-    padding: 0;
-    font-family: "Source Sans 3", sans-serif;
 }
 
-.fw300 {
-    font-weight: 300;
-}
-
-.fw400 {
-    font-weight: 400;
-}
-
-.fw500 {
-    font-weight: 500;
-}
-
-.fw600 {
-    font-weight: 600;
-}
-
-.fw900 {
-    font-weight: 900;
-}
-
-.header {
-    background-color: beige;
-}
-
-/*SOLO MENU DE LOGOS*/
-
-.logos {
-    background-color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1% 15% 1% 15%;
+.botones {
+    position: absolute; /* Posiciona los botones absolutamente dentro del contenedor */
+    top: 10%; /* Centra verticalmente los botones */
+    left: 10px;
+    transform: translateY(-15%); /* Corrige el centrado vertical */
     display: flex;
-    justify-content: space-between;
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-wrap: wrap;
 }
 
-.barra {
-    background-color: #4F9C49;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.barra nav ul {
-    margin-bottom: 0;
-    padding: 0.2% 15% 0% 15%;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
-
-.barra nav ul li a {
-    text-decoration: none;
+.boton-img {
+    width: calc(50% - 10px); /* Cambia a un contenedor por fila */
+    max-width: calc(50% - 10px);
+    display: flex; /* Para que tenga la propiedad flex */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 15px 10px;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
     color: white;
-    font-weight: bold;
-}
-
-.barra nav ul li a:hover {
-    color: #E3E3E3;
+    background-color: #000000;
     cursor: pointer;
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
-.menu {
-    background-color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+.icono {
+    margin-right: 5px;
 }
 
-.menu nav {
-    padding: 1% 15% 1% 15%;
+.seccion1 img {
+    width: 100%; /* La imagen ocupa todo el ancho de la sección */
+    height: auto; /* La altura se ajusta automáticamente */
+}
+
+.seccion2 {
     display: flex;
-    justify-content: space-between;
 }
 
-.menu nav ul {
-    margin-bottom: 0;
-    margin-top: 15px;
-    gap: 20PX;
-    display: flex;
-    justify-content: center;
+.seccion2 .titulo {
+    flex: 1; /* El título ocupa todo el espacio disponible */
+    background-color: none; /* Solo para visualización */
+    padding: 10px;
 }
 
-.menu nav ul li a {
-    color: #4F9C49;
-    text-decoration: none;
+.listado {
+    flex: 1; /* El listado ocupa todo el espacio disponible */
+    background-color: none; /* Solo para visualización */
+    padding: 10px;
 }
 
-#sniffs a{
-    padding: 5px 5px 2px 5px;
-    background-color: #4F9C49;
-    color: white;
+.listado ul {
+    padding: 0;
+    margin: 0;
+}
 
+.listado li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    .contenedor-cards {
+        margin: 0px 0px 0px 0px;
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+    .contenedor-cards .contenedor-card {
+        width: calc(50% - 10px); /* Cambia a dos contenedores por fila */
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contenedor-cards {
+        margin: 0px 0px 0px 0px;
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+
+    .contenedor-cards .contenedor-card {
+        width: calc(100% - 10px); /* Cambia a un contenedor por fila */
+        max-width: calc(100% - 10px);
+    }
 }
