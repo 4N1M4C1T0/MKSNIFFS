@@ -1,112 +1,57 @@
-body {
-    background-color: white;
-}
-
-#kiko-slider {
-    font-family: sans-serif;
-    margin: auto;
-    background-color: white;
-    max-width: calc(70% - 10px);
-    width: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-}
-
-#kiko-slider>ul,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#kiko-slider>ul.slider {
-    position: relative;
-    max-width: calc(100% - 10px);
-    width: 100%;
-    height: 300px;
-}
-
-#kiko-slider>ul.slider h1,p {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    left: 50%;
-    top: 100px;
-    transform: translate(-50%, -50%);
-    max-width: calc(70% - 10px);
-    width: 100%;
+body{
+    display: flex;
     justify-content: center;
-}
-#kiko-slider>ul.slider h1{
-    text-align: center;
+    align-items: center;
 }
 
-#kiko-slider>ul.slider p {
+.contenedor_preguntas{
+    background-color: black;
+    max-width: calc(70% - 10px);
+    width: 70%;
+}
+    
+details,h3{
+    font-family: sans-serif;
+    font-size: 17px;
+    background: rgba(118, 165, 107, 0.7);
     color: white;
-    top: 160px;
+    margin: auto;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+h3{
     text-align: center;
-}
-#kiko-slider>ul.slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background: #fff;
+    padding: 20px;
+    border-bottom: none;
+    font-size: 25px;
 }
 
-#kiko-slider>ul.slider li img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.primero{
+    border-top: none;
 }
 
-#kiko-slider>ul.slider li:first-child {
-    opacity: 1;
-    /*Mostramos el primer <li>*/
+p{
+    text-align: justify;
 }
-
-#kiko-slider>ul.slider li:target {
-    opacity: 1;
-    /*Mostramos el <li> del enlace que pulsemos*/
-}
-
-#kiko-slider>.menu {
-    text-align: center;
-    margin: 40px;
-}
-
-#kiko-slider>.menu li {
-    display: inline-block;
-    text-align: center;
-}
-
-#kiko-slider>.menu li a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background-color: #0c960c;
-    padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-}
-
-#kiko-slider>.menu li a:hover{
-    background-color: #086d08;
-}
-
 @media screen and (max-width: 768px) {
-    #kiko-slider {
-        font-family: sans-serif;
-        margin: auto;
-        background-color: white;
+    .contenedor_preguntas{
+        background-color: black;
         max-width: calc(100% - 10px);
         width: 100%;
-        padding: 30px;
+    }
+        
+    details,h3{
+        font-family: sans-serif;
+        font-size: 17px;
+        background: rgba(118, 165, 107, 0.7);
+        color: white;
+        margin: auto;
+        padding: 0.5rem;
         box-sizing: border-box;
-    }    
+        cursor: pointer;
+        border: 1px solid white;
+    }  
   }
