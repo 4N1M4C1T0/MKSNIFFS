@@ -1,106 +1,172 @@
-/*GENERAL*/
-
-* {
-    overflow: hidden;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    font-family: "Source Sans 3", sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-.fw300 {
-    font-weight: 300;
+.contenedor {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000; /* Borde del contenedor principal */
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative; /* Necesario para la posición de la línea */
 }
 
-.fw400 {
-    font-weight: 400;
+.sub-contenedor {
+    border: 2px solid #000; /* Borde de los sub-contenedores */
+    box-sizing: border-box; /* Para incluir el borde en el ancho total */
+    padding: 10px;
+    position: relative;
 }
 
-.fw500 {
-    font-weight: 500;
+.titulo {
+    border: none; /* Quitar el borde del contenedor del título */
+    padding-bottom: 0;
+    width: 100%;
 }
 
-.fw600 {
-    font-weight: 600;
+.titulo h1 {
+    margin: 0;
 }
 
-.fw900 {
-    font-weight: 900;
+hr {
+    border: none;
+    border-top: 2px solid #000; /* Línea horizontal */
+    margin: 10px 0;
 }
 
-.header {
-    background-color: beige;
-}
-
-/*SOLO MENU DE LOGOS*/
-
-.logos {
-    background-color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1% 15% 1% 15%;
+.contenido-flex {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    position: relative;
 }
 
-.barra {
-    background-color: #4F9C49;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
+.contenido-flex::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #000;
 }
 
-.barra nav ul {
-    margin-bottom: 0;
-    padding: 0.2% 15% 0% 15%;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
+.izquierda {
+    text-align: left;
+    width: 48%; /* Ajustar el ancho */
 }
 
-.barra nav ul li a {
+.derecha {
+    text-align: left;
+    width: 48%; /* Ajustar el ancho */
+    position: relative;
+}
+
+.texto-largo {
+    margin-bottom: 20px;
+    max-width: 50%; /* Limitar a 50% del contenedor */
+    font-size: 8px; /* Reducir la letra a 8px */
+}
+
+.contenedor-inferior {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+.transparencia {
+    padding: 10px;
+}
+
+.seccion {
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: gold;
+}
+
+.icono {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 10px;
+    color: #000;
     text-decoration: none;
-    color: white;
-    font-weight: bold;
 }
 
-.barra nav ul li a:hover {
-    color: #E3E3E3;
+.icono:hover {
+    color: #007BFF;
     cursor: pointer;
 }
 
-.menu {
-    background-color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.menu nav {
-    padding: 1% 15% 1% 15%;
+/* Estilos para el formulario */
+form {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-.menu nav ul {
-    margin-bottom: 0;
+.campo {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, textarea, button {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Incluir el padding y borde en el ancho total */
+}
+
+button {
     margin-top: 15px;
-    gap: 20PX;
-    display: flex;
-    justify-content: center;
-}
-
-.menu nav ul li a {
-    color: #4F9C49;
-    text-decoration: none;
-}
-
-#sniffs a{
-    padding: 5px 5px 2px 5px;
-    background-color: #4F9C49;
+    background-color: #007BFF;
     color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
 
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenedor {
+        align-items: center;
+    }
+
+    .contenido-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-flex::before {
+        content: none; /* Elimina la línea vertical en pantallas pequeñas */
+    }
+
+    .izquierda, .derecha {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .derecha {
+        margin-bottom: 0;
+    }
 }

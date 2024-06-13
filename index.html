@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor centrado</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="sub-contenedor titulo">
+            <h1>Título del Formulario</h1>
+        </div>
+        <hr>
+        <div class="contenido-flex">
+            <div class="sub-contenedor izquierda">
+                <form>
+                    <div class="campo">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="email">Correo:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="phone">Teléfono:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    
+                    <div class="campo">
+                        <label for="comment">Comentario:</label>
+                        <textarea id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="sub-contenedor derecha">
+                <div class="texto-largo">
+                    <p>Texto línea 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p>Texto línea 2. Nullam vestibulum ex sit amet sollicitudin venenatis.</p>
+                    <p>Texto línea 3. Maecenas nec leo in mauris lobortis dapibus.</p>
+                    <p>Texto línea 4. Integer nec tortor luctus, convallis odio nec, rhoncus metus.</p>
+                    <p>Texto línea 5. Donec eget purus id libero vehicula ultricies.</p>
+                    <p>Texto línea 6. Sed non eros ut est pretium bibendum.</p>
+                </div>
+                <div class="contenedor-inferior">
+                    <div class="transparencia">
+                        <div class="seccion">
+                            <h2>Título de la Sección</h2>
+                        </div>
+                        <div class="seccion">
+                            <p>Texto de ejemplo para la segunda sección del contenedor.</p>
+                        </div>
+                        <div class="seccion">
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <div class="seccion">
+                            <a href="#" class="icono"><i class="fab fa-facebook-square"></i></a>
+                            <a href="#" class="icono"><i class="fab fa-whatsapp-square"></i></a>
+                            <button onclick="copyLink()" class="icono">Copiar Link</button>
+                            <a href="#" class="icono"><i class="fab fa-instagram-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para copiar el enlace -->
+    <script>
+        function copyLink() {
+            var dummy = document.createElement('input');
+            var text = window.location.href;
+
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+
+            alert('Enlace copiado: ' + text);
+        }
+    </script>
+</body>
+</html>
