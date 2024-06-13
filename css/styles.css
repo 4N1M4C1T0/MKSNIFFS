@@ -4,21 +4,27 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Color de fondo para el cuerpo */
 }
 
 .contenedor {
+    margin: 0 auto;
+    border: 1px solid #ccc;
     width: 70%;
     display: flex;
     flex-direction: column;
-    border: 2px solid #000; /* Borde del contenedor principal */
     padding: 10px;
     box-sizing: border-box;
     position: relative; /* Necesario para la posición de la línea */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), transparent), url('../img/background/backcontacto.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño para cubrir el contenedor */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
 }
 
 .sub-contenedor {
-    border: 2px solid #000; /* Borde de los sub-contenedores */
     box-sizing: border-box; /* Para incluir el borde en el ancho total */
     padding: 10px;
     position: relative;
@@ -32,12 +38,26 @@ body {
 
 .titulo h1 {
     margin: 0;
+    color: #ffffff;
 }
 
-hr {
+.hr-container {
+    display: flex;
+    width: 30%;
+}
+
+.hr-izquierda {
+    width: 50%;
+    margin: 0;
     border: none;
-    border-top: 2px solid #000; /* Línea horizontal */
-    margin: 10px 0;
+    border-top: 1px solid #4bc51b;
+}
+
+.hr-derecha {
+    width: 50%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ffffff;
 }
 
 .contenido-flex {
@@ -47,6 +67,10 @@ hr {
     position: relative;
 }
 
+.contenido-flex .izquierda label {
+    color: #ffffff;
+}
+
 .contenido-flex::before {
     content: '';
     position: absolute;
@@ -54,7 +78,7 @@ hr {
     bottom: 0;
     left: 50%;
     width: 2px;
-    background-color: #000;
+    background-color: #ffffff;
 }
 
 .izquierda {
@@ -66,21 +90,30 @@ hr {
     text-align: left;
     width: 48%; /* Ajustar el ancho */
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .texto-largo {
     margin-bottom: 20px;
     max-width: 50%; /* Limitar a 50% del contenedor */
-    font-size: 8px; /* Reducir la letra a 8px */
+    font-size: 12px; /* Reducir la letra a 8px */
+    text-align: left; /* Alinear a la izquierda */
+    margin-top: 5%; /* Agregar margen superior de 15% */
+    color: #ffffff;
 }
 
 .contenedor-inferior {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    max-width: 45%; /* Limitar el ancho máximo al 50% del contenedor derecho */
     background-color: rgba(255, 255, 255, 0.6);
     padding: 10px;
-    border: 2px solid #000;
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    text-align: center;
+    padding: 15px 5px 5px 0;
+    border-radius: 5px;
 }
 
 .transparencia {
@@ -95,17 +128,55 @@ hr {
     color: gold;
 }
 
+.iconos {
+    display: flex;
+    justify-content: space-between;
+}
+
 .icono {
-    display: inline-block;
-    font-size: 24px;
-    margin-right: 10px;
-    color: #000;
+    width: 23%;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
 .icono:hover {
-    color: #007BFF;
     cursor: pointer;
+    text-decoration: none;
+}
+
+.f{
+    background-color: #137adb;
+}
+
+.f:hover{
+    background-color: #0e5ea8;
+}
+
+.w{
+    background-color: #4bc51b;
+}
+
+.w:hover{
+    background-color: #399415;
+}
+
+.g{
+    background-color: #c93116;
+}
+
+.g:hover{
+    background-color: #992814;
+}
+
+.c{
+    background-color: #1bdbbb;
+}
+
+.c:hover{
+    background-color: #19bba0;
 }
 
 /* Estilos para el formulario */
@@ -124,7 +195,7 @@ label {
     margin-bottom: 5px;
 }
 
-input, textarea, button {
+input, textarea, button, a {
     padding: 8px;
     font-size: 14px;
     border: 1px solid #ccc;
@@ -133,17 +204,26 @@ input, textarea, button {
     box-sizing: border-box; /* Incluir el padding y borde en el ancho total */
 }
 
-button {
+.campo-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo-flex .campo {
+    width: 48%; /* Ajustar el ancho */
+}
+
+.enviar {
     margin-top: 15px;
-    background-color: #007BFF;
+    background-color: #4bc51b;
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px;
 }
 
-button:hover {
-    background-color: #0056b3;
+.enviar:hover {
+    background-color: #399415;
 }
 
 /* Media query para pantallas más pequeñas */
@@ -155,6 +235,25 @@ button:hover {
     .contenido-flex {
         flex-direction: column;
         align-items: center;
+    }
+
+    .hr-container {
+        display: flex;
+        width: 30%;
+    }
+    
+    .hr-izquierda {
+        width: 50%;
+        margin: 0;
+        border: none;
+        border-top: 1px solid #4bc51b;
+    }
+    
+    .hr-derecha {
+        width: 50%;
+        margin: 0;
+        border: none;
+        border-top: 1px solid #ffffff;
     }
 
     .contenido-flex::before {
@@ -169,4 +268,12 @@ button:hover {
     .derecha {
         margin-bottom: 0;
     }
+
+    .contenedor-inferior {
+        position: static; /* Cambiar la posición para pantallas pequeñas */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+        max-width: 100%; /* Limitar el ancho máximo */
+        margin-top: 20px; /* Agregar margen superior */
+    }
+
 }

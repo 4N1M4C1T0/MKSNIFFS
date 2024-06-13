@@ -9,9 +9,12 @@
 <body>
     <div class="contenedor">
         <div class="sub-contenedor titulo">
-            <h1>Título del Formulario</h1>
+            <h1>Contacto</h1>
         </div>
-        <hr>
+        <div class="hr-container">
+            <hr class="hr-izquierda">
+            <hr class="hr-derecha">
+        </div>
         <div class="contenido-flex">
             <div class="sub-contenedor izquierda">
                 <form>
@@ -19,71 +22,50 @@
                         <label for="name">Nombre:</label>
                         <input type="text" id="name" name="name" required>
                     </div>
-                    
-                    <div class="campo">
-                        <label for="email">Correo:</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="campo-flex">
+                        <div class="campo">
+                            <label for="correo">Correo</label>
+                            <input type="email" id="correo" name="correo">
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
                     </div>
-                    
-                    <div class="campo">
-                        <label for="phone">Teléfono:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    
                     <div class="campo">
                         <label for="comment">Comentario:</label>
                         <textarea id="comment" name="comment" rows="4" required></textarea>
                     </div>
-                    
-                    <button type="submit">Enviar</button>
+                    <button type="submit" class="enviar">Enviar</button>
                 </form>
             </div>
             <div class="sub-contenedor derecha">
                 <div class="texto-largo">
-                    <p>Texto línea 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <p>Texto línea 2. Nullam vestibulum ex sit amet sollicitudin venenatis.</p>
-                    <p>Texto línea 3. Maecenas nec leo in mauris lobortis dapibus.</p>
-                    <p>Texto línea 4. Integer nec tortor luctus, convallis odio nec, rhoncus metus.</p>
-                    <p>Texto línea 5. Donec eget purus id libero vehicula ultricies.</p>
-                    <p>Texto línea 6. Sed non eros ut est pretium bibendum.</p>
+                    <p><strong>Datos de contacto</strong></p>
+                    <p>Servicio Nacional Forestal y de Fauna Silvestre - SERFOR</p>
+                    <br>
+                    <p>Av. Javier Prado Oeste N° 2442, Urb. Orrantia,</p>
+                    <p>Magdalena del Mar, Lima 17 – Lima, Perú.</p>
+                    <br>
+                    <p><strong>Central Telefónica:</strong> (+511) 225 9005</p>
+                    <p><strong>Correo:</strong> conocimientoaldia@serfor.gob.pe</p>
                 </div>
                 <div class="contenedor-inferior">
                     <div class="transparencia">
-                        <div class="seccion">
-                            <h2>Título de la Sección</h2>
-                        </div>
-                        <div class="seccion">
-                            <p>Texto de ejemplo para la segunda sección del contenedor.</p>
-                        </div>
-                        <div class="seccion">
-                            <span class="rating">★★★★★</span>
-                        </div>
-                        <div class="seccion">
-                            <a href="#" class="icono"><i class="fab fa-facebook-square"></i></a>
-                            <a href="#" class="icono"><i class="fab fa-whatsapp-square"></i></a>
-                            <button onclick="copyLink()" class="icono">Copiar Link</button>
-                            <a href="#" class="icono"><i class="fab fa-instagram-square"></i></a>
+                        <div class="seccion"><strong>COMPARTIR</strong></div>
+                        <div class="seccion">¡Evaluanos y comparte!</div>
+                        <div class="seccion rating">★★★★★</div>
+                        <div class="seccion iconos">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fexample.com" class="icono f" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://api.whatsapp.com/send?text=http%3A%2F%2Fexample.com" class="icono w " target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="mailto:?subject=Interesante%20Enlace&body=Te%20comparto%20este%20enlace:%20YOUR_URL_HERE" class="icono g" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                            <button onclick="copyLink()" class="icono c"><i class="fa-solid fa-share-nodes"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Script para copiar el enlace -->
-    <script>
-        function copyLink() {
-            var dummy = document.createElement('input');
-            var text = window.location.href;
-
-            document.body.appendChild(dummy);
-            dummy.value = text;
-            dummy.select();
-            document.execCommand('copy');
-            document.body.removeChild(dummy);
-
-            alert('Enlace copiado: ' + text);
-        }
-    </script>
+    <script src="./js/copylink.js"></script>
 </body>
 </html>
