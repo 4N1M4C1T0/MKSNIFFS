@@ -339,3 +339,103 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
 /*PROPIEDADES SLIDER_BODY*/
+
+#slider-body {
+    font-family: sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: white;
+    max-width: calc(70% - 10px);
+    width: 70%;
+    box-sizing: border-box;
+}
+
+#slider-body>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#slider-body>ul.slider {
+    position: relative;
+    max-width: calc(100% - 10px);
+    width: 100%;
+    height: 300px;
+}
+
+#slider-body>ul.slider h1, .texto_slider_body {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    max-width: calc(70% - 10px);
+    width: 100%;
+    justify-content: center;
+}
+#slider-body>ul.slider h1{
+    text-align: center;
+}
+
+#slider-body>ul.slider .texto_slider_body {
+    color: white;
+    top: 160px;
+    text-align: center;
+}
+#slider-body>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#slider-body>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#slider-body>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#slider-body>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#slider-body>.menu {
+    text-align: center;
+    margin: 40px;
+}
+
+#slider-body>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+#slider-body>.menu li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: #0c960c;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+#slider-body>.menu li a:hover{
+    background-color: #086d08;
+}
+
+/*PROPIEDADES DE PREGUNTAS*/
+

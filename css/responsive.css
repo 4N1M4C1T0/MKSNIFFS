@@ -81,3 +81,21 @@
         width: 100%;
   }
 }
+
+/*MEDIA SLIDER BODY*/
+
+@media screen and (max-width: 768px) {
+    #slider-body {
+        font-family: sans-serif;
+        margin: auto;
+        background-color: white;
+        max-width: calc(100% - 10px);
+        width: 100%;
+        padding: 30px;
+        box-sizing: border-box;
+    }    
+  }
+
+  /*MEDIA PREGUNTAS*/
+
+  
