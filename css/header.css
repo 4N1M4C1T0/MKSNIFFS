@@ -1,0 +1,37 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.top-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-container a img {
+    width: 150px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto;
+}
+
+.middle-section {
+    background-color: #4CAF50; /* Verde */
+}
+
+.bottom-section {
+    background-color: rgba(255, 255, 255, 0.5); /* Blanco con transparencia */
+}

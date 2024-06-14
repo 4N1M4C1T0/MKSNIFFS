@@ -1,106 +1,11 @@
-/*GENERAL*/
-
-* {
-    overflow: hidden;
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    font-family: "Source Sans 3", sans-serif;
 }
 
-.fw300 {
-    font-weight: 300;
-}
-
-.fw400 {
-    font-weight: 400;
-}
-
-.fw500 {
-    font-weight: 500;
-}
-
-.fw600 {
-    font-weight: 600;
-}
-
-.fw900 {
-    font-weight: 900;
-}
-
-.header {
-    background-color: beige;
-}
-
-/*SOLO MENU DE LOGOS*/
-
-.logos {
-    background-color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 1% 15% 1% 15%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.barra {
-    background-color: #4F9C49;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.barra nav ul {
-    margin-bottom: 0;
-    padding: 0.2% 15% 0% 15%;
-    display: flex;
-    gap: 10px;
-    justify-content: flex-end;
-}
-
-.barra nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-.barra nav ul li a:hover {
-    color: #E3E3E3;
-    cursor: pointer;
-}
-
-.menu {
-    background-color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.menu nav {
-    padding: 1% 15% 1% 15%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu nav ul {
-    margin-bottom: 0;
-    margin-top: 15px;
-    gap: 20PX;
-    display: flex;
-    justify-content: center;
-}
-
-.menu nav ul li a {
-    color: #4F9C49;
-    text-decoration: none;
-}
-
-#sniffs a{
-    padding: 5px 5px 2px 5px;
-    background-color: #4F9C49;
-    color: white;
-
+main {
+    padding: 20px;
 }
