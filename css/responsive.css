@@ -117,3 +117,55 @@
         border: 1px solid white;
     }  
   }
+
+/*MEDIA PARA CONTACTO*/
+@media (max-width: 768px) {
+    .contenedor {
+        align-items: center;
+    }
+
+    .contenido-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hr-container {
+        display: flex;
+        width: 30%;
+    }
+    
+    .hr-izquierda {
+        width: 50%;
+        margin: 0;
+        border: none;
+        border-top: 1px solid #4bc51b;
+    }
+    
+    .hr-derecha {
+        width: 50%;
+        margin: 0;
+        border: none;
+        border-top: 1px solid #ffffff;
+    }
+
+    .contenido-flex::before {
+        content: none; /* Elimina la línea vertical en pantallas pequeñas */
+    }
+
+    .izquierda, .derecha {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .derecha {
+        margin-bottom: 0;
+    }
+
+    .contenedor-inferior {
+        position: static; /* Cambiar la posición para pantallas pequeñas */
+        width: 100%; /* Ocupa el 100% del ancho disponible */
+        max-width: 100%; /* Limitar el ancho máximo */
+        margin-top: 20px; /* Agregar margen superior */
+    }
+
+}

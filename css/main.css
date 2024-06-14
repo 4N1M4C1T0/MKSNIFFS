@@ -3,13 +3,20 @@
 body{
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
 }
 
 main{
     font-family: Poppins;
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: #ffffff;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
 }
 
 /*Propiedades del Slider*/
@@ -189,14 +196,15 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 .contenedor-centralizado {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
+    padding: 15px;
 }
 
 .contenedor-cards {
     display: flex;
     flex-wrap: wrap; /* Los contenedores flex se envuelven cuando no hay suficiente espacio */
     justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
-    width: calc(70% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(70% - 10px);
+    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 10px);
 }
 
 .contenedor-cards .contenedor-card {
@@ -243,8 +251,13 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     text-decoration: none; /* Quita el subrayado de los enlaces */
     color: white;
     background-color: #000000;
-    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
     align-items: center; /* Centra verticalmente el contenido */
+}
+
+.boton-img:hover{
+    background-color: #505050;
+    cursor: pointer;
 }
 
 .icono {
@@ -306,8 +319,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     display: flex;
     justify-content: space-between;
     text-align: center;
-    max-width: calc(70% - 10px);
-    width: 100%;
+    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 10px);
     font-family: sans-serif;
     margin: auto;
     box-sizing: border-box;
@@ -345,8 +358,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     margin: auto;
     padding: 0;
     background-color: white;
-    max-width: calc(70% - 10px);
-    width: 70%;
+    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 10px);
     box-sizing: border-box;
 }
 
@@ -440,11 +453,11 @@ li {
 /*PROPIEDADES DE PREGUNTAS*/
 
 .contenedor_preguntas{
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
     background-color: #000000;
-    max-width: calc(70% - 10px);
-    width: 70%;
+    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 10px);
     box-sizing: border-box;
 }
     
@@ -473,4 +486,225 @@ details, .subtitulo-preguntas{
 
 .texto-preguntas{
     text-align: justify;
+}
+
+/*PROPIEDADES DE CONTACTO*/
+
+.contenedor {
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 10px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative; /* Necesario para la posición de la línea */
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), transparent), url('../img/contacto/backcontacto.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta el tamaño para cubrir el contenedor */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen para que no se desplace con el scroll */
+}
+
+.sub-contenedor {
+    box-sizing: border-box; /* Para incluir el borde en el ancho total */
+    padding: 10px;
+    position: relative;
+}
+
+.titulo {
+    border: none; /* Quitar el borde del contenedor del título */
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.titulo .titulo-contacto {
+    margin: 0;
+    color: #ffffff;
+}
+
+.hr-container {
+    display: flex;
+    width: 30%;
+}
+
+.hr-izquierda {
+    width: 50%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #4bc51b;
+}
+
+.hr-derecha {
+    width: 50%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ffffff;
+}
+
+.contenido-flex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.contenido-flex .izquierda  .label-izquierda {
+    color: #ffffff;
+}
+
+.contenido-flex::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: #ffffff;
+}
+
+.izquierda {
+    text-align: left;
+    width: 48%; /* Ajustar el ancho */
+}
+
+.derecha {
+    text-align: left;
+    width: 48%; /* Ajustar el ancho */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-largo {
+    margin-bottom: 20px;
+    max-width: 50%; /* Limitar a 50% del contenedor */
+    font-size: 12px; /* Reducir la letra a 8px */
+    text-align: left; /* Alinear a la izquierda */
+    margin-top: 5%; /* Agregar margen superior de 15% */
+    color: #ffffff;
+}
+
+.contenedor-inferior {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    max-width: 45%; /* Limitar el ancho máximo al 50% del contenedor derecho */
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    box-sizing: border-box; /* Incluir padding y borde en el ancho total */
+    text-align: center;
+    padding: 15px 5px 5px 0;
+    border-radius: 5px;
+}
+
+.transparencia {
+    padding: 10px;
+}
+
+.seccion {
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: gold;
+}
+
+.iconos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icono {
+    width: 23%;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.icono:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.f{
+    background-color: #137adb;
+}
+
+.f:hover{
+    background-color: #0e5ea8;
+}
+
+.w{
+    background-color: #4bc51b;
+}
+
+.w:hover{
+    background-color: #399415;
+}
+
+.g{
+    background-color: #c93116;
+}
+
+.g:hover{
+    background-color: #992814;
+}
+
+.c{
+    background-color: #1bdbbb;
+}
+
+.c:hover{
+    background-color: #19bba0;
+}
+
+/* Estilos para el formulario */
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+.intextbua-contacto {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    box-sizing: border-box; /* Incluir el padding y borde en el ancho total */
+}
+
+.campo-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.campo-flex .campo {
+    width: 48%; /* Ajustar el ancho */
+}
+
+.enviar {
+    margin-top: 15px;
+    background-color: #4bc51b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.enviar:hover {
+    background-color: #399415;
 }

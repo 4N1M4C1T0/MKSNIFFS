@@ -113,7 +113,6 @@
                 </div>
             </div>
         </div>
-        
         <h3 style="text-align: center; font-size: 35px;">TEMATICAS</h3>
     <div class="contenedor-centralizado">
         <div class="contenedor-cards">
@@ -566,6 +565,67 @@
         </details>
     </div>
 
+    <div class="contenedor">
+        <div class="sub-contenedor titulo">
+            <h1 class="titulo-contacto">Contacto</h1>
+        </div>
+        <div class="hr-container">
+            <hr class="hr-izquierda">
+            <hr class="hr-derecha">
+        </div>
+        <div class="contenido-flex">
+            <div class="sub-contenedor izquierda">
+                <form class="formulario-contacto">
+                    <div class="campo">
+                        <label class="label-izquierda" for="name">Nombre:</label>
+                        <input class="intextbua-contacto" type="text" id="name" name="name" required>
+                    </div>
+                    <div class="campo-flex">
+                        <div class="campo">
+                            <label class="label-izquierda" for="correo">Correo</label>
+                            <input class="intextbua-contacto" type="email" id="correo" name="correo">
+                        </div>
+                        <div class="campo">
+                            <label class="label-izquierda" for="telefono">Teléfono</label>
+                            <input class="intextbua-contacto" type="tel" id="telefono" name="telefono">
+                        </div>
+                    </div>
+                    <div class="campo">
+                        <label for="comment">Comentario:</label>
+                        <textarea class="intextbua-contacto" id="comment" name="comment" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="enviar intextbua-contacto">Enviar</button>
+                </form>
+            </div>
+            <div class="sub-contenedor derecha">
+                <div class="texto-largo">
+                    <p><strong>Datos de contacto</strong></p>
+                    <p>Servicio Nacional Forestal y de Fauna Silvestre - SERFOR</p>
+                    <br>
+                    <p>Av. Javier Prado Oeste N° 2442, Urb. Orrantia,</p>
+                    <p>Magdalena del Mar, Lima 17 – Lima, Perú.</p>
+                    <br>
+                    <p><strong>Central Telefónica:</strong> (+511) 225 9005</p>
+                    <p><strong>Correo:</strong> conocimientoaldia@serfor.gob.pe</p>
+                </div>
+                <div class="contenedor-inferior">
+                    <div class="transparencia">
+                        <div class="seccion"><strong>COMPARTIR</strong></div>
+                        <div class="seccion">¡Evaluanos y comparte!</div>
+                        <div class="seccion rating">★★★★★</div>
+                        <div class="seccion iconos">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fexample.com" class="icono f intextbua-contacto" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://api.whatsapp.com/send?text=http%3A%2F%2Fexample.com" class="icono w intextbua-contacto" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="mailto:?subject=Interesante%20Enlace&body=Te%20comparto%20este%20enlace:%20YOUR_URL_HERE" class="icono g intextbua-contacto" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                            <button onclick="copyLink()" class="icono c intextbua-contacto"><i class="fa-solid fa-share-nodes"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </main>
     <script src="./js/slider.js"></script>
+    <script src="./js/copylink.js"></script>
 </body>
