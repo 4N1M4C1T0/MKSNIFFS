@@ -2,7 +2,7 @@ body {
     background-color: white;
 }
 
-#kiko-slider {
+#slider-body {
     font-family: sans-serif;
     margin: auto;
     background-color: white;
@@ -12,21 +12,21 @@ body {
     box-sizing: border-box;
 }
 
-#kiko-slider>ul,
+#slider-body>ul,
 li {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-#kiko-slider>ul.slider {
+#slider-body>ul.slider {
     position: relative;
     max-width: calc(100% - 10px);
     width: 100%;
     height: 300px;
 }
 
-#kiko-slider>ul.slider h1,p {
+#slider-body>ul.slider h1,p {
     position: absolute;
     color: rgba(255, 255, 255, 0.8);
     padding: 10px;
@@ -37,16 +37,16 @@ li {
     width: 100%;
     justify-content: center;
 }
-#kiko-slider>ul.slider h1{
+#slider-body>ul.slider h1{
     text-align: center;
 }
 
-#kiko-slider>ul.slider p {
+#slider-body>ul.slider p {
     color: white;
     top: 160px;
     text-align: center;
 }
-#kiko-slider>ul.slider li {
+#slider-body>ul.slider li {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -57,33 +57,33 @@ li {
     background: #fff;
 }
 
-#kiko-slider>ul.slider li img {
+#slider-body>ul.slider li img {
     width: 100%;
     height: 300px;
     object-fit: cover;
 }
 
-#kiko-slider>ul.slider li:first-child {
+#slider-body>ul.slider li:first-child {
     opacity: 1;
     /*Mostramos el primer <li>*/
 }
 
-#kiko-slider>ul.slider li:target {
+#slider-body>ul.slider li:target {
     opacity: 1;
     /*Mostramos el <li> del enlace que pulsemos*/
 }
 
-#kiko-slider>.menu {
+#slider-body>.menu {
     text-align: center;
     margin: 40px;
 }
 
-#kiko-slider>.menu li {
+#slider-body>.menu li {
     display: inline-block;
     text-align: center;
 }
 
-#kiko-slider>.menu li a {
+#slider-body>.menu li a {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -95,12 +95,12 @@ li {
     border-radius: 100%;
 }
 
-#kiko-slider>.menu li a:hover{
+#slider-body>.menu li a:hover{
     background-color: #086d08;
 }
 
 @media screen and (max-width: 768px) {
-    #kiko-slider {
+    #slider-body {
         font-family: sans-serif;
         margin: auto;
         background-color: white;
