@@ -44,3 +44,40 @@
         max-width: calc(100% - 20px);
     }
 }
+
+/*MEDIA ACERCA DE*/
+
+@media screen and (max-width: 768px) {
+    .seccion_body{
+        display: flex;
+        font-family: sans-serif;
+        margin: auto;
+        max-width: calc(100% - 10px);
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .imagen_sec_body{
+        flex: 1;
+        padding: 10px;
+        max-width: calc(100% - 10px);
+        width: 100%;
+        align-items: center;
+        margin: auto;
+        display: block;
+        
+    }
+    
+    .titulo_principal_body{
+        text-align: justify;
+    }
+
+    .texto_sec_body{
+        flex: 1;
+        padding: 10px;
+        text-align: justify;
+        max-width: calc(100% - 10px);
+        width: 100%;
+  }
+}

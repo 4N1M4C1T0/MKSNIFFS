@@ -299,3 +299,43 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 .icono-listado {
     margin-right: 5px;
 }
+
+/*PROPIEDADES ACERCA DE*/
+
+.seccion_body{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    max-width: calc(70% - 10px);
+    width: 100%;
+    font-family: sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+
+}
+
+.imagen_sec_body{
+    flex: 1;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    display: block;
+    max-width: calc(40% - 10px);
+    width: 30%;
+}
+
+.titulo_principal_body{
+    text-align: justify;
+}
+
+.texto_sec_body{
+    max-width: calc(60% - 10px);
+    width: 50%;
+    flex: 1;
+    margin-right: 80px;
+    padding: 20px;
+    text-align: justify;
+}
+
+/*PROPIEDADES SLIDER_BODY*/
