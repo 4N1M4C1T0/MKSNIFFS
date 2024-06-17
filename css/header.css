@@ -48,12 +48,19 @@ header {
 .icon-container {
     display: flex;
     align-items: center;
-    color: #ffffff;
 }
 
 .icon {
     padding: 0 10px;
     color: white;
+    text-decoration: none;
+}
+
+.icon-container a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
 }
 
 .separator {
@@ -65,5 +72,56 @@ header {
 
 .bottom-section {
     background-color: rgba(255, 255, 255, 0.5); /* Blanco con transparencia */
-    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centra el contenido de bottom-content */
+    padding: 20px 0 0 10px;
+}
+
+.bottom-content {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-left, .bottom-right {
+    width: 50%; /* Cada sección ocupa el 35% del ancho de bottom-content */
+}
+
+.bottom-left {
+    text-align: left;
+}
+
+.bottom-left a img {
+    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto;
+}
+
+.bottom-right {
+    text-align: right;
+}
+
+.bottom-right nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-right nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.bottom-right nav ul li a {
+    text-decoration: none;
+    color: rgb(37, 156, 26); /* Ajusta el color del texto según tus necesidades */
+    font-weight: bold;
+}
+
+.bottom-right nav ul li .opcion5 {
+    text-decoration: none;
+    color: rgb(255, 255, 255); /* Ajusta el color del texto según tus necesidades */
+    background-color: #4CAF50;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px;
 }
