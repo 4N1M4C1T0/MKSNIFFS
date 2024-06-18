@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 middleSection.style.display = 'none';
                 bottomSection.classList.add('fixed');
             } else {
-                topSection.style.display = 'block';
-                middleSection.style.display = 'block';
+                topSection.style.display = 'flex'; // Asegúrate de que las secciones sean flexibles
+                middleSection.style.display = 'flex'; // Asegúrate de que las secciones sean flexibles
                 bottomSection.classList.remove('fixed');
             }
         }
