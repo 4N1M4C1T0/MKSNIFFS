@@ -26,13 +26,17 @@ document.addEventListener("DOMContentLoaded", function() {
             let currentScrollTop = window.scrollY;
             if (currentScrollTop > lastScrollTop) {
                 // Scrolling down
-                topSection.style.display = 'none';
-                middleSection.style.display = 'none';
+                topSection.classList.remove('visible');
+                topSection.classList.add('hidden');
+                middleSection.classList.remove('visible');
+                middleSection.classList.add('hidden');
                 bottomSection.classList.add('fixed');
             } else {
                 // Scrolling up
-                topSection.style.display = 'flex'; // Asegúrate de que las secciones sean flexibles
-                middleSection.style.display = 'flex'; // Asegúrate de que las secciones sean flexibles
+                topSection.classList.remove('hidden');
+                topSection.classList.add('visible');
+                middleSection.classList.remove('hidden');
+                middleSection.classList.add('visible');
                 bottomSection.classList.remove('fixed');
             }
             lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling

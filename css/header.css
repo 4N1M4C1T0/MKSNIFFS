@@ -7,6 +7,7 @@ header {
 .section {
     width: 100%;
     text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .top-section {
@@ -131,4 +132,15 @@ header {
     background-color: #4CAF50; /* Verde */
     border-radius: 5px;
     padding: 5px 10px;
+}
+
+/* Transiciones y clases para animaciones */
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.visible {
+    transform: translateY(0);
+    opacity: 1;
 }
