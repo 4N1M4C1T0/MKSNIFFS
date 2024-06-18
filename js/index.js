@@ -11,32 +11,31 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(error => console.error('Error al cargar el archivo:', error));
     }
 
-    // Ajustar la altura de la middle-section basado en la altura de la top-section
-    function adjustMiddleSectionHeight() {
-        const topSection = document.querySelector('.top-section');
-        const middleSection = document.querySelector('.middle-section');
-        if (topSection && middleSection) {
-            middleSection.style.height = (topSection.offsetHeight / 64) + 'px';
-        }
-    }
+    // Variables para manejar el desplazamiento
+    let lastScrollTop = 0;
 
-    // Ocultar top-section y middle-section al hacer scroll
+    // Ocultar top-section y middle-section al hacer scroll hacia abajo
+    // Mostrar top-section y middle-section al hacer scroll hacia arriba
     window.addEventListener('scroll', function() {
         const topSection = document.querySelector('.top-section');
         const middleSection = document.querySelector('.middle-section');
         const bottomSection = document.querySelector('.bottom-section');
         const scrollPosition = window.scrollY;
-
+        
         if (topSection && middleSection && bottomSection) {
-            if (scrollPosition > 0) {
+            let currentScrollTop = window.scrollY;
+            if (currentScrollTop > lastScrollTop) {
+                // Scrolling down
                 topSection.style.display = 'none';
                 middleSection.style.display = 'none';
                 bottomSection.classList.add('fixed');
             } else {
+                // Scrolling up
                 topSection.style.display = 'flex'; // Asegúrate de que las secciones sean flexibles
                 middleSection.style.display = 'flex'; // Asegúrate de que las secciones sean flexibles
                 bottomSection.classList.remove('fixed');
             }
+            lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
         }
     });
 
