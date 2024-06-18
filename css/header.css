@@ -75,6 +75,14 @@ header {
     display: flex;
     justify-content: center; /* Centra el contenido de bottom-content */
     padding: 20px 0 0 10px;
+    width: 100%;
+    z-index: 10; /* Asegura que esté por encima del contenido */
+    position: relative; /* Posición inicial relativa */
+}
+
+.bottom-section.fixed {
+    position: fixed;
+    top: 0;
 }
 
 .bottom-content {
@@ -117,11 +125,9 @@ header {
     font-weight: bold;
 }
 
-.bottom-right nav ul li .opcion5 {
-    text-decoration: none;
-    color: rgb(255, 255, 255); /* Ajusta el color del texto según tus necesidades */
-    background-color: #4CAF50;
+.bottom-right nav ul li:last-child a {
+    color: white;
+    background-color: #4CAF50; /* Verde */
     border-radius: 5px;
-    font-weight: bold;
-    padding: 8px;
+    padding: 5px 10px;
 }
