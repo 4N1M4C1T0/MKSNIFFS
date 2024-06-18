@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const topSection = document.querySelector('.top-section');
         const middleSection = document.querySelector('.middle-section');
         if (topSection && middleSection) {
-            middleSection.style.height = (topSection.offsetHeight / 2) + 'px';
+            middleSection.style.height = (topSection.offsetHeight / 32) + 'px';
         }
     }
 
