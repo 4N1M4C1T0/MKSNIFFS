@@ -71,7 +71,7 @@ header {
 }
 
 .bottom-section {
-    background-color: rgba(255, 255, 255, 0.5); /* Blanco con transparencia */
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco con transparencia */
     display: flex;
     justify-content: center; /* Centra el contenido de bottom-content */
     padding: 20px 0 0 10px;
