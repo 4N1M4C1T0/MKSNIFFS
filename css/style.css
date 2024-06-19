@@ -8,7 +8,6 @@ main{
 }
 
 .contenedor_vista_principal{
-    border: 2px black dashed;
     background-color: blueviolet;
     max-width: calc(70% - 10px);
     width: 70%;
@@ -28,8 +27,10 @@ main{
     width: 25%;
     height: 115px;
     display: flex;
-    background-color: red;
+    background-color: #76A56B;
     color: white;
+    font-size: 20px;
+    font-weight: bold;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -57,8 +58,9 @@ main{
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgb(39, 36, 36);
+    background-color: #5D5D5D;
     color: white;
+    font-size: 18px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -68,8 +70,9 @@ main{
     width: 50%;
     height: 100%;
     display: flex;
-    background-color: rgb(39, 36, 36);
+    background-color: #5D5D5D;
     color: white;
+    font-size: 18px;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -87,8 +90,7 @@ main{
     width: 25%;
     height: 100%;
     display: flex;
-    background-color: white;
-    border-left: 1px black solid;
+    background-color: #D8D8D8;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -98,7 +100,7 @@ main{
     width: 25%;
     height: 100%;
     display: flex;
-    background-color: white;
+    background-color: #D8D8D8;
     border-left: 1px black solid;
     box-sizing: border-box;
     justify-content: center;
@@ -109,7 +111,7 @@ main{
     width: 25%;
     height: 100%;
     display: flex;
-    background-color: white;
+    background-color: #D8D8D8;
     border-left: 1px black solid;
     box-sizing: border-box;
     justify-content: center;
@@ -120,7 +122,7 @@ main{
     width: 25%;
     height: 100%;
     display: flex;
-    background-color: white;
+    background-color: #D8D8D8;
     border-left: 1px black solid;
     box-sizing: border-box;
     justify-content: center;
@@ -128,9 +130,9 @@ main{
 }
 
 .caja_Seccion_medio{
-    background-color: rgb(170, 211, 170);
+    background-color: #D4F3A7;
     width: 100%;
-    height: 50px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -166,7 +168,7 @@ main{
 
 .caja13{
     width: 100%;
-    height: 90%;
+    height: 96%;
     display: flex;
     background-color: rgb(218, 218, 210);
     box-sizing: border-box;
@@ -175,10 +177,10 @@ main{
 }
 
 .caja14{
-    border: 1px black solid;
     width: 100%;
-    height: 10%;
+    height: 4%;
     background-color: rgb(218, 218, 210);
+    color: #8C8C8C;
     box-sizing: border-box;
 }
 
@@ -187,4 +189,9 @@ main{
     width: 95%;
     height: 95%;
     background-color: white;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 18px;
 }
