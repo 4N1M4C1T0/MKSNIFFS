@@ -153,6 +153,32 @@ main{
     align-items: center;
 }
 
+.caja_seccion_abajo .fila_arriba{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+
+.caja_seccion_abajo .fila_arriba .caja11{
+    border: 2px black dashed;
+    width: 33.33%;
+    height: 100%;
+}
+
+.caja_seccion_abajo .fila_abajo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
+
+.caja_seccion_abajo .fila_abajo .caja12{
+    border: 2px red dashed;
+    width: 33.33%;
+    height: 100%;
+}
+
 
 i{
     margin-right: 10px;
