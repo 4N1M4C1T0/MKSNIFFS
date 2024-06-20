@@ -121,13 +121,14 @@ main{
 .caja_Seccion_medio{
     background-color: chocolate;
     width: 100%;
-    height: 380px;
+    height: 500px;
 }
 
 .caja_Seccion_medio img{
     width: 100%;
     height: 100%;
     display: flex;
+    object-fit: cover;
 }
 
 .caja_seccion_abajo{
@@ -189,10 +190,6 @@ main{
 i{
     margin-right: 10px;
     font-size: 18px;
-}
-
-img{
-    height: 30px;
 }
 
 .caja_seccion_final{
