@@ -1,15 +1,55 @@
-.footer-section {
+/* Estilos para el footer */
+footer {
     width: 100%;
+}
+
+.footer-section {
     padding: 20px;
     text-align: center;
 }
 
 .top-footer {
-    background-color: #333;
-    color: white;
+    background-color: #f1f1f1; /* Color de fondo para la sección superior del footer */
+    display: flex;
+    justify-content: center; /* Centrar todo el contenido */
+}
+
+.top-footer .content-wrapper {
+    width: 70%; /* Contenedor que ocupa el 70% del ancho */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinear elementos verticalmente al centro */
+}
+
+.top-footer .left-section {
+    width: 70%; /* Cada sección ocupa el 50% del contenedor */
+    text-align: left; /* Alinear texto a la izquierda en left-section */
+}
+
+.top-footer .right-section {
+    display: flex;
+    flex-direction: column; /* Alinear las imágenes en columna */
+    align-items: center; /* Centrar horizontalmente */
+    width: 30%; /* Cada sección ocupa el 50% del contenedor */
+    text-align: left; /* Alinear texto a la izquierda en left-section */
+}
+
+.top-footer .right-section img {
+    display: block; /* Asegurar que las imágenes sean elementos de bloque */
+    margin-bottom: 10px; /* Espacio entre las imágenes */
 }
 
 .bottom-footer {
-    background-color: #222;
-    color: white;
+    background-color: #ccc; /* Color de fondo para la sección inferior del footer */
+    height: 5px; /* Altura de 5px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.divider {
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.8); /* Línea divisoria con transparencia */
 }

@@ -5,10 +5,30 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => response.text())
             .then(data => {
                 document.getElementById(elementId).innerHTML = data;
-                // Ajustar la altura de la middle-section basado en la altura de la top-section
-                adjustMiddleSectionHeight();
+                
+                // Si se carga el footer, actualizar el año
+                if (elementId === 'footer') {
+                    updateFooterYear();
+                }
+
+                // Añadir animaciones de visibilidad a las secciones
+                const topSection = document.querySelector('.top-section');
+                const middleSection = document.querySelector('.middle-section');
+                if (topSection && middleSection) {
+                    topSection.classList.add('visible');
+                    middleSection.classList.add('visible');
+                }
             })
             .catch(error => console.error('Error al cargar el archivo:', error));
+    }
+
+    // Función para actualizar el año en el footer
+    function updateFooterYear() {
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) {
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        }
     }
 
     // Variables para manejar el desplazamiento
