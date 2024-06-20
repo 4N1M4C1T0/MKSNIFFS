@@ -119,17 +119,15 @@ main{
 }
 
 .caja_Seccion_medio{
-    background-color: #635b12;
+    background-color: chocolate;
     width: 100%;
-    height: 500px;
+    height: 380px;
+}
+
+.caja_Seccion_medio img{
+    width: 100%;
+    height: 100%;
     display: flex;
-    font-weight: bold;
-    color: #76A56B;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
 }
 
 .caja_seccion_abajo{
