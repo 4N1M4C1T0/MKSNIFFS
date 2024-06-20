@@ -15,7 +15,7 @@ main{
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
     max-width: calc(80% - 10px);
 }
 
@@ -77,14 +77,17 @@ main{
 .slider .list .item .content .boton{
     position: relative;
     font-size: 15px;
-    margin: 0 0 5px 0;
+    margin: 1px 0 3px 0;
+    padding: 8px 6px 1px 24px;
     border-radius: 10px;
     border: 1px;
     width:400px;
     height:35px;
-    background-color: #F1F3F1;
-    color: #000;
+    border: 2px #F1F3F1 solid;
+    background-color: transparent;
+    color: #F1F3F1;
     display: block;
+    text-align: left;
 }
 .slider .list .item .content .boton:hover{
     background-color: #098509;
