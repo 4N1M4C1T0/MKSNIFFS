@@ -1,47 +1,67 @@
 /* Estilos para el footer */
 footer {
     width: 100%;
+    background-color: #363636; /* Color de fondo para la sección superior del footer */
+    padding: 0; /* Espaciado interno */
+    text-align: justify;
+    color: #ffffff;
 }
 
 .footer-section {
     padding: 20px;
-    text-align: center;
-}
-
-.top-footer {
-    background-color: #f1f1f1; /* Color de fondo para la sección superior del footer */
-    display: flex;
-    justify-content: center; /* Centrar todo el contenido */
 }
 
 .top-footer .content-wrapper {
-    width: 70%; /* Contenedor que ocupa el 70% del ancho */
     display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
     justify-content: space-between;
-    align-items: center; /* Alinear elementos verticalmente al centro */
+    align-items: flex-start; /* Alinear elementos arriba */
+}
+
+.top-footer .left-section,
+.top-footer .right-section {
+    width: 100%;
+    text-align: center; /* Alinear texto al centro */
+    margin-bottom: 10px; /* Espacio entre elementos */
 }
 
 .top-footer .left-section {
-    width: 70%; /* Cada sección ocupa el 50% del contenedor */
-    text-align: left; /* Alinear texto a la izquierda en left-section */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear elementos a la izquierda */
+}
+
+.top-footer .left-section .bottom-container {
+    display: flex;
+    justify-content: space-around; /* Distribuir elementos en línea */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    font-size: 12px;
+}
+
+.top-footer .left-section .bottom-container > div {
+    width: calc(33.33% - 20px); /* Ancho del contenedor, con margen entre elementos */
+    margin: 10px; /* Espacio entre elementos */
+    word-wrap: break-word; /* Dividir palabras largas */
+}
+
+.top-footer .left-section .bottom-container > div > p {
+    text-align: justify;
 }
 
 .top-footer .right-section {
     display: flex;
-    flex-direction: column; /* Alinear las imágenes en columna */
+    flex-direction: column;
     align-items: center; /* Centrar horizontalmente */
-    width: 30%; /* Cada sección ocupa el 50% del contenedor */
-    text-align: left; /* Alinear texto a la izquierda en left-section */
 }
 
 .top-footer .right-section img {
-    display: block; /* Asegurar que las imágenes sean elementos de bloque */
-    margin-bottom: 10px; /* Espacio entre las imágenes */
+    max-width: 100%; /* Imágenes responsivas */
+    margin-bottom: 40px;
 }
 
 .bottom-footer {
-    background-color: #ccc; /* Color de fondo para la sección inferior del footer */
-    height: 5px; /* Altura de 5px */
+    background-color: #292929; /* Color de fondo para la sección inferior del footer */
+    height: 10px; /* Altura de 10px */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,4 +72,22 @@ footer {
     width: 70%;
     margin: 0 auto;
     border-top: 1px solid rgba(255, 255, 255, 0.8); /* Línea divisoria con transparencia */
+}
+
+@media screen and (min-width: 768px) {
+    .top-footer .content-wrapper {
+        width: 70%; /* Contenedor que ocupa el 70% del ancho en pantallas más grandes */
+        margin: 0 auto; /* Centrar el contenido */
+    }
+
+    .top-footer .left-section,
+    .top-footer .right-section {
+        width: 48%; /* Reducir el ancho de cada sección en pantallas más grandes */
+    }
+
+    .top-footer .left-section .bottom-container > div {
+        width: calc(33.33% - 20px); /* Ancho del contenedor, con margen entre elementos */
+        margin: 10px; /* Espacio entre elementos */
+        word-wrap: break-word; /* Dividir palabras largas */
+    }
 }
