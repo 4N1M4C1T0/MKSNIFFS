@@ -162,6 +162,7 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: 23px
 }
 
 .caja_seccion_abajo .fila_abajo{
@@ -184,6 +185,7 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
+    font-size: 23px;
 }
 
 i{
@@ -202,5 +204,5 @@ img{
     justify-content: space-between;
     flex-direction: row;
     background-color: white;
-    text-align: justify;
+    align-items: center;
 }
