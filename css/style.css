@@ -119,7 +119,7 @@ main{
 }
 
 .caja_Seccion_medio{
-    background-color: #D4F3A7;
+    background-color: #635b12;
     width: 100%;
     height: 500px;
     display: flex;
@@ -134,7 +134,7 @@ main{
 
 .caja_seccion_abajo{
     width: 100%;
-    height: 520px;
+    height: 580px;
     display: flex;
     flex-direction: column;
     background-color: rgb(230, 141, 141);
@@ -146,28 +146,45 @@ main{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: blue;
+    background-color: #d5f3a756;
 }
 
 .caja_seccion_abajo .fila_arriba .caja11{
-    border: 2px black dashed;
+    border: 1px solid white;
     width: 33.33%;
     height: 100%;
+}
+
+.caja_seccion_abajo .fila_arriba .caja11 .texto1{
+    color: white;
+    display: block;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
 
 .caja_seccion_abajo .fila_abajo{
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-color: #d5f3a756;
 }
 
 .caja_seccion_abajo .fila_abajo .caja12{
-    border: 2px red dashed;
+    border: 1px solid white;
     width: 33.33%;
     height: 100%;
 }
 
+.caja_seccion_abajo .fila_abajo .caja12 .texto1{
+    color: white;
+    display: block;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
 
 i{
     margin-right: 10px;
@@ -176,4 +193,14 @@ i{
 
 img{
     height: 30px;
+}
+
+.caja_seccion_final{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    text-align: justify;
 }
