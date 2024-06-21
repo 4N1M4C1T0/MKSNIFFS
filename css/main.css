@@ -10,6 +10,20 @@ body{
     background-color: #f5f5f5;
 }
 
+#header {
+    margin: 0;
+    padding: 0;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
 main{
     font-family: Poppins;
     margin: 0;

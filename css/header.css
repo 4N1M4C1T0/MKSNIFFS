@@ -1,0 +1,162 @@
+/* Estilos para el encabezado */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.top-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 20px; /* Ajusta la altura según sea necesario */
+}
+
+.inner-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-container a img {
+    width: 150px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto;
+}
+
+.middle-section {
+    background-color: #4CAF50; /* Verde */
+    display: flex;
+    justify-content: center; /* Centra el .middle-content horizontalmente */
+    align-items: center;
+    overflow: hidden; /* Asegura que el contenido no se desborde */
+    padding: 10px; /* Opcional: ajusta según tus necesidades */
+    height: 10px; /* Ajuste inicial, se sobrescribirá con JS */
+}
+
+.middle-content {
+    width: 100%; /* Ocupa el 70% del ancho de la .middle-section */
+    display: flex;
+    justify-content: flex-end; /* Alinea los iconos a la derecha */
+    align-items: center;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon-container a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.separator {
+    height: 24px; /* Altura de la línea vertical */
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.8); /* Blanco con transparencia del 80% */
+    margin: 0 10px;
+}
+
+.bottom-section {
+    background-color: rgba(255, 255, 255, 0.7); /* Blanco con transparencia */
+    display: flex;
+    justify-content: center; /* Centra el contenido de bottom-content */
+    padding: 20px 0 0 10px;
+    width: 100%;
+    z-index: 10; /* Asegura que esté por encima del contenido */
+    position: relative; /* Posición inicial relativa */
+}
+
+.bottom-section.fixed {
+    position: fixed;
+    top: 0;
+}
+
+.bottom-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-left, .bottom-right {
+    width: 50%; /* Cada sección ocupa el 35% del ancho de bottom-content */
+}
+
+.bottom-left {
+    text-align: left;
+}
+
+.bottom-left a img {
+    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto;
+}
+
+.bottom-right {
+    text-align: right;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 14px 20px;
+}
+
+.bottom-right nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bottom-right nav ul li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.bottom-right nav ul li a {
+    text-decoration: none;
+    color: rgb(37, 156, 26); /* Ajusta el color del texto según tus necesidades */
+    font-weight: bold;
+}
+
+.bottom-right nav ul li:last-child a {
+    color: white;
+    background-color: #4CAF50; /* Verde */
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+/* Transiciones y clases para animaciones */
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+}
+
+.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .bottom-right nav ul .ocultar {
+        display: none;
+    }
+
+}
