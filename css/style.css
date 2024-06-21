@@ -8,7 +8,9 @@ main{
 }
 
 .contenedor_vista_principal{
-    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
     max-width: calc(70% - 10px);
     width: 70%;
     height: auto;
@@ -21,6 +23,10 @@ main{
     width: 100%;
     height: 115px;
     box-sizing: border-box;
+}
+
+i{
+    margin-right: 10px;
 }
 
 .caja1{
@@ -119,9 +125,12 @@ main{
 }
 
 .caja_Seccion_medio{
+    position: relative;
     background-color: chocolate;
     width: 100%;
     height: 380px;
+    overflow: hidden;
+    position: relative;
 }
 
 .caja_Seccion_medio img{
@@ -131,9 +140,141 @@ main{
     object-fit: cover;
 }
 
+.titulo_imagen{
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-250%, -50%);
+
+}
+
 .caja_seccion_abajo{
-    border: 4px black solid;
     width: 100%;
-    height: 450px;
+    height: auto;
     box-sizing: border-box;
+    background-color: white;
+}
+
+/*Propiedades de tematicas*/
+
+.contenedor-centralizado {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 35px;
+}
+
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap; /* Los contenedores flex se envuelven cuando no hay suficiente espacio */
+    justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
+    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 10px);
+}
+
+.contenedor-cards .contenedor-card {
+    width: calc(25% - 20px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(25% - 20px);
+    border-radius: 10px; /* Agrega un borde redondeado de 5px al contenedor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
+    margin-right: 20px; /* Espacio entre los contenedores */
+    margin-bottom: 20px; /* Espacio debajo de los contenedores */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave para la sombra y el movimiento */
+}
+
+.contenedor-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 15); /* Cambia la sombra al pasar el mouse por encima */
+    transform: translate(-5px, -5px); /* Mueve el contenedor hacia la esquina superior izquierda */
+}
+
+.contenedor-cards .contenedor-card .seccion1 {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    max-height: 50%;
+    border-radius: 10px 10px 0px 0px; /* Agrega un borde redondeado de 5px al contenedor */
+}
+
+.botones {
+    position: absolute; /* Posiciona los botones absolutamente dentro del contenedor */
+    top: 15%; /* Centra verticalmente los botones */
+    left: 20px;
+    transform: translateY(-15%); /* Corrige el centrado vertical */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-wrap: wrap;
+}
+
+.boton-img {
+    width: calc(50% - 10px); /* Cambia a un contenedor por fila */
+    max-width: calc(50% - 10px);
+    display: flex; /* Para que tenga la propiedad flex */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: white;
+    background-color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
+    align-items: center; /* Centra verticalmente el contenido */
+    font-size: 14px;
+}
+
+.boton-img:hover{
+    background-color: #505050;
+    cursor: pointer;
+}
+
+.icono {
+    margin-right: 5px;
+}
+
+.seccion1 img {
+    width: 100%; /* La imagen ocupa todo el ancho de la sección */
+    height: auto; /* La altura se ajusta automáticamente */
+}
+
+.seccion2 {
+    display: block;
+    width: 100%;
+}
+
+.seccion2 .titulo {
+    flex: 1; /* El título ocupa todo el espacio disponible */
+    background-color: none; /* Solo para visualización */
+    padding: 10px;
+    font-size: 13px;
+    height: 50%;
+}
+
+.listado {
+    display: flex;
+    flex: 1; /* El listado ocupa todo el espacio disponible */
+    background-color: none; /* Solo para visualización */
+    padding: 10px;
+    font-size: 15px;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.listado a{
+    color: white;
+}
+
+.boton-listado {
+    width: calc(30% - 10px); /* Cambia a un contenedor por fila */
+    max-width: calc(30% - 10px);
+    display: flex; /* Para que tenga la propiedad flex */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 1px;
+    border-radius: 5px;
+    padding: 5px 2px;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    background-color: #099409a2;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
 }
