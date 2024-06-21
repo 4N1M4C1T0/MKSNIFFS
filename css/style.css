@@ -1,6 +1,7 @@
 main{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    background-color: rgba(235, 230, 230, 0.685);
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -237,7 +238,7 @@ i{
     width: 100%; /* La imagen ocupa todo el ancho de la sección */
     height: 300px; /* La altura se ajusta automáticamente */
     border: 2px solid blue;
-    
+    object-fit: cover;
 }
 
 .seccion2 {
