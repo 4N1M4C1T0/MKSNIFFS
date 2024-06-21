@@ -110,6 +110,14 @@ header {
     text-align: right;
 }
 
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 14px 20px;
+}
+
 .bottom-right nav ul {
     list-style: none;
     padding: 0;
@@ -143,4 +151,12 @@ header {
 .visible {
     transform: translateY(0);
     opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .bottom-right nav ul .ocultar {
+        display: none;
+    }
+
 }

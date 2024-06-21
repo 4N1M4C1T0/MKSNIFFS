@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function() {
             lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
         }
     });
-
+    
     // Cargar el contenido del header y footer
     loadContent('../template/header.html', 'header');
     loadContent('../template/footer.html', 'footer');
