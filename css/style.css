@@ -182,6 +182,7 @@ i{
     margin-right: 20px; /* Espacio entre los contenedores */
     margin-bottom: 20px; /* Espacio debajo de los contenedores */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave para la sombra y el movimiento */
+    border: 2px solid black;
 }
 
 .contenedor-card:hover {
@@ -234,10 +235,13 @@ i{
 
 .seccion1 img {
     width: 100%; /* La imagen ocupa todo el ancho de la sección */
-    height: auto; /* La altura se ajusta automáticamente */
+    height: 300px; /* La altura se ajusta automáticamente */
+    border: 2px solid blue;
+    
 }
 
 .seccion2 {
+    position: relative;
     display: block;
     width: 100%;
 }
@@ -245,9 +249,21 @@ i{
 .seccion2 .titulo {
     flex: 1; /* El título ocupa todo el espacio disponible */
     background-color: none; /* Solo para visualización */
-    padding: 10px;
-    font-size: 13px;
+    padding: 16px;
+    font-size: 15px;
     height: 50%;
+    border: 2px solid red;
+
+}
+
+.seccion2 .titulo h4{
+    text-align: start;
+    border: 2px solid gray;
+}
+
+.seccion2 .titulo p{
+    text-align: justify;
+    border: 2px solid gray;
 }
 
 .listado {
@@ -258,6 +274,7 @@ i{
     font-size: 15px;
     height: 100%;
     justify-content: flex-end;
+    border: 2px solid rgb(0, 132, 255);
 }
 
 .listado a{
@@ -277,4 +294,5 @@ i{
     color: white;
     cursor: pointer;
     justify-content: center;
+    border: 2px solid black;
 }
