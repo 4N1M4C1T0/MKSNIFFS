@@ -2,6 +2,7 @@
 header {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
 }
 
 .section {
@@ -15,12 +16,13 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 0 20px 0;
     height: 20px; /* Ajusta la altura según sea necesario */
 }
 
 .inner-container {
     width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -36,8 +38,7 @@ header {
     justify-content: center; /* Centra el .middle-content horizontalmente */
     align-items: center;
     overflow: hidden; /* Asegura que el contenido no se desborde */
-    padding: 10px; /* Opcional: ajusta según tus necesidades */
-    height: 10px; /* Ajuste inicial, se sobrescribirá con JS */
+    padding: 2px 0 2px 0;
 }
 
 .middle-content {
@@ -50,6 +51,7 @@ header {
 .icon-container {
     display: flex;
     align-items: center;
+    margin-right: 15px;
 }
 
 .icon {
@@ -76,21 +78,24 @@ header {
     background-color: rgba(255, 255, 255, 0.7); /* Blanco con transparencia */
     display: flex;
     justify-content: center; /* Centra el contenido de bottom-content */
-    padding: 20px 0 0 10px;
     width: 100%;
     z-index: 10; /* Asegura que esté por encima del contenido */
+    padding: 1px 0 1px 0;
     position: relative; /* Posición inicial relativa */
 }
 
-.bottom-section.fixed {
+.section.bottom-section.fixed {
+    width: 79.5%;
     position: fixed;
     top: 0;
 }
 
 .bottom-content {
     width: 100%;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .bottom-left, .bottom-right {

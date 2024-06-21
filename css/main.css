@@ -111,7 +111,7 @@ main{
 
 .slider .list .item.active{
     opacity: 1;
-    z-index: 10;
+    z-index: 2;
 }
 @keyframes showContent {
     to{
@@ -138,7 +138,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 .circle{
     position: absolute;
     bottom: 20px;
-    z-index: 11;
+    z-index: 3;
     display: flex;
     gap: 15px;
     width: 100%;
