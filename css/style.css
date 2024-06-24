@@ -211,9 +211,10 @@ i{
 }
 
 .seccion2 .titulo{
-    height: 80%;
+    height: 78%;
     text-align: justify;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .seccion2 .titulo h4{
@@ -221,27 +222,27 @@ i{
 }
 
 .seccion2 .titulo p{
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .seccion2 .boton_texto{
-    width: 90px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 13px;
+    height: 25px;
+}
+
+.seccion2 .boton_texto a{
+    width: 100px;
     height: 25px;
     display: flex; /* Para que tenga la propiedad flex */
     align-items: center; /* Centra verticalmente el contenido */
     margin-bottom: 1px;
     border-radius: 5px;
-    padding: 5px 2px;
     text-decoration: none; /* Quita el subrayado de los enlaces */
     background-color: #099409a2;
     color: white;
     cursor: pointer;
     justify-content: center;
-    border: 2px black solid;
-
-}
-
-.seccion2 .boton_texto a{
-    text-decoration: none;
     border: 2px black solid;
 }
