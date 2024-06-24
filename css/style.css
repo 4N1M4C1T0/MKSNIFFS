@@ -66,6 +66,12 @@ main{
     align-items: center;
 }
 
+.caja4 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
 .caja5{
     width: 50%;
     height: 100%;
@@ -76,6 +82,12 @@ main{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+}
+
+.caja5 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
 }
 
 .caja6{
@@ -96,6 +108,12 @@ main{
     align-items: center;
 }
 
+.caja7 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 .caja9{
     width: 33.33%;
     height: 100%;
@@ -107,6 +125,12 @@ main{
     align-items: center;
 }
 
+.caja9 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 .caja10{
     width: 33.33%;
     height: 100%;
@@ -116,6 +140,12 @@ main{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+}
+
+.caja10 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
 }
 
 .caja_Seccion_medio{
