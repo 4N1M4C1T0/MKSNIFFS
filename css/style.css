@@ -73,6 +73,12 @@ i{
     align-items: center;
 }
 
+.caja4 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
 .caja5{
     width: 50%;
     height: 100%;
@@ -83,6 +89,12 @@ i{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+}
+
+.caja5 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
 }
 
 .caja6{
@@ -103,6 +115,12 @@ i{
     align-items: center;
 }
 
+.caja7 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 .caja9{
     width: 33.33%;
     height: 100%;
@@ -114,6 +132,12 @@ i{
     align-items: center;
 }
 
+.caja9 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
 .caja10{
     width: 33.33%;
     height: 100%;
@@ -123,6 +147,12 @@ i{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+}
+
+.caja10 a{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
 }
 
 .caja_Seccion_medio{
@@ -176,14 +206,17 @@ i{
 }
 
 .contenedor-cards .contenedor-card {
+ 
+    overflow: hidden;
+    position: relative;
     width: calc(25% - 20px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
     max-width: calc(25% - 20px);
+    height: 400px;
     border-radius: 10px; /* Agrega un borde redondeado de 5px al contenedor */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
     margin-right: 20px; /* Espacio entre los contenedores */
     margin-bottom: 20px; /* Espacio debajo de los contenedores */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave para la sombra y el movimiento */
-    border: 2px solid black;
 }
 
 .contenedor-card:hover {
@@ -192,108 +225,55 @@ i{
 }
 
 .contenedor-cards .contenedor-card .seccion1 {
-    position: relative;
-    overflow: hidden;
-    height: 200px;
-    max-height: 50%;
-    border-radius: 10px 10px 0px 0px; /* Agrega un borde redondeado de 5px al contenedor */
-}
-
-.botones {
-    position: absolute; /* Posiciona los botones absolutamente dentro del contenedor */
-    top: 15%; /* Centra verticalmente los botones */
-    left: 20px;
-    transform: translateY(-15%); /* Corrige el centrado vertical */
-    display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    flex-wrap: wrap;
-}
-
-.boton-img {
-    width: calc(50% - 10px); /* Cambia a un contenedor por fila */
-    max-width: calc(50% - 10px);
-    display: flex; /* Para que tenga la propiedad flex */
-    align-items: center; /* Centra verticalmente el contenido */
-    margin-bottom: 5px;
-    border-radius: 5px;
-    padding: 10px 10px;
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: white;
-    background-color: #000000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
-    align-items: center; /* Centra verticalmente el contenido */
-    font-size: 14px;
-}
-
-.boton-img:hover{
-    background-color: #505050;
-    cursor: pointer;
-}
-
-.icono {
-    margin-right: 5px;
+    height: 40%;
 }
 
 .seccion1 img {
-    width: 100%; /* La imagen ocupa todo el ancho de la sección */
-    height: 300px; /* La altura se ajusta automáticamente */
-    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .seccion2 {
-    position: relative;
-    display: block;
-    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
-.seccion2 .titulo {
-    flex: 1; /* El título ocupa todo el espacio disponible */
-    background-color: none; /* Solo para visualización */
-    padding: 16px;
-    font-size: 15px;
-    height: 50%;
-    border: 2px solid red;
-
+.seccion2 .titulo{
+    height: 78%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .seccion2 .titulo h4{
-    text-align: start;
-    border: 2px solid gray;
+    font-size: 15px;
 }
 
 .seccion2 .titulo p{
-    text-align: justify;
-    border: 2px solid gray;
+    font-size: 14px;
 }
 
-.listado {
+.seccion2 .boton_texto{
     display: flex;
-    flex: 1; /* El listado ocupa todo el espacio disponible */
-    background-color: none; /* Solo para visualización */
-    padding: 10px;
-    font-size: 15px;
-    height: 100%;
     justify-content: flex-end;
-    border: 2px solid rgb(0, 132, 255);
+    padding-right: 13px;
+    height: 25px;
 }
 
-.listado a{
-    color: white;
-}
-
-.boton-listado {
-    width: calc(30% - 10px); /* Cambia a un contenedor por fila */
-    max-width: calc(30% - 10px);
+.seccion2 .boton_texto a{
+    width: 100px;
+    height: 25px;
     display: flex; /* Para que tenga la propiedad flex */
     align-items: center; /* Centra verticalmente el contenido */
     margin-bottom: 1px;
     border-radius: 5px;
-    padding: 5px 2px;
     text-decoration: none; /* Quita el subrayado de los enlaces */
     background-color: #099409a2;
     color: white;
     cursor: pointer;
     justify-content: center;
-    border: 2px solid black;
+    border: 2px black solid;
 }
+
