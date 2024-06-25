@@ -89,19 +89,19 @@ main{
     letter-spacing: 10px;
 }
 .slider .list .item .content h2{
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 36px;
     margin: 0;
 }
 
 .slider .list .item .content .boton{
+    font-family: "Raleway", sans-serif;
     position: relative;
     font-size: 15px;
     margin: 1px 0 3px 0;
     padding: 8px 6px 1px 24px;
-    border-radius: 10px;
-    border: 1px;
+    border-radius: 20px;
     width:400px;
     height:35px;
     border: 2px #F1F3F1 solid;
@@ -109,6 +109,7 @@ main{
     color: #F1F3F1;
     display: block;
     text-align: left;
+    text-decoration: none;
 }
 .slider .list .item .content .boton:hover{
     background-color: #098509;
@@ -177,10 +178,9 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 /*Propiedades de tematicas*/
 
 .tematica-texto {
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Raleway", sans-serif;
     text-align: center;
     font-size: 36px;
-    font-weight: bold;
 }
 
 .contenedor-centralizado {
@@ -203,7 +203,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     border-radius: 10px; /* Agrega un borde redondeado de 5px al contenedor */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
     margin-right: 20px; /* Espacio entre los contenedores */
-    margin-bottom: 20px; /* Espacio debajo de los contenedores */
+    margin-bottom: 30px; /* Espacio debajo de los contenedores */
     transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave para la sombra y el movimiento */
 }
 
@@ -213,9 +213,9 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
 .contenedor-cards .contenedor-card .seccion1 {
+    height: 250px;
     position: relative;
     overflow: hidden;
-    height: 200px;
     max-height: 50%;
     border-radius: 10px 10px 0px 0px; /* Agrega un borde redondeado de 5px al contenedor */
 }
@@ -237,13 +237,12 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     align-items: center; /* Centra verticalmente el contenido */
     margin-bottom: 5px;
     border-radius: 5px;
-    padding: 10px 10px;
+    padding: 5px 7px;
     text-decoration: none; /* Quita el subrayado de los enlaces */
     color: white;
     background-color: #000000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
     align-items: center; /* Centra verticalmente el contenido */
-    font-size: 14px;
 }
 
 .boton-img:hover{
@@ -251,20 +250,30 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     cursor: pointer;
 }
 
+.texto {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
 .icono {
     margin-right: 5px;
+    font-size: 10px;
 }
 
 .seccion1 img {
     width: 100%; /* La imagen ocupa todo el ancho de la sección */
     height: auto; /* La altura se ajusta automáticamente */
+    min-height: 100%;
 }
 
-.seccion2 {
+.contenedor-cards .contenedor-card .seccion2 {
     display: flex;
 }
 
 .seccion2 .titulo {
+    font-family: "Raleway", sans-serif;
     flex: 1; /* El título ocupa todo el espacio disponible */
     background-color: none; /* Solo para visualización */
     padding: 10px;
@@ -272,10 +281,12 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
 .listado {
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
     flex: 1; /* El listado ocupa todo el espacio disponible */
     background-color: none; /* Solo para visualización */
     padding: 10px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .listado ul {
@@ -332,10 +343,12 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
 .titulo_principal_body{
+    font-family: "Raleway", sans-serif;
     text-align: justify;
 }
 
 .texto_sec_body{
+    font-family: "Raleway", sans-serif;
     max-width: calc(60% - 10px);
     width: 50%;
     flex: 1;
@@ -382,10 +395,12 @@ li {
     justify-content: center;
 }
 #slider-body>ul.slider h1{
+    font-family: "Raleway", sans-serif;
     text-align: center;
 }
 
 #slider-body>ul.slider .texto_slider_body {
+    font-family: "Raleway", sans-serif;
     color: white;
     top: 160px;
     text-align: center;
@@ -431,7 +446,7 @@ li {
     display: inline-block;
     color: white;
     text-decoration: none;
-    background-color: #0c960c;
+    background-color: #ADBC70;
     padding: 10px;
     width: 20px;
     height: 20px;
@@ -440,12 +455,14 @@ li {
 }
 
 #slider-body>.menu li a:hover{
-    background-color: #086d08;
+    background-color: #97BEA0;
 }
 
 /*PROPIEDADES DE PREGUNTAS*/
 
 .contenedor_preguntas{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
     margin: 0 auto;
     padding: 0;
     background-color: #000000;
@@ -457,8 +474,8 @@ li {
 details, .subtitulo-preguntas{
     font-family: sans-serif;
     font-size: 17px;
-    background: rgba(118, 165, 107, 0.7);
-    color: white;
+    background: #97BEA0;
+    color: #ffffff;
     margin: auto;
     padding: 0.5rem;
     box-sizing: border-box;
@@ -507,6 +524,7 @@ details, .subtitulo-preguntas{
 }
 
 .titulo {
+    font-family: "Raleway", sans-serif;
     border: none; /* Quitar el borde del contenedor del título */
     padding-bottom: 0;
     width: 100%;
@@ -558,11 +576,13 @@ details, .subtitulo-preguntas{
 }
 
 .izquierda {
+    font-family: "Raleway", sans-serif;
     text-align: left;
     width: 48%; /* Ajustar el ancho */
 }
 
 .derecha {
+    font-family: "Raleway", sans-serif;
     text-align: left;
     width: 48%; /* Ajustar el ancho */
     position: relative;
@@ -585,10 +605,9 @@ details, .subtitulo-preguntas{
     right: 10px;
     max-width: 45%; /* Limitar el ancho máximo al 50% del contenedor derecho */
     background-color: rgba(255, 255, 255, 0.6);
-    padding: 10px;
     box-sizing: border-box; /* Incluir padding y borde en el ancho total */
     text-align: center;
-    padding: 15px 5px 5px 0;
+    padding: 5px 5px 5px 5px;
     border-radius: 5px;
 }
 
@@ -597,6 +616,7 @@ details, .subtitulo-preguntas{
 }
 
 .seccion {
+    font-family: "Raleway", sans-serif;
     margin-bottom: 10px;
 }
 
@@ -610,9 +630,9 @@ details, .subtitulo-preguntas{
 }
 
 .icono {
-    width: 23%;
+    height: 35px;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     color: white;
     box-sizing: border-box;
     text-decoration: none;

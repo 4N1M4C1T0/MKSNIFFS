@@ -1,5 +1,6 @@
 /* Estilos para el footer */
 footer {
+    font-family: "Raleway", sans-serif;
     background-color: #363636; /* Color de fondo para la sección superior del footer */
     padding: 0; /* Espaciado interno */
     text-align: justify;
@@ -7,7 +8,8 @@ footer {
 }
 
 .footer-section {
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .top-footer .content-wrapper {
@@ -15,13 +17,14 @@ footer {
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
     justify-content: space-between;
     align-items: flex-start; /* Alinear elementos arriba */
+    padding: 0 100px;
 }
 
 .top-footer .left-section,
 .top-footer .right-section {
-    width: 100%;
+    width: 50%;
     text-align: center; /* Alinear texto al centro */
-    margin-bottom: 10px; /* Espacio entre elementos */
+    margin-bottom: 20px; /* Espacio entre elementos */
 }
 
 .top-footer .left-section {
@@ -50,7 +53,8 @@ footer {
 .top-footer .right-section {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar horizontalmente */
+    justify-content: center;
+    align-items: flex-end; /* Centrar horizontalmente */
 }
 
 .top-footer .right-section img {
@@ -73,7 +77,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.8); /* Línea divisoria con transparencia */
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .top-footer .content-wrapper {
         width: 70%; /* Contenedor que ocupa el 70% del ancho en pantallas más grandes */
         margin: 0 auto; /* Centrar el contenido */

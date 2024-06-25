@@ -16,19 +16,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
     height: 20px; /* Ajusta la altura según sea necesario */
 }
 
 .inner-container {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }
 
 .inner-container a img {
-    width: 150px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    width: 200px; /* Ajusta el ancho de las imágenes según tus necesidades */
     height: auto;
 }
 
@@ -99,7 +99,7 @@ header {
 }
 
 .bottom-left, .bottom-right {
-    width: 50%; /* Cada sección ocupa el 35% del ancho de bottom-content */
+    width: 50%; /* Cada sección ocupa el 50% del ancho de bottom-content */
 }
 
 .bottom-left {
@@ -107,7 +107,7 @@ header {
 }
 
 .bottom-left a img {
-    width: 200px; /* Ajusta el ancho de la imagen según tus necesidades */
+    width: 250px; /* Ajusta el ancho de la imagen según tus necesidades */
     height: auto;
 }
 
@@ -117,7 +117,7 @@ header {
 
 .bottom-right nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0 5px 0 5px;
     margin: 0;
 }
 
@@ -125,13 +125,12 @@ header {
     font-family: "Bebas Neue", sans-serif;
     font-size: 20px;
     display: inline-block;
-    margin-left: 15px;
+    margin-left: 45px;
 }
 
 .bottom-right nav ul li a {
     text-decoration: none;
     color: rgb(37, 156, 26); /* Ajusta el color del texto según tus necesidades */
-    font-weight: bold;
 }
 
 .bottom-right nav ul li:last-child a {
