@@ -204,6 +204,7 @@ i{
     font-size: 20px;
     display: flex;
     justify-content: flex-start;
+    padding-bottom: 10px;
 }
 
 .segmento-bloque{
