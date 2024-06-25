@@ -189,6 +189,42 @@ i{
     background-color: white;
 }
 
+
+/*Estilos parte de filtros*/
+.filtro_seccion2{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+.filtro_seccion2 label{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.segmento-bloque{
+    flex-direction: column;
+    display: flex;
+}
+
+.lista-desplegable {
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 10px;
+    width:auto;
+    cursor: pointer;
+}
+
+#seleccionar-categoria{
+    padding: 5px;
+    font-weight: bold;
+}
+
+
 /*Propiedades de tematicas*/
 
 .contenedor-centralizado {
