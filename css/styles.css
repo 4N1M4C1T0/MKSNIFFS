@@ -22,6 +22,7 @@ body{
     overflow: hidden;
     opacity: 0;
     transition: .5s;
+    border: 2px solid yellow;
 }
 
 .slider .list .item img{
@@ -43,6 +44,7 @@ body{
 }
 
 .slider .list .item .content{
+    border: 2px solid white;
     position: absolute;
     left: 10%;
     top: 20%;
@@ -85,6 +87,23 @@ body{
     background-color: #098509;
     color: #ffffff;
     cursor: pointer;
+}
+
+.slider .list .item .content .boton a{
+    text-decoration: none;
+    color: #000;
+    background-color: #F1F3F1;
+}
+
+.slider .list .item .content .boton a:hover{
+    background-color: #098509;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.miniatura{
+    font-size: 13px;
+    border: 2px solid white;
 }
 
 .slider .list .item.active{

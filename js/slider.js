@@ -54,3 +54,9 @@ mniniaturas.forEach((mniniatura, index) => {
         showSlider();
     })
 })
+
+
+
+document.getElementById('botonpdf').addEventListener('click', function() {
+    window.open('./pdf/Manual Bambú Piura.pdf', '_blank');
+});
