@@ -55,6 +55,40 @@ body{
     border: 2px solid white;
 }
 
+.slider .list .item .foto_perfil{
+    /*border: 2px solid white;*/
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    width: 200px;
+    max-width: 80%;
+    z-index: 1;
+    text-align: justify;
+    gap: 10px; /* Espacio entre los contenedores */
+    justify-content: center; /* Centra los contenedores horizontalmente */
+    align-items: center; /* Centra los contenedores verticalmente */
+    border: 2px solid white;
+}
+
+.slider .list .item .foto_perfil .foto{
+    width: 50px; /* Ancho del contenedor circular */
+    height: 50px; /* Alto del contenedor circular */
+    border-radius: 50%; /* Hace que el contenedor sea circular */
+    overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor circular */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    border: 2px solid #000; /* Borde del contenedor circular */
+}
+
+.slider .list .item .foto_perfil .foto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .slider .list .item .content p:nth-child(1){
     text-transform: uppercase;
     letter-spacing: 10px;
@@ -64,46 +98,16 @@ body{
     margin: 0;
 }
 
-.slider .list .item .content .boton{
-    position: relative;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0;
-    border-radius: 10px;
-    border: 1px;
-    width:200px;
-    height:50px;
-    background-color: #F1F3F1;
-    color: #000;
-}
-.slider .list .item .content .boton:hover{
-    position: relative;
-    font-size: 17px;
-    font-weight: bold;
-    margin: 0;
-    border-radius: 10px;
-    border: 1px;
-    width:200px;
-    height:50px;
-    background-color: #098509;
-    color: #ffffff;
-    cursor: pointer;
-}
 
-.slider .list .item .content .boton a{
-    text-decoration: none;
-    color: #000;
-    background-color: #F1F3F1;
-}
-
-.slider .list .item .content .boton a:hover{
-    background-color: #098509;
-    color: #ffffff;
-    cursor: pointer;
+.miembros h3{
+    color: white;
+    position: absolute;
+    border: 2px solid white;
 }
 
 .miniatura{
     font-size: 13px;
+    border: solid 2px white;
     /*border: 2px solid white;*/
 }
 
