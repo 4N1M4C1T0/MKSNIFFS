@@ -52,6 +52,7 @@ body{
     max-width: 80%;
     z-index: 1;
     text-align: justify;
+    border: 2px solid white;
 }
 
 .slider .list .item .content p:nth-child(1){
