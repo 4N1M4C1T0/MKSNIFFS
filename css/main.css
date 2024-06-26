@@ -593,7 +593,7 @@ details, .subtitulo-preguntas{
 .texto-largo {
     margin-bottom: 20px;
     max-width: 50%; /* Limitar a 50% del contenedor */
-    font-size: 12px; /* Reducir la letra a 8px */
+    font-size: 14px; /* Reducir la letra a 14px */
     text-align: left; /* Alinear a la izquierda */
     margin-top: 5%; /* Agregar margen superior de 15% */
     color: #ffffff;
@@ -692,8 +692,9 @@ label {
 }
 
 .intextbua-contacto {
+    font-family: "Raleway", sans-serif;
     padding: 8px;
-    font-size: 14px;
+    font-size: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 100%; /* Ocupa el 100% del ancho disponible */
@@ -711,7 +712,7 @@ label {
 
 .enviar {
     margin-top: 15px;
-    background-color: #4bc51b;
+    background-color: #098509;
     color: white;
     border: none;
     cursor: pointer;
@@ -719,5 +720,5 @@ label {
 }
 
 .enviar:hover {
-    background-color: #399415;
+    background-color: #0a7a0a;
 }
