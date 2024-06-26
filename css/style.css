@@ -177,6 +177,25 @@ main{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.caja11 .titulo1{
+    width: 210px;
+    padding-left: 30px;
+}
+
+.caja11 .titulo1 h3{
+    text-align: start;
+}
+
+.caja11 .lista1{
+    font-size: 14px;
+    width: 210px;
+}
+
+.caja11 .lista1 ul{
+    text-align: start;
 }
 
 .caja12{
