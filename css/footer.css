@@ -59,7 +59,8 @@ footer {
 
 .top-footer .right-section img {
     max-width: 100%; /* Imágenes responsivas */
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .bottom-footer {

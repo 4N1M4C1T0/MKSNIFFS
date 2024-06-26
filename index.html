@@ -652,26 +652,32 @@
         </div>
         <div class="contenido-flex">
             <div class="sub-contenedor izquierda">
-                <form class="formulario-contacto">
+                <form id="form" class="formulario-contacto">
                     <div class="campo">
                         <label class="label-izquierda" for="name">Nombre:</label>
                         <input class="intextbua-contacto" type="text" id="name" name="name" required>
                     </div>
                     <div class="campo-flex">
                         <div class="campo">
-                            <label class="label-izquierda" for="correo">Correo</label>
-                            <input class="intextbua-contacto" type="email" id="correo" name="correo">
+                            <label class="label-izquierda" for="email">Correo</label>
+                            <input class="intextbua-contacto" type="email" id="email" name="email" required>
                         </div>
                         <div class="campo">
-                            <label class="label-izquierda" for="telefono">Teléfono</label>
-                            <input class="intextbua-contacto" type="tel" id="telefono" name="telefono">
+                            <label class="label-izquierda" for="phone">Teléfono</label>
+                            <input class="intextbua-contacto" type="tel" id="phone" name="phone" required>
                         </div>
                     </div>
                     <div class="campo">
-                        <label class="label-izquierda" for="comment">Comentario:</label>
-                        <textarea class="intextbua-contacto" id="comment" name="comment" rows="4" required></textarea>
+                        <label class="label-izquierda" for="subject">Asunto:</label>
+                        <input class="intextbua-contacto" type="text" id="subject" name="subject" required>
                     </div>
-                    <button type="submit" class="enviar intextbua-contacto">Enviar</button>
+                    <div class="campo">
+                        <label class="label-izquierda" for="message">Comentario:</label>
+                        <textarea class="intextbua-contacto" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <input type="submit" id="button" value="Enviar" class="enviar intextbua-contacto">
+
                 </form>
             </div>
             <div class="sub-contenedor derecha">
@@ -695,10 +701,10 @@
                         </div>
                         <!--div class="seccion rating">★★★★★</div-->
                         <div class="seccion iconos">
-                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsniffs.serfor.gob.pe%2Fconocimiento%2F" class="icono f intextbua-contacto" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="https://api.whatsapp.com/send?text=Módulo%20de%20Gestión%20del%20Conocimiento%20del%20SNIFFS:%20https%3A%2F%2Fsniffs.serfor.gob.pe%2Fconocimiento%2F" class="icono w intextbua-contacto" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="mailto:?subject=Módulo%20de%20Gestión%20del%20Conocimiento%20del%20SNIFFS&body=Te%20comparto%20este%20enlace:%20https://sniffs.serfor.gob.pe/conocimiento/" class="icono g intextbua-contacto" target="_blank"><i class="fa-regular fa-envelope"></i></a>
-                            <button onclick="copyLink()" class="icono c intextbua-contacto"><i class="fa-solid fa-share-nodes"></i></button>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fsniffs.serfor.gob.pe%2Fconocimiento%2F" class="icono-compartir f intextbua-contacto" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://api.whatsapp.com/send?text=Módulo%20de%20Gestión%20del%20Conocimiento%20del%20SNIFFS:%20https%3A%2F%2Fsniffs.serfor.gob.pe%2Fconocimiento%2F" class="icono-compartir w intextbua-contacto" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="mailto:?subject=Módulo%20de%20Gestión%20del%20Conocimiento%20del%20SNIFFS&body=Te%20comparto%20este%20enlace:%20https://sniffs.serfor.gob.pe/conocimiento/" class="icono-compartir g intextbua-contacto" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                            <button onclick="copyLink()" class="icono-compartir c intextbua-contacto"><i class="fa-solid fa-share-nodes"></i></button>
                         </div>
                     </div>
                 </div>
@@ -708,6 +714,15 @@
     </main>
 
     <div id="footer"></div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        emailjs.init('17VF1kdw1SemrL-w_')
+    </script>
+
+    <script src="./js/email.js"></script>
 
     <script src="./js/headfoot.js"></script>
     <script src="./js/slider.js"></script>

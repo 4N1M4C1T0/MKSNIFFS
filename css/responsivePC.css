@@ -1,3 +1,211 @@
 @media screen and (max-width: 1600px) {
+    .slider{
+        height: 45vh;
+    }
+
+    .slider .list .item .content p{
+        font-size: 12px;
+    }
+
+    .slider .list .item .content h2{
+        font-size: 30px;
+    }
+
+    .slider .list .item .content .boton{
+        font-size: 13px;
+        padding: 4px 3px 1px 24px;
+        width:300px;
+        height:20px;
+    }
+
+    .contenedor-cards .contenedor-card .seccion1 {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1360px) {
+    #header {
+        width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(85% - 10px);
+    }
+
+    .top-section {
+        padding: 17px 0 17px 0;
+        height: 10px; /* Ajusta la altura según sea necesario */
+    }
+
+    .inner-container a img {
+        width: 130px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    }
+
+    .icon {
+        padding: 0 7px;
+    }
+
+    .icon-container a {
+        font-size: 13px;
+    }
+
+    .separator {
+        height: 18px; /* Altura de la línea vertical */
+    }
+
+    .section.bottom-section.fixed {
+        width: 84.2%;
+    }
+
+    .bottom-left a img {
+        width: 170px; /* Ajusta el ancho de la imagen según tus necesidades */
+    }
     
+    .bottom-right nav ul li {
+        font-size: 16px;
+    }
+    
+    #footer {
+        width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(85% - 10px);
+    }
+
+    .iconos {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        gap: 5px;
+    }
+
+    .icono-compartir {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        box-sizing: border-box;
+        text-decoration: none;
+        height: 25px;
+        width: 35px;
+    }
+    
+    main{
+        width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(85% - 10px);
+    }
+
+    .circle .item{
+        width: 8px;
+    }
+
+    .circle .item i{
+        font-size: 15px;
+    }
+
+    .slider{
+        height: 55vh;
+    }
+
+    .tematica-texto {
+        font-size: 25px;
+    }
+
+    .contenedor-cards .contenedor-card .seccion1 {
+        height: 100px;
+    }
+
+    .boton-img {
+        width: calc(40% - 10px); /* Cambia a un contenedor por fila */
+        max-width: calc(40% - 10px);
+        padding: 1px 25px;
+    }
+
+    .texto {
+        font-size: 10px;
+    }
+    
+    .icono {
+        margin-left: -20px;
+        margin-right: 2px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #header {
+        width: calc(90% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(90% - 10px);
+    }
+
+    #footer {
+        width: calc(90% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(90% - 10px);
+    }
+
+    main{
+        width: calc(90% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(90% - 10px);
+    }
+
+    .slider .list .item .content{
+        top: 3%;
+    }
+
+    .section.bottom-section.fixed {
+        width: 89.2%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+
+    .section.bottom-section.fixed {
+        width: 98.7%;
+    }
+
+    .bottom-left {
+        width: 30%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    }
+
+    .bottom-right {
+        width: 70%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    }
+
+    #footer {
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+
+    main{
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+
+    .slider .list .item .content{
+        left: 8%;
+        top: 3%;
+        width: 350px;
+    }
+
+    .slider .list .item .content p{
+        font-size: 10px;
+    }
+
+    .slider .list .item .content h2{
+        font-size: 20px;
+    }
+
+    .slider .list .item .content .boton{
+        font-size: 10px;
+        padding: 3px 3px 1px 20px;
+        width:150px;
+        height:12px;
+    }
+
+    .circle .item{
+        width: 6px;
+    }
+
+    .circle .item i{
+        font-size: 12px;
+    }
 }

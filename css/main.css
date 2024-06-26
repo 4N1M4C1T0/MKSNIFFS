@@ -36,7 +36,7 @@ main{
 /*Propiedades del Slider*/
 
 .slider{
-    height: 60vh;
+    height: 55vh;
     margin: 0;
     padding: 0;
     position: relative;
@@ -81,7 +81,7 @@ main{
 
 .slider .list .item .content p{
     font-family: "Raleway", sans-serif;
-    font-size: 148x;
+    font-size: 14px;
 }
 
 .slider .list .item .content p:nth-child(1){
@@ -102,7 +102,7 @@ main{
     margin: 1px 0 3px 0;
     padding: 8px 6px 1px 24px;
     border-radius: 20px;
-    width:400px;
+    width:300px;
     height:35px;
     border: 2px #F1F3F1 solid;
     background-color: transparent;
@@ -223,11 +223,12 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 .botones {
     position: absolute; /* Posiciona los botones absolutamente dentro del contenedor */
     top: 15%; /* Centra verticalmente los botones */
-    left: 20px;
+    left: -10px;
     transform: translateY(-15%); /* Corrige el centrado vertical */
     display: flex;
     align-items: center; /* Centra verticalmente el contenido */
     flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .boton-img {
@@ -237,7 +238,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     align-items: center; /* Centra verticalmente el contenido */
     margin-bottom: 5px;
     border-radius: 5px;
-    padding: 5px 7px;
+    padding: 2px 25px;
     text-decoration: none; /* Quita el subrayado de los enlaces */
     color: white;
     background-color: #000000;
@@ -254,11 +255,11 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 12px;
-
 }
 
 .icono {
-    margin-right: 5px;
+    margin-left: -20px;
+    margin-right: 2px;
     font-size: 10px;
 }
 
@@ -627,18 +628,19 @@ details, .subtitulo-preguntas{
 .iconos {
     display: flex;
     justify-content: space-between;
+    gap: 5px;
 }
 
-.icono {
+.icono-compartir {
     height: 35px;
     text-align: center;
-    padding: 10px;
+    padding: 6px;
     color: white;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-.icono:hover {
+.icono-compartir:hover {
     cursor: pointer;
     text-decoration: none;
 }

@@ -16,20 +16,17 @@
 }
 
 
-/*MEDIA TEMATICAS*/
+/*MEDIA TEMATICAS
 
-
-@media screen and (max-width: 1334px) {
-    .contenedor-cards {
-        margin: 0px 0px 0px 0px;
-        width: calc(80% - 10px);
-        max-width: calc(80% - 10px);
-    }
-    .contenedor-cards .contenedor-card {
-        width: calc(50% - 20px); /* Cambia a dos contenedores por fila */
-        max-width: calc(50% - 20px);
-    }
+.contenedor-cards {
+    margin: 0px 0px 0px 0px;
+    width: calc(80% - 10px);
+    max-width: calc(80% - 10px);
 }
+.contenedor-cards .contenedor-card {
+    width: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}*/
 
 @media screen and (max-width: 794px) {
     .contenedor-cards {
