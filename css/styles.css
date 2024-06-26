@@ -22,7 +22,7 @@ body{
     overflow: hidden;
     opacity: 0;
     transition: .5s;
-    border: 2px solid yellow;
+    /*border: 2px solid yellow;*/
 }
 
 .slider .list .item img{
@@ -44,7 +44,7 @@ body{
 }
 
 .slider .list .item .content{
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     position: absolute;
     left: 10%;
     top: 20%;
@@ -103,7 +103,7 @@ body{
 
 .miniatura{
     font-size: 13px;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
 }
 
 .slider .list .item.active{
@@ -156,7 +156,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 
 .miniatura{
     position: absolute;
-    bottom: 50px;
+    bottom: 10px;
     z-index: 11;
     display: flex;
     gap: 10px;
