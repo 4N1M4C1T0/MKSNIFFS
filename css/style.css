@@ -8,7 +8,7 @@ main{
 }
 
 .contenedor_vista_principal{
-    background-color: blueviolet;
+    background-color: #ADBC70;
     max-width: calc(70% - 10px);
     width: 70%;
     height: auto;
@@ -148,93 +148,87 @@ main{
     color: black;
 }
 
-.caja_Seccion_medio{
-    position: relative;
-    background-color: chocolate;
-    width: 100%;
-    height: 565px;
-    overflow: hidden;
-    position: relative;
+.boton-superior-izquierda {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
 }
 
-.caja_Seccion_medio img{
+.contenedor {
+    padding: 0;
+    margin: 0;
+}
+
+.inner-div {
+    position: relative;
+    background-color: transparent;
+}
+
+.imagen {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ajusta la imagen para que cubra el área sin deformarse */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    object-fit: cover;
-}
-
-.titulo_imagen{
-    display: flex;
-    font-size: 2.5rem;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: white;
-    transform: translate(-60%, -50%);
-}
-
-.caja_seccion_abajo{
-    width: 100%;
-    height: 580px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(230, 141, 141);
     justify-content: center;
     align-items: center;
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
 }
 
-.caja_seccion_abajo .fila_arriba{
+.texto-superior {
+    margin-bottom: 10px; /* Espaciado entre el texto superior y el título */
+}
+
+.titulo {
+    font-size: 2em; /* Tamaño del título */
+}
+
+.contenedor-inferior {
     display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #d5f3a756;
+    flex-wrap: wrap; /* Permite que los items se envuelvan en una nueva línea */
+    justify-content: flex-start; /* Alinea los items al inicio de la línea */
+    padding: 0; /* Elimina el padding del contenedor inferior */
 }
 
-.caja_seccion_abajo .fila_arriba .caja11{
-    border: 1px solid white;
-    width: 33.33%;
-    height: 100%;
+.item {
+    flex: 0 0 calc(33.33% - 0px); /* Cada item ocupa un tercio del ancho del contenedor menos el margen */
+    margin: 0; /* Elimina el margen entre los items */
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    background-color: transparent; /* Fondo transparente */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total del elemento */
+    text-align: center; /* Centra el texto dentro de cada item */
 }
 
-.caja_seccion_abajo .fila_arriba .caja11 .texto1{
-    color: white;
-    display: block;
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-size: 23px
+.subitem {
+    flex: 0 0; /* Los subitems no crecen ni se encogen */
+    background-color: transparent;
 }
 
-.caja_seccion_abajo .fila_abajo{
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background-color: #d5f3a756;
+.subitem1, .subitem3 {
+    height: 50px;
 }
 
-.caja_seccion_abajo .fila_abajo .caja12{
-    border: 1px solid white;
-    width: 33.33%;
-    height: 100%;
+.subitem2 {
+    height: 80px;
 }
 
-.caja_seccion_abajo .fila_abajo .caja12 .texto1{
-    color: white;
-    display: block;
-    margin-top: 50px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-size: 23px;
-}
-
-i{
-    margin-right: 10px;
-    font-size: 18px;
-}
 
 .caja_seccion_final{
     width: 100%;
@@ -244,4 +238,8 @@ i{
     flex-direction: row;
     background-color: white;
     align-items: center;
+}
+
+.izquierda, .derecha{
+    padding: 10px;
 }
