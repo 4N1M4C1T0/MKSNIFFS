@@ -4,23 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista Desplegable</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dropdown">
-        <button class="dropbtn">Seleccione una opción</button>
-        <div class="dropdown-content">
-            <a href="#" data-option="1">Ecozona Costa</a>
-            <a href="#" data-option="2">Ecozona Sierra</a>
-            <a href="#" data-option="3">Ecozona Selva Alta Accesible</a>
-            <a href="#" data-option="4">Ecozona Selva Alta de Difícil Acceso</a>
-            <a href="#" data-option="5">Ecozona Selva Baja</a>
-            <a href="#" data-option="6">Ecozona Hidromórfica</a>
-        </div>
-    </div>
-
-    <p id="selected-text">Ninguna opción seleccionada</p>
-
-    <script src="script.js"></script>
+    <label for="opciones">Elige una opción:</label>
+    <select id="opciones" onchange="cambiarTexto()">
+        <option value="costa">Ecozona Costa</option>
+        <option value="sierra">Ecozona Sierra</option>
+    </select>
+    <p id="texto">15 025 311</p>
 </body>
+<script src="scripts.js"></script>
 </html>
