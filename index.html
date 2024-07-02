@@ -35,13 +35,21 @@
             </div>
           </div>
         </div>
-        <button class="boton-superior-izquierda">Botón</button>
+        <div class="seccion-boton">
+        <select id="opciones" onchange="cambiarTexto()">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+        </select>
+        </div>
+        
+
+
         <div class="contenedor">
           <div class="inner-div">
-            <img src="./img/fondo-agua.jpg" alt="Descripción de la imagen" class="imagen">
+            <img src="./img/fondo-agua.jpg" alt="Descripción de la imagen" id="imagen">
             <div class="overlay">
-                <p class="texto-superior">Texto superior</p>
-                <h1 class="titulo">Título centrado</h1>
+                <p id="texto-superior">Ecozona</p>
+                <h1 id="titulo">Costa</h1>
             </div>
           </div>
           
@@ -51,78 +59,79 @@
             
             <div class="item">
                 <div class="subitem subitem1">
-                  <p>HOLA</p>
+                  <p>SUPERFICIE APROXIMADA</p>
                 </div>
                 <div class="subitem subitem2">
-                  <h1>50</h1>
+                  <h1 id="texto1">15 025 311</h1>
                 </div>
                 <div class="subitem subitem3">
-                  <p>BIEN</p>
+                  <p>hectáreas</p>
                 </div>
             </div>
             
             
             <div class="item">
               <div class="subitem subitem1">
-                <p>HOLA</p>
+                <p>CONFORMACIÓN PANEL 1</p>
               </div>
               <div class="subitem subitem2">
-                <h1>50</h1>
+                <h1 id="texto2">30</h1>
               </div>
               <div class="subitem subitem3">
-                <p>BIEN</p>
+                <p>unidades muestrales</p>
               </div>
           </div>
           
           
           <div class="item">
             <div class="subitem subitem1">
-              <p>HOLA</p>
+              <p>COMPOSICIÓN FLORÍSTICA</p>
             </div>
             <div class="subitem subitem2">
-              <h1>50</h1>
+              <h1 id="texto3">53</h1>
             </div>
             <div class="subitem subitem3">
-              <p>BIEN</p>
+              <p>especies de flora identificadas</p>
             </div>
         </div>
         
         
         <div class="item">
           <div class="subitem subitem1">
-            <p>HOLA</p>
+            <p>FAUNA SILVESTRE</p>
           </div>
           <div class="subitem subitem2">
-            <h1>50</h1>
+            <h1 id="texto4">183</h1>
           </div>
           <div class="subitem subitem3">
-            <p>BIEN</p>
+            <p>especies de fauna registradas</p>
           </div>
         </div>
 
         <div class="item">
             <div class="subitem subitem1">
-              <p>HOLA</p>
+              <p>BIOMASA PROMEDIO</p>
             </div>
             <div class="subitem subitem2">
-              <h1>50</h1>
+              <h1 id="texto5">16,08</h1>
             </div>
             <div class="subitem subitem3">
-              <p>BIEN</p>
+              <p>t/ha</p>
             </div>
           </div>
 
           <div class="item">
             <div class="subitem subitem1">
-              <p>HOLA</p>
+              <p>COMPOSICIÓN FLORÍSTICA</p>
             </div>
             <div class="subitem subitem2">
-              <h1>50</h1>
+                <h1 id="texto6">7,56</h1>
             </div>
             <div class="subitem subitem3">
-              <p>BIEN</p>
+              <p>tC/ha</p>
             </div>
           </div>
+
 
     </div>
 
@@ -137,4 +146,5 @@
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>
