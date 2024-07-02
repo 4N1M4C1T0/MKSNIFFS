@@ -1,38 +1,30 @@
-function cambiarTexto() {
-    var seleccion = document.getElementById("opciones").value;
-    var texto1 = document.getElementById("texto1");
-    var texto2 = document.getElementById("texto2");
-    var texto3 = document.getElementById("texto3");
-    var texto4 = document.getElementById("texto4");
-    var texto5 = document.getElementById("texto5");
-    var texto6 = document.getElementById("texto6");
-    var imagen = document.getElementById("imagen");
-    var texto_superior = document.getElementById("texto-superior");
-    var titulo = document.getElementById("titulo");
-    
-    if (seleccion === "opcion1") {
-        texto1.innerHTML = "100";
-        texto2.innerHTML = "200";
-        texto3.innerHTML = "300";
-        texto4.innerHTML = "400";
-        texto5.innerHTML = "500";
-        texto6.innerHTML = "600";
-        imagen.src = "./img/fondo-agua.jpg";
-        imagen.alt = "Descripción de la imagen";
-        texto_superior.innerHTML = "Ecozona";
-        titulo.innerHTML = "Costa";
+document.addEventListener("DOMContentLoaded", function() {
+    var menuItems = document.querySelectorAll(".menu-item");
 
-    } else if (seleccion === "opcion2") {
-        texto1.innerHTML = "700";
-        texto2.innerHTML = "800";
-        texto3.innerHTML = "900";
-        texto4.innerHTML = "1000";
-        texto5.innerHTML = "1100";
-        texto6.innerHTML = "1200";
-        imagen.src = "./img/serfor-1-1.png";
-        imagen.alt = "Descripción de la imagen";
-        texto_superior.innerHTML = "Ecozona";
-        titulo.innerHTML = "Sierra";
+    menuItems.forEach(function(item) {
+        var submenu = item.nextElementSibling;
 
-    }
-}
+        if (submenu && submenu.classList.contains("submenu")) {
+            var arrowIcon = document.createElement("i");
+            arrowIcon.classList.add("arrow-icon", "fas", "fa-chevron-right");
+            item.appendChild(arrowIcon);
+
+            item.addEventListener("click", function(e) {
+                e.preventDefault();
+                submenu.classList.toggle("active");
+                arrowIcon.classList.toggle("collapsed");
+            });
+        }
+    });
+
+    var menuToggle = document.querySelector(".menu-toggle");
+    var menu = document.querySelector(".menu-desplegable");
+
+    menuToggle.addEventListener("click", function() {
+        menu.classList.toggle("collapsed");
+        var menuIcons = document.querySelectorAll(".menu-desplegable .menu-item .arrow-icon");
+        menuIcons.forEach(function(icon) {
+            icon.classList.remove("collapsed");
+        });
+    });
+});
