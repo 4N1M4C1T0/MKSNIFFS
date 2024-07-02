@@ -3,6 +3,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
+.menu-toggle-container {
+    background-color: #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.menu-toggle {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+}
+
 .menu-desplegable {
     width: 250px;
     max-height: 80vh; /* Altura máxima del menú */
@@ -10,17 +26,6 @@ body {
     overflow-y: auto; /* Scroll vertical cuando se excede el alto máximo */
     position: fixed;
     transition: width 0.3s;
-}
-
-.menu-toggle {
-    display: block;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    text-align: left;
 }
 
 .menu-desplegable ul {
@@ -53,7 +58,7 @@ body {
 }
 
 .menu-desplegable ul li a .arrow-icon.collapsed {
-    transform: rotate(90deg); /* Rotar hacia abajo cuando el submenú esté colapsado */
+    transform: rotate(deg); /* Rotar hacia abajo cuando el submenú esté colapsado */
 }
 
 .menu-desplegable ul li a i {
@@ -92,6 +97,12 @@ body {
 
 .menu-desplegable.collapsed ul {
     display: none;
+}
+
+.menu-desplegable.collapsed .menu-item .arrow-icon {
+    right: 10px;
+    display: block; /* Mostrar el icono de flecha al estar colapsado */
+    transform: rotate(0deg);
 }
 
 .menu-desplegable.collapsed .menu-toggle {

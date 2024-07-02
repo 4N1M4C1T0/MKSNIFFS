@@ -13,6 +13,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 e.preventDefault();
                 submenu.classList.toggle("active");
                 arrowIcon.classList.toggle("collapsed");
+                arrowIcon.classList.toggle("fa-chevron-down");
+                arrowIcon.classList.toggle("fa-chevron-right");
             });
         }
     });
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
         var menuIcons = document.querySelectorAll(".menu-desplegable .menu-item .arrow-icon");
         menuIcons.forEach(function(icon) {
             icon.classList.remove("collapsed");
+            icon.classList.remove("fa-chevron-down");
+            icon.classList.add("fa-chevron-right");
         });
     });
 });
