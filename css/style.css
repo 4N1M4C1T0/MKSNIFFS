@@ -28,6 +28,16 @@ body {
     transition: width 0.3s;
 }
 
+.menu-title {
+    padding: 10px;
+    font-size: 14px;
+    color: #ffffff;
+    white-space: normal; /* Permitir que el texto se rompa en múltiples líneas */
+    word-wrap: break-word; /* Romper palabras largas */
+    word-break: break-word; /* Manejar el corte de palabras largas */
+    position: relative; /* Posición relativa para el ícono */
+}
+
 .menu-desplegable ul {
     list-style-type: none;
     margin: 0;
@@ -77,7 +87,7 @@ body {
 /* Estilo del submenú */
 .submenu {
     list-style-type: none;
-    padding-left: 20px;
+    padding-left: 40px; /* Reducir el padding para alinear más a la izquierda */
     display: none; /* Ocultar submenú por defecto */
 }
 
@@ -88,6 +98,7 @@ body {
 .submenu li a {
     padding: 10px;
     background-color: #444;
+    font-size: 12px; /* Tamaño de fuente del submenú */
 }
 
 /* Estilo cuando el menú está colapsado */
@@ -95,7 +106,8 @@ body {
     width: 70px;
 }
 
-.menu-desplegable.collapsed ul {
+.menu-desplegable.collapsed ul,
+.menu-desplegable.collapsed .menu-title {
     display: none;
 }
 
