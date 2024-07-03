@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/0391024a00.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/resultados.css" />
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <title>INFOGRAFIA</title>
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="contenedor_vista_principal">
+        <div class="caja_seccion_arriba">
+          <div class="caja1">Inventario Nacional Forestal y de Fauna Silvestre (INFFS)</div>
+          <div class="caja2">
+            <div class="caja3">
+              <div class="caja4">
+                <i class="fa-regular fa-chart-bar"></i><a href="../../vistas/tableros/8.html">Reportes Interactivos</a></div>
+              <div class="caja5">
+                <i class="fa-solid fa-laptop-file"></i><a href="../../vistas/resultados/8.html">Infografías</a></div>
+            </div>
+            <div class="caja6">
+              <div class="caja7">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <a href="../../vistas/documentos/8.html">Documentos</a>
+              </div>
+              <div class="caja9">
+                <i class="fa-solid fa-photo-film"></i>
+                <a href="../../vistas/galeria/8.html">Galería</a>
+              </div>
+              <div class="caja10">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <a href="../../vistas/herramientas/8.html">Herramientas</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="seccion-boton">
+        <select id="opciones" onchange="cambiarTexto()">
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+        </select>
+        </div>
+        
+
+        <div class="contenedor">
+          <div class="inner-div">
+            <img src="./img/fondo-agua.jpg" alt="Descripción de la imagen" id="imagen">
+            <div class="overlay">
+                <p id="texto-superior">Ecozona</p>
+                <h1 id="titulo">Costa</h1>
+            </div>
+          </div>
+          
+          
+          <div class="inner-div contenedor-inferior">
+            
+            
+            <div class="item">
+                <div class="subitem subitem1">
+                  <p>SUPERFICIE APROXIMADA</p>
+                </div>
+                <div class="subitem subitem2">
+                  <h1 id="texto1">15 025 311</h1>
+                </div>
+                <div class="subitem subitem3">
+                  <p>hectáreas</p>
+                </div>
+            </div>
+            
+            
+            <div class="item">
+              <div class="subitem subitem1">
+                <p>CONFORMACIÓN PANEL 1</p>
+              </div>
+              <div class="subitem subitem2">
+                <h1 id="texto2">30</h1>
+              </div>
+              <div class="subitem subitem3">
+                <p>unidades muestrales</p>
+              </div>
+          </div>
+          
+          
+          <div class="item">
+            <div class="subitem subitem1">
+              <p>COMPOSICIÓN FLORÍSTICA</p>
+            </div>
+            <div class="subitem subitem2">
+              <h1 id="texto3">53</h1>
+            </div>
+            <div class="subitem subitem3">
+              <p>especies de flora identificadas</p>
+            </div>
+        </div>
+        
+        
+        <div class="item">
+          <div class="subitem subitem1">
+            <p>FAUNA SILVESTRE</p>
+          </div>
+          <div class="subitem subitem2">
+            <h1 id="texto4">183</h1>
+          </div>
+          <div class="subitem subitem3">
+            <p>especies de fauna registradas</p>
+          </div>
+        </div>
+
+        <div class="item">
+            <div class="subitem subitem1">
+              <p>BIOMASA PROMEDIO</p>
+            </div>
+            <div class="subitem subitem2">
+              <h1 id="texto5">16,08</h1>
+            </div>
+            <div class="subitem subitem3">
+              <p>t/ha</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="subitem subitem1">
+              <p>COMPOSICIÓN FLORÍSTICA</p>
+            </div>
+            <div class="subitem subitem2">
+                <h1 id="texto6">7,56</h1>
+            </div>
+            <div class="subitem subitem3">
+              <p>tC/ha</p>
+            </div>
+          </div>
+
+    </div>
+
+        <div class="caja_seccion_final">
+            <div class="izquierda">
+              <span>Fuente: DIV - SERFOR ©</span>
+            </div>
+            <div class="derecha">
+              <span>Datos del Panel 1 registrados a diciembre del 2019</span>
+            </div>
+        </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <script src="../../js/headfoots.js"></script>
+    <script src="../../js/herramientas.js"></script>
+  </body>
+</html>
+
