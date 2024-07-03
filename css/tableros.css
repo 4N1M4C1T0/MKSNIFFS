@@ -392,3 +392,10 @@ i{
 img{
     height: 30px;
 }
+
+.content {
+    display: none;
+}
+#default {
+    display: block;
+}

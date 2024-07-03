@@ -66,9 +66,9 @@
                 <li>
                   <a href="#"><i class="fas fa-home"></i>INTERVENCIONES GORES <span class="arrow-icon">&gt;</span></a>
                     <ul class="submenu">
-                        <li><a href="#">Amazonas</a></li>
-                        <li><a href="#">Ayacucho</a></li>
-                        <li><a href="#">Cajamarca</a></li>
+                        <li><a href="#" onclick="showDiv('div1')">Amazonas</a></li>
+                        <li><a href="#" onclick="showDiv('div2')">Ayacucho</a></li>
+                        <li><a href="#" onclick="showDiv('div3')">Cajamarca</a></li>
                         <li><a href="#">Cusco</a></li>
                         <li><a href="#">Huanuco</a></li>
                         <li><a href="#">La Libertad</a></li>
@@ -91,7 +91,20 @@
         </div>
             <div class="caja12">
                 <div class="caja13">
-                    <div class="caja15"></div>
+                    <div class="caja15">
+                      <div id="default">
+                        <p>Dale clic a una opción por favor</p>
+                      </div>
+                      <div id="div1" class="content">
+                        <p>Contenido del Div 1</p>
+                      </div>
+                      <div id="div2" class="content">
+                        <p>Contenido del Div 2</p>
+                      </div>
+                      <div id="div3" class="content">
+                        <p>Contenido del Div 3</p>
+                      </div>
+                    </div>
                 </div>
                 <div class="caja14">2024 © SERFOR - Dirección de Seguimiento</div>
             </div>

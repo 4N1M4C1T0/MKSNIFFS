@@ -20,3 +20,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function showDiv(divId) {
+    // Ocultar el div por defecto
+    document.getElementById('default').style.display = 'none';
+
+    // Ocultar todos los divs de contenido
+    const contents = document.querySelectorAll('.content');
+    contents.forEach(content => content.style.display = 'none');
+
+    // Mostrar el div correspondiente
+    const selectedDiv = document.getElementById(divId);
+    if (selectedDiv) {
+        selectedDiv.style.display = 'block';
+    }
+}
