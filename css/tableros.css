@@ -193,19 +193,20 @@ main{
 }
 
 .caja_Seccion_medio .menu-toggle-container{
-    background-color: #333;
+    background-color: transparent;
     padding: 10px;
     text-align: left;
 }
 
 .caja_Seccion_medio .menu-toggle-container .menu-toggle{
-    background-color: #333;
-    color: white;
+    background-color: transparent;
+    color: #76A56B;
     border: none;
     cursor: pointer;
     width: 100%;
     text-align: left;
     padding: 10px;
+    font-weight: bold;
 }
 
 .caja_Seccion_medio img {
@@ -220,20 +221,20 @@ main{
     width: 100%;
     height: 730px;
     display: flex;
-    background-color: rgb(230, 141, 141);
+    background-color: rgb(218, 218, 210);
     justify-content: center;
     align-items: center;
 }
 
 .menu-desplegable{
-    width: 15%;
+    width: 250px;
     height: 100%;
-    display: flex;
-    background-color: rgb(110, 205, 218);
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    max-height: 100%; /* Altura máxima del menú */
+    background-color: rgb(28, 96, 84);
+    overflow-y: auto; /* Scroll vertical cuando se excede el alto máximo */
+    position: relative;
+    transition: width 0.2s;
+    text-align: justify;
 }
 
 .menu-title {
@@ -268,6 +269,82 @@ main{
     position: relative; /* Posición relativa para el ícono */
 }
 
+.menu-desplegable ul li a .arrow-icon {
+    position: absolute;
+    right: 10px; /* Alinear a la derecha */
+    bottom: 10px; /* Alinear en la parte inferior */
+    font-size: 0.8em; /* Tamaño del ícono */
+    font-weight: bold;
+    transition: transform 0.3s; /* Transición para la animación */
+}
+
+.menu-desplegable ul li a .arrow-icon.collapsed {
+    transform: rotate(90deg); /* Rotar hacia abajo cuando el submenú esté colapsado */
+}
+
+.menu-desplegable ul li a i {
+    margin-right: 10px;
+    vertical-align: middle; /* Alinear iconos verticalmente */
+}
+
+.menu-desplegable ul li a span {
+    vertical-align: middle; /* Alinear texto verticalmente */
+}
+
+.menu-desplegable ul li a:hover {
+    background-color: rgb(36, 122, 107);
+}
+
+/* Estilo del submenú */
+.submenu {
+    list-style-type: none;
+    display: none; /* Ocultar submenú por defecto */
+}
+
+.submenu.active {
+    display: block; /* Mostrar submenú activo */
+}
+
+.submenu li {
+    padding-left: 30px;
+    padding-right: 15px;
+}
+
+.submenu li a {
+    background-color: rgb(28, 96, 84);
+    font-size: 12px; /* Tamaño de fuente del submenú */
+}
+
+/* Estilo cuando el menú está colapsado */
+.menu-desplegable.collapsed {
+    width: 0%;
+}
+
+.menu-desplegable.collapsed ul,
+.menu-desplegable.collapsed .menu-title {
+    display: none;
+}
+
+.menu-desplegable.collapsed .menu-item .arrow-icon {
+    right: 10px;
+    display: block; /* Mostrar el icono de flecha al estar colapsado */
+    transform: rotate(0deg);
+}
+
+.menu-desplegable.collapsed .menu-toggle {
+    text-align: center;
+}
+
+.menu-desplegable.collapsed .menu-toggle i {
+    margin-right: 0;
+    display: block; /* Mostrar el icono del menú al estar colapsado */
+}
+
+.menu-desplegable.collapsed .menu-toggle span {
+    display: none; /* Ocultar el texto del menú al estar colapsado */
+}
+
+
 .caja12{
     width: 85%;
     height: 100%;
@@ -275,6 +352,10 @@ main{
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+}
+
+.caja12.collapsed{
+    width: 100%;
 }
 
 .caja13{
