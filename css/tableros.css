@@ -411,13 +411,14 @@ img{
 }
 
 #default img {
-    width: 100%; /* La imagen ocupa todo el ancho de la sección */
     height: auto; /* La altura se ajusta automáticamente */
     min-height: 100%;
-    display: block;
-    max-width: calc(35% - 10px);
-    width: 35%;
-    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(70% - 10px);
+    width: 70%;
+    left: 15%;
     position: relative;
     overflow: hidden;
     max-height: 50%;
