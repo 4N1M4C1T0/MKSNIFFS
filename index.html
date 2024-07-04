@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Slider con HTML y CSS</title>
-    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/sliderbody.css">
+    <title>Document</title>
 </head>
-
 <body>
-
-    <div id="slider-body">
-
-        <ul class="slider">
-            <li id="slide1">
-                <h1>Caracteristicas</h1>
-                <br>
-                <p>Dispone de información confiable sobre el recurso forestal y de fauna silvestre, insumo para la generación de esquemas de incentivos o equilibrio para la restauración y conservación forestal aplicados en la formulación de políticas forestales y de fauna silvestre.</p>
-                <img src="./img/fondo-hojas.jpg" />
-            </li>
-            <li id="slide2">
-                <h1>Caracteristicas</h1>
-                <br>
-                <p>Consolidación de un sistema nacional de inventarios forestales.</p>
-                <img src="./img/fondo-hojas.jpg" />
-            </li>
-            <li id="slide3">
-                <h1>Caracteristicas</h1>
-                <br>
-                <p>Asegura la transparencia de la información e interoperabilidad entre los diferentes proveedores, generadores o consumidores de información en temas de inventarios forestales y de fauna silvestre.</p>
-                <img src="./img/fondo-hojas.jpg" />
-            </li>
-        </ul>
-
-        <ul class="menu">
-            <li>
-                <a href="#slide1">1</a>
-            </li>
-            <li>
-                <a href="#slide2">2</a>
-            </li>
-            <li>
-                <a href="#slide3">3</a>
-            </li>
-        </ul>
-
-    </div>
-
+    <main>
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+            <div id="slides">
+               <div id="overflow">
+                  <div class="inner">
+                     <div class="slide slide_1">
+                        <div class="slide-content">
+                           <h2>Slide 1</h2>
+                           <p>Content for Slide 1</p>
+                        </div>
+                     </div>
+                     <div class="slide slide_2">
+                        <div class="slide-content">
+                           <h2>Slide 2</h2>
+                           <p>Content for Slide 2</p>
+                        </div>
+                     </div>
+                     <div class="slide slide_3">
+                        <div class="slide-content">
+                           <h2>Slide 3</h2>
+                           <p>Content for Slide 3</p>
+                        </div>
+                     </div>
+                     <div class="slide slide_4">
+                        <div class="slide-content">
+                           <h2>Slide 4</h2>
+                           <p>Content for Slide 4</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div id="controls">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+            <div id="bullets">
+               <label for="slide1"></label>
+               <label for="slide2"></label>
+               <label for="slide3"></label>
+               <label for="slide4"></label>
+            </div>
+         </div>
+    </main>
 </body>
-
 </html>
