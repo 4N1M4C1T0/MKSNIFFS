@@ -371,103 +371,134 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 /*PROPIEDADES SLIDER_BODY*/
 
 #slider-body {
-    font-family: sans-serif;
-    margin: auto;
-    padding: 0;
-    background-color: white;
-    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 10px);
-    box-sizing: border-box;
-}
-
-#slider-body>ul,
-li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-#slider-body>ul.slider {
-    position: relative;
-    max-width: calc(100% - 10px);
-    width: 100%;
-    height: 300px;
-}
-
-#slider-body>ul.slider h1, .texto_slider_body {
-    position: absolute;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    left: 50%;
-    top: 100px;
-    transform: translate(-50%, -50%);
-    max-width: calc(70% - 10px);
-    width: 100%;
-    justify-content: center;
-}
-#slider-body>ul.slider h1{
-    font-family: "Raleway", sans-serif;
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
     text-align: center;
-}
-
-#slider-body>ul.slider .texto_slider_body {
-    font-family: "Raleway", sans-serif;
-    color: white;
-    top: 160px;
-    text-align: center;
-}
-#slider-body>ul.slider li {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    opacity: 0;
-    width: inherit;
-    height: inherit;
-    transition: opacity .5s;
-    background: #fff;
-}
-
-#slider-body>ul.slider li img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-#slider-body>ul.slider li:first-child {
-    opacity: 1;
-    /*Mostramos el primer <li>*/
-}
-
-#slider-body>ul.slider li:target {
-    opacity: 1;
-    /*Mostramos el <li> del enlace que pulsemos*/
-}
-
-#slider-body>.menu {
-    text-align: center;
-    margin: 40px;
-}
-
-#slider-body>.menu li {
-    display: inline-block;
-    text-align: center;
-}
-
-#slider-body>.menu li a {
-    display: inline-block;
-    color: white;
+ }
+ #slider-body input[type=radio] {
+    display: none;
+ }
+ #slider-body label {
+    cursor:pointer;
     text-decoration: none;
-    background-color: #ADBC70;
+ }
+ #slides {
     padding: 10px;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    border-radius: 100%;
-}
+    border: 3px solid #ccc;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    background-color: #444;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+ #slides .slide_1, #slides .slide_2, #slides .slide_3,  #slides .slide_4 {
+    background-color: transparent;
+ }
 
-#slider-body>.menu li a:hover{
-    background-color: #97BEA0;
-}
+ #controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+ }
+ #controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background-image: url(../img/flecha-correcta.png);
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+    background-size: cover;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(1),
+ #slide2:checked ~ #controls label:nth-last-child(4),
+ #slide3:checked ~ #controls label:nth-last-child(3),
+ #slide4:checked ~ #controls label:nth-last-child(2) {
+    background-image: url(../img/flecha-correcta.png);
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+    background-size: cover;
+    transform: scaleX(-1);
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ }
+
 
 /*PROPIEDADES DE PREGUNTAS*/
 
