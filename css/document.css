@@ -194,6 +194,7 @@ i{
     height: 100%;
     display: flex;
     object-fit: cover;
+    object-position: 50% 40%;
 }
 
 .titulo_imagen{
