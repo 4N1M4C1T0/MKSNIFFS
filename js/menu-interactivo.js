@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const menuDesplegable = document.querySelector('.menu-desplegable');
     const submenuItems = document.querySelectorAll('.menu-desplegable ul li a');
-    const caja12 = document.querySelector('.caja12');
+    const caja12 = document.querySelector('.right-content');
 
     menuToggle.addEventListener('click', function() {
         menuDesplegable.classList.toggle('collapsed');
