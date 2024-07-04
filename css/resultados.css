@@ -48,6 +48,10 @@ main{
     box-sizing: border-box;
 }
 
+i{
+    margin-right: 10px;
+}
+
 .caja1{
     width: 25%;
     height: 115px;
@@ -176,12 +180,15 @@ main{
 select{
     position: absolute;
     top: 35%;
-    left: 17%;
+    left: 13%;
     padding: 10px 20px;
-    background-color: #007BFF;
+    font-weight: bold;
+    background-color: transparent;
+    background-color: black;
+    opacity: 0.5;
+    font-size: 20px;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 2px white solid;
     cursor: pointer;
     z-index: 8; /* Asegura que el botón esté por encima de otros elementos */
 }
@@ -217,11 +224,14 @@ select{
 }
 
 #texto-superior {
-    margin-bottom: 10px; /* Espaciado entre el texto superior y el título */
+    font-size: 2em;
+    margin-bottom: 1px; /* Espaciado entre el texto superior y el título */
+    color: black;
 }
 
 #titulo {
-    font-size: 2em; /* Tamaño del título */
+    font-size: 4em; /* Tamaño del título */
+    color: black;
 }
 
 .contenedor-inferior {
@@ -248,10 +258,12 @@ select{
 
 .subitem1, .subitem3 {
     height: 50px;
+    font-size: 20px;
 }
 
 .subitem2 {
-    height: 80px;
+    height: 110px;
+    font-size: 30px;
 }
 
 .caja_seccion_final{
