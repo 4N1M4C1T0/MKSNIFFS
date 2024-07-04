@@ -35,3 +35,9 @@ function showDiv(divId) {
         selectedDiv.style.display = 'block';
     }
 }
+
+const fechaActual = new Date();
+      const añoActual = fechaActual.getFullYear();
+      fechaActual.setMonth(fechaActual.getMonth() - 1);
+      const mesAnterior = fechaActual.toLocaleString('es-ES', { month: 'long' });
+      document.getElementById('referencia').textContent = `Datos de ${mesAnterior} del ${añoActual}  © SERFOR - Dirección de Seguimiento`;
