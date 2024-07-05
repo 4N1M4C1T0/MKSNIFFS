@@ -21,19 +21,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function showDiv(divId) {
-    // Ocultar el div por defecto
-    document.getElementById('default').style.display = 'none';
+function showContent(event) {
+    event.preventDefault();
 
-    // Ocultar todos los divs de contenido
-    const contents = document.querySelectorAll('.content');
-    contents.forEach(content => content.style.display = 'none');
+    // Ocultar todos los divs
+    let contents = document.querySelectorAll('.content');
+    contents.forEach(content => content.classList.remove('active'));
 
-    // Mostrar el div correspondiente
-    const selectedDiv = document.getElementById(divId);
-    if (selectedDiv) {
-        selectedDiv.style.display = 'block';
+    // Mostrar el div correspondiente al enlace seleccionado
+    let target = event.target.getAttribute('data-target');
+    if (target !== 'default') {
+        document.getElementById('default').classList.remove('active');
     }
+    document.getElementById(target).classList.add('active');
 }
 
 const fechaActual = new Date();

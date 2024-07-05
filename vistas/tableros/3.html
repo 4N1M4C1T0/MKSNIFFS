@@ -61,37 +61,28 @@
               <li>
                 <a href="#"><i class="fas fa-home"></i>INTERVENCIONES GORES <span class="arrow-icon">&gt;</span></a>
                   <ul class="submenu">
-                      <li><a href="#" onclick="showDiv('amazonas')">Amazonas</a></li>
-                      <li><a href="#" onclick="showDiv('ayacucho')">Ayacucho</a></li>
-                      <li><a href="#" onclick="showDiv('cajamarca')">Cajamarca</a></li>
-                      <li><a href="#" onclick="showDiv('cusco')">Cusco</a></li>
-                      <li><a href="#" onclick="showDiv('huanuco')">Huanuco</a></li>
-                      <li><a href="#" onclick="showDiv('ll')">La Libertad</a></li>
-                      <li><a href="#" onclick="showDiv('loreto')">Loreto</a></li>
-                      <li><a href="#" onclick="showDiv('mdd')">Madre de Dios</a></li>
-                      <li><a href="#" onclick="showDiv('piura')">Piura</a></li>
-                      <li><a href="#" onclick="showDiv('sm')">San Martin</a></li>
-                      <li><a href="#" onclick="showDiv('tumbes')">Tumbes</a></li>
-                      <li><a href="#" onclick="showDiv('ucayali')">Ucayali</a></li>
-                  </ul>
+                    <li><a href="#" data-target="default" onclick="showContent(event)">Default</a></li>
+                    <li><a href="#" data-target="option1" onclick="showContent(event)">Option 1</a></li>
+                    <li><a href="#" data-target="option2" onclick="showContent(event)">Option 2</a></li>
+                    <li><a href="#" data-target="option3" onclick="showContent(event)">Option 3</a></li>
+                </ul>
               </li>
           </ul>
           </div>
         <div class="right-content">
           <div class="inner-div">
-            <div id="default">
-              <img src="../../img/2da_vista/reporte_interactivo/CLICK.jpg" alt="">
-              <div id="amazonas" class="content">
-                <iframe width="567" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=30977336&amp;format=interactive"></iframe>
-                <iframe width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=G2:J14&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-                <iframe width="562" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=1261799692&amp;format=interactive"></iframe>
-                <iframe width="285" height="345" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=R2:U14&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-                <iframe width="567" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=1226112056&amp;format=interactive"></iframe>
-                <iframe width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=G20:J26&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-                <iframe width="562" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=181495025&amp;format=interactive"></iframe>
-                <iframe width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=R20:U26&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-              </div>
-            </div>
+            <div id="default" class="content active">
+              This is the default content.
+          </div>
+          <div id="option1" class="content">
+              This is content for option 1.
+          </div>
+          <div id="option2" class="content">
+              This is content for option 2.
+          </div>
+          <div id="option3" class="content">
+              This is content for option 3.
+          </div>
           </div>
           <div class="inner-div">
             <p id="referencia"></p>
