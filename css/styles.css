@@ -52,6 +52,8 @@ body{
     max-width: 80%;
     z-index: 1;
     text-align: justify;
+    color: white;
+    border: 2px solid white;
 }
 
 .container {
@@ -100,22 +102,22 @@ body{
 
 .slider .list .item .content h1{
     margin: 0;
-    font-size: 120px;
+    font-size: 85px;
     
 }
 
 .slider .list .item .content h2{
-    font-size: 40px;
+    font-size: 35px;
     margin: 0;
 }
 
 .slider .list .item .content span{
-    font-size: 25px;
+    font-size: 20px;
     margin: 5px;
 }
 
 .slider .list .item .content ul{
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
 }
 
