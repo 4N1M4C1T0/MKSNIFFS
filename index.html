@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="slider-container">
+        <div class="background"></div>
+        <div class="slides">
+            <div class="slide">
+                <h2>Título 1</h2>
+                <p>Descripción del slide 1</p>
+            </div>
+            <div class="slide">
+                <h2>Título 2</h2>
+                <p>Descripción del slide 2</p>
+            </div>
+            <div class="slide">
+                <h2>Título 3</h2>
+                <p>Descripción del slide 3</p>
+            </div>
+            <div class="slide">
+                <h2>Título 4</h2>
+                <p>Descripción del slide 4</p>
+            </div>
+            <!-- Añadir más slides aquí -->
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="dots"></div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
