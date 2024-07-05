@@ -169,12 +169,13 @@ main{
     width: 15%;
     height: 100%;
     min-height: 800px;
-    max-height: 100%; /* Altura máxima del menú */
+    max-height: 800px; /* Altura máxima del menú */
     background-color: rgb(28, 96, 84);
     overflow-y: auto; /* Scroll vertical cuando se excede el alto máximo */
     position: relative;
     transition: width 0.2s;
     text-align: justify;
+    overflow-y: auto;
 }
 
 .menu-title {
@@ -314,40 +315,16 @@ main{
 .content {
     display: none;
 }
+
+.content:not(:nth-child(1)) {
+    padding: 0 0 0 150px;
+}
 .content.active {
     display: block;
 }
+
 .full-width-image {
-    width: 100%;
-    height: auto;
-}
-.iframe-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 10fr));
-    gap: 10px;
-}
-
-.iframe-container.collapsed {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 10fr));
-    gap: 10px;
-}
-
-iframe:nth-child(1),iframe:nth-child(3),iframe:nth-child(5),iframe:nth-child(7) {
-    transform: scale(1);
-    width: 100%;
-    height: 350px;
-}
-
-iframe:nth-child(2),iframe:nth-child(4),iframe:nth-child(6),iframe:nth-child(8) {
-    transform: scale(1);
-    width: 80%;
-    height: 350px;
-}
-
-#default img {
     height: auto; /* La altura se ajusta automáticamente */
-    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -357,6 +334,33 @@ iframe:nth-child(2),iframe:nth-child(4),iframe:nth-child(6),iframe:nth-child(8) 
     position: relative;
     overflow: hidden;
     max-height: 50%;
+}
+.iframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 10fr));
+    gap: 10px;
+}
+
+.titulo-iframe {
+    color: #1C6054;
+}
+
+.iframe-container.collapsed {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 10fr));
+    gap: 10px;
+}
+
+.graficos {
+    transform: scale(1);
+    width: 100%;
+    height: 350px;
+}
+
+.tablas {
+    transform: scale(1);
+    width: 80%;
+    height: 350px;
 }
 
 .inner-div:nth-child(2) {
