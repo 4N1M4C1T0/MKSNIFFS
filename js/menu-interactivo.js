@@ -2,11 +2,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const menuToggle = document.querySelector('.menu-toggle');
     const menuDesplegable = document.querySelector('.menu-desplegable');
     const submenuItems = document.querySelectorAll('.menu-desplegable ul li a');
-    const caja12 = document.querySelector('.right-content');
+    const rightcontent = document.querySelector('.right-content');
+    const iframecontainer = document.querySelector('.iframe-container');
 
     menuToggle.addEventListener('click', function() {
         menuDesplegable.classList.toggle('collapsed');
-        caja12.classList.toggle('collapsed');
+        rightcontent.classList.toggle('collapsed');
+        iframecontainer.classList.toggle('collapsed');
     });
 
     submenuItems.forEach(item => {
