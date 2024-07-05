@@ -535,75 +535,27 @@
         </div>
     </div>
 
-    <div id="slider-body">
-        <input type="radio" name="slider" id="slide1" checked>
-        <input type="radio" name="slider" id="slide2">
-        <input type="radio" name="slider" id="slide3">
-        <input type="radio" name="slider" id="slide4">
-        <div id="slides">
-           <div id="overflow">
-              <div class="inner">
-                 <div class="slide slide_1">
-                    <div class="slide-content">
-                       <div class="titulo-slide-body">
-                        <h2 class="slide-content-h2">
-                            CARACTERISTICAS
-                        </h2>
-                       </div>
-                       <div class="contenido-slide-body">
-                        <p class="slide-content-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non. Debitis in iste omnis ea provident maiores vitae blanditiis aperiam aspernatur, cupiditate voluptates consectetur veritatis dignissimos sunt voluptatum iure a! Lorem ipsum dolor,
-                        </p>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="slide slide_2">
-                    <div class="slide-content">
-                       <div class="titulo-slide-body">
-                        <h2 class="slide-content-h2">
-                            CARACTERISTICAS
-                        </h2>
-                       </div>
-                       <div class="contenido-slide-body">
-                        <p class="slide-content-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non. Debitis in iste omnis ea provident maiores vitae blanditiis aperiam aspernatur, cupiditate voluptates consectetur veritatis dignissimos sunt voluptatum iure a!
-                        </p>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="slide slide_3">
-                    <div class="slide-content">
-                       <div class="titulo-slide-body">
-                        <h2 class="slide-content-h2">
-                            CARACTERISTICAS
-                        </h2>
-                       </div>
-                       <div class="contenido-slide-body">
-                        <p class="slide-content-p">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, non. Debitis in iste omnis ea provident maiores vitae blanditiis aperiam aspernatur, cupiditate voluptates consectetur veritatis dignissimos sunt voluptatum iure a!
-                        </p>
-                       </div>
-                    </div>
-                 </div>
-                 
-              </div>
-           </div>
+    <div class="slider-container">
+        <div class="background"></div>
+        <div class="slides">
+            <div class="slide">
+                <h2 class="titulo-slidebody">Características</h2>
+                <p class="texto-slidebody">Descripción del slide 1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem accusantium cum, natus, non autem deserunt molestiae officia soluta iure ratione dicta dolorem aut quae quas consectetur a aperiam dignissimos quidem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem beatae et laudantium saepe quidem eligendi nihil excepturi sapiente illum neque voluptatem quae voluptatibus totam at, illo suscipit veniam dolores. Quasi.</p>
+            </div>
+            <div class="slide">
+                <h2 class="titulo-slidebody">Características</h2>
+                <p class="texto-slidebody">Descripción del slide 2</p>
+            </div>
+            <div class="slide">
+                <h2 class="titulo-slidebody">Características</h2>
+                <p class="texto-slidebody">Descripción del slide 3</p>
+            </div>
+            <!-- Añadir más slides aquí -->
         </div>
-        <div id="controls">
-           <label for="slide1"></label>
-           <label for="slide2"></label>
-           <label for="slide3"></label>
-           
-        </div>
-        <div id="bullets">
-           <label for="slide1"></label>
-           <label for="slide2"></label>
-           <label for="slide3"></label>
-           
-        </div>
-     </div>
-
-
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+    <div class="dots"></div>
 
     <div class="contenedor_preguntas">
         <div>
@@ -779,8 +731,8 @@
     </script>
 
     <script src="./js/email.js"></script>
-
     <script src="./js/headfoot.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/sliderbody.js"></script>
     <script src="./js/copylink.js"></script>
 </body>
