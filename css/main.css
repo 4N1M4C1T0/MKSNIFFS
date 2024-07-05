@@ -372,9 +372,13 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 
 #slider-body {
     margin: 0 auto;
-    width: 800px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 1420px;
     max-width: 100%;
     text-align: center;
+    height: auto;
+    position: relative;
  }
  #slider-body input[type=radio] {
     display: none;
@@ -389,12 +393,17 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     background: #fff;
     position: relative;
     z-index: 1;
-    background-color: #444;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../img/slider/slider-body/slider_body.jpg);
+    background-repeat: no-repeat;
+    background-position: center top; /* Posición inicial de la imagen */
+    background-position-y: 40%; /* Subir la imagen 50px hacia arriba */
+    background-size: cover;
  }
  #overflow {
     width: 100%;
     overflow: hidden;
  }
+
  #slide1:checked ~ #slides .inner {
     margin-left: 0;
  }
@@ -404,15 +413,55 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
  #slide3:checked ~ #slides .inner {
     margin-left: -200%;
  }
- #slide4:checked ~ #slides .inner {
-    margin-left: -300%;
- }
- #slides .inner {
+
+#slides .inner {
     transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
     width: 400%;
     line-height: 0;
     height: 300px;
- }
+}
+
+.slide-content {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    z-index: 9;
+    position: relative;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    text-align: left;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.titulo-slide-body {
+    position: relative;
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    border: 2px solid red;
+}
+
+.contenido-slide-body{
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.5;
+    border: 2px solid blue;
+}
+
+.slide-content-p, .slide-content-h2{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content-h2 {
+    font-size: 35px;
+}
+
  #slides .slide {
     width: 25%;
     float:left;
@@ -422,7 +471,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     height: 100%;
     color: #fff;
  }
- #slides .slide_1, #slides .slide_2, #slides .slide_3,  #slides .slide_4 {
+ #slides .slide_1, #slides .slide_2, #slides .slide_3 {
     background-color: transparent;
  }
 
@@ -445,8 +494,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
  }
  #slide1:checked ~ #controls label:nth-child(2),
  #slide2:checked ~ #controls label:nth-child(3),
- #slide3:checked ~ #controls label:nth-child(4),
- #slide4:checked ~ #controls label:nth-child(1) {
+ #slide3:checked ~ #controls label:nth-child(1) {
     background-image: url(../img/slider/slider-body/flecha-correcta.png);
     float:right;
     margin: 0 -50px 0 0;
@@ -454,9 +502,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     background-size: cover;
  }
  #slide1:checked ~ #controls label:nth-last-child(1),
- #slide2:checked ~ #controls label:nth-last-child(4),
- #slide3:checked ~ #controls label:nth-last-child(3),
- #slide4:checked ~ #controls label:nth-last-child(2) {
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(2) {
     background-image: url(../img/slider/slider-body/flecha-correcta.png);
     float:left;
     margin: 0 0 0 -50px;
@@ -478,8 +525,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
  }
  #slide1:checked ~ #bullets label:nth-child(1),
  #slide2:checked ~ #bullets label:nth-child(2),
- #slide3:checked ~ #bullets label:nth-child(3),
- #slide4:checked ~ #bullets label:nth-child(4) {
+ #slide3:checked ~ #bullets label:nth-child(3) {
     background: #444;
  }
  @media screen and (max-width: 900px) {
