@@ -58,18 +58,21 @@ main{
 }
 
 .left {
-    width: 15%;
+    width: 20%;
+    
     background-color: #499c53; /* Fondo verde */
     color: #ffffff; /* Texto blanco */
 }
 
 .left h2 {
-    text-align: center;
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
     margin: 0; /* Eliminar el margen predeterminado */
 }
 
 .right {
-    width: 85%;
+    width: 80%;
     display: flex;
     flex-direction: column; /* Alinear los elementos de right-column en columna */
 }
@@ -166,7 +169,7 @@ main{
 }
 
 .menu-desplegable{
-    width: 15%;
+    width: 20%;
     height: 100%;
     min-height: 800px;
     max-height: 800px; /* Altura máxima del menú */
@@ -290,7 +293,7 @@ main{
 }
 
 .right-content {
-    width: 85%;
+    width: 80%;
     background-color: #f3f6f8;
     color: #ffffff; /* Texto blanco */
     padding: 10px;
