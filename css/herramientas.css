@@ -53,18 +53,21 @@ main{
 }
 
 .left {
-    width: 15%;
+    width: 20%;
+    
     background-color: #499c53; /* Fondo verde */
     color: #ffffff; /* Texto blanco */
 }
 
 .left h2 {
-    text-align: center;
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
     margin: 0; /* Eliminar el margen predeterminado */
 }
 
 .right {
-    width: 85%;
+    width: 80%;
     display: flex;
     flex-direction: column; /* Alinear los elementos de right-column en columna */
 }
@@ -94,8 +97,6 @@ main{
     box-sizing: border-box;
     text-align: center; /* Alinear texto al centro */
 }
-
-
 
 .right-column > div i {
     margin-right: 5px; /* Espacio entre el icono y el texto */
