@@ -27,6 +27,7 @@ body{
 }
 
 main{
+    font-family: "Raleway", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -34,151 +35,82 @@ main{
     max-width: calc(80% - 10px);
 }
 
-.contenedor_vista_principal{
-    display: flex;
-    flex-direction: column;
-    background-color: skyblue;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-.caja_seccion_arriba{
-    background-color:yellow;
-    display: flex;
-    width: 100%;
-    height: 115px;
+.div-content {
     box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word; /* Permitir división de palabras */
+    display: flex; /* Para alinear left y right en la misma línea */
 }
 
-i{
-    margin-right: 10px;
+.div-content:nth-child(3) {
+    background-color: #f3f6f8;
 }
 
-.caja1{
-    width: 25%;
-    height: 115px;
-    padding: 10px;
-    display: flex;
-    background-color: #76A56B;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+.left, .right {
     box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    align-items: center; /* Alinear contenido verticalmente al centro */
 }
 
-.caja2{
-    flex: 1;
-    width: 80%;
-    height: 115px;
-    display: flex;
-    background-color: blue;
-    box-sizing: border-box;
-    flex-direction: column;
+.left {
+    width: 15%;
+    background-color: #499c53; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
 }
 
-.caja3{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    background-color: black;
-    box-sizing: border-box;
+.left h2 {
+    text-align: center;
+    margin: 0; /* Eliminar el margen predeterminado */
 }
 
-.caja4{
-    width: 50%;
-    height: 100%;
+.right {
+    width: 85%;
     display: flex;
-    background-color: #5D5D5D;
-    color: white;
+    flex-direction: column; /* Alinear los elementos de right-column en columna */
+}
+
+.right-column {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a la línea */
+    color: #edf0f4; /* Texto blanco */
+    background-color: #444; /* Fondo verde */
+    border: 1px solid #ccc; /* Borde para claridad */
+    width: 100%; /* Ocupar el 100% del ancho del contenedor */
     font-size: 18px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
 }
 
-.caja4 a{
+.right-column:nth-child(2) {
+    color: #444; /* Texto blanco */
+    background-color: #edf0f4; /* Color de fondo para la segunda .right-column */
+}
+
+.right-column > div {
+    display: flex;
+    flex: 1 1 auto; /* Ocupar todo el espacio disponible */
+    align-items: center; /* Alinear contenido verticalmente al centro */
+    justify-content: center; /* Alinear contenido horizontalmente al centro */
+    border-left: 1px solid #444;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Alinear texto al centro */
+}
+
+
+
+.right-column > div i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.right-column:nth-child(1) > div a {
     text-decoration: none;
     cursor: pointer;
-    color: white;
+    color: #edf0f4; /* Texto blanco */
 }
 
-.caja5{
-    width: 50%;
-    height: 100%;
-    display: flex;
-    background-color: #5D5D5D;
-    color: white;
-    font-size: 18px;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-}
-
-.caja5 a{
+.right-column:nth-child(2) > div a {
     text-decoration: none;
     cursor: pointer;
-    color: white;
-}
-
-.caja6{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    background-color: rgb(255, 123, 0);
-    box-sizing: border-box;
-}
-
-.caja7{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    background-color: #D8D8D8;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-}
-
-.caja7 a{
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-}
-
-.caja9{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    background-color: #D8D8D8;
-    border-left: 1px black solid;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-}
-
-.caja9 a{
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
-}
-
-.caja10{
-    width: 33.33%;
-    height: 100%;
-    display: flex;
-    background-color: #D8D8D8;
-    border-left: 1px black solid;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-}
-
-.caja10 a{
-    text-decoration: none;
-    cursor: pointer;
-    color: black;
+    color: #444; /* Texto blanco */
 }
 
 .caja_Seccion_medio{
