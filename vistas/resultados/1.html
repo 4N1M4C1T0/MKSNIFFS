@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../css/resultados.css" />
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
-    <title>INFOGRAFIA</title>
+    <title>RESULTADOS</title>
   </head>
   <body>
     <div id="header"></div>
@@ -45,116 +45,46 @@
           </div>
         </div>
         <div class="seccion-boton">
-        <select id="opciones" onchange="cambiarTexto()">
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
+          <select id="optionSelect">
+            <option value="option1" selected>Opción 1</option>
+            <option value="option2">Opción 2</option>
         </select>
         </div>
-        
 
-        <div class="contenedor">
+        <div id="contentDiv">
           <div class="inner-div">
-            <img src="../../img/vistas/politica_nacional.jpg" alt="Descripción de la imagen" id="imagen">
-            <div class="overlay">
-                <p id="texto-superior">Ecozona</p>
-                <h1 id="titulo">Costa</h1>
-            </div>
-          </div>
-          
-          
-          <div class="inner-div contenedor-inferior">
-            
-            
-            <div class="item">
-                <div class="subitem subitem1">
-                  <p>SUPERFICIE APROXIMADA</p>
-                </div>
-                <div class="subitem subitem2">
-                  <h1 id="texto1">15 025 311</h1>
-                </div>
-                <div class="subitem subitem3">
-                  <p>hectáreas</p>
-                </div>
-            </div>
-            
-            
-            <div class="item">
-              <div class="subitem subitem1">
-                <p>CONFORMACIÓN PANEL 1</p>
-              </div>
-              <div class="subitem subitem2">
-                <h1 id="texto2">30</h1>
-              </div>
-              <div class="subitem subitem3">
-                <p>unidades muestrales</p>
+              <img id="contentImage" src="" alt="Imagen">
+              <div class="overlay">
+                  <h1 id="contentH1"></h1>
+                  <h2 id="contentH2"></h2>
               </div>
           </div>
-          
-          
-          <div class="item">
-            <div class="subitem subitem1">
-              <p>COMPOSICIÓN FLORÍSTICA</p>
-            </div>
-            <div class="subitem subitem2">
-              <h1 id="texto3">53</h1>
-            </div>
-            <div class="subitem subitem3">
-              <p>especies de flora identificadas</p>
-            </div>
-        </div>
-        
-        
-        <div class="item">
-          <div class="subitem subitem1">
-            <p>FAUNA SILVESTRE</p>
+          <div class="inner-div contenedor-inferior" id="contenedorInferior">
+              <div class="item">
+                  <div class="subitem subitem1">
+                      <h3 id="contentH3_1"></h3>
+                  </div>
+                  <div class="subitem subitem2">
+                      <p id="contentP_1"></p>
+                  </div>
+                  <div class="subitem subitem3">
+                      <h3 id="contentH3_2"></h3>
+                  </div>
+              </div>
           </div>
-          <div class="subitem subitem2">
-            <h1 id="texto4">183</h1>
+          <div class="caja_seccion_final">
+              <div class="izquierda">
+                  <span id="contentSpan1"></span>
+              </div>
+              <div class="derecha">
+                  <span id="contentSpan2"></span>
+              </div>
           </div>
-          <div class="subitem subitem3">
-            <p>especies de fauna registradas</p>
-          </div>
-        </div>
-
-        <div class="item">
-            <div class="subitem subitem1">
-              <p>BIOMASA PROMEDIO</p>
-            </div>
-            <div class="subitem subitem2">
-              <h1 id="texto5">16,08</h1>
-            </div>
-            <div class="subitem subitem3">
-              <p>t/ha</p>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="subitem subitem1">
-              <p>COMPOSICIÓN FLORÍSTICA</p>
-            </div>
-            <div class="subitem subitem2">
-                <h1 id="texto6">7,56</h1>
-            </div>
-            <div class="subitem subitem3">
-              <p>tC/ha</p>
-            </div>
-          </div>
-
-    </div>
-
-        <div class="caja_seccion_final">
-            <div class="izquierda">
-              <span>Fuente: DIV - SERFOR ©</span>
-            </div>
-            <div class="derecha">
-              <span>Datos del Panel 1 registrados a diciembre del 2019</span>
-            </div>
         </div>
       </div>
     </main>
     <div id="footer"></div>
     <script src="../../js/headfoots.js"></script>
-    <script src="../../js/resultados.js"></script>
+    <script src="../../js/resultados/1.js"></script>
   </body>
 </html>
-
