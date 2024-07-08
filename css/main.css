@@ -328,6 +328,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     max-width: calc(100% - 10px);
     font-family: sans-serif;
     margin: auto;
+    padding-bottom: 30px;
     box-sizing: border-box;
 
 }
