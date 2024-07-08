@@ -1,118 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableros</title>
     <script src="https://kit.fontawesome.com/0391024a00.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../css/tableros.css" />
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="header"></div>
-    <main>
-      <div class="contenedor_vista_principal">
-        <div class="caja_seccion_arriba">
-          <div class="caja1">Seguimiento de Intervenciones</div>
-          <div class="caja2">
-            <div class="caja3">
-              <div class="caja4">
-                <i class="fa-regular fa-chart-bar"></i><a href="../tableros/7.html">Reportes Interactivos</a></div>
-              <div class="caja5">
-                <i class="fa-solid fa-laptop-file"></i><a href="">Infografías</a></div>
-            </div>
-            <div class="caja6">
-              <div class="caja7">
-                <i class="fa-solid fa-map-location-dot"></i>
-                <a href="../documentos/7.html">Documentos</a>
-              </div>
-              <div class="caja9">
-                <i class="fa-solid fa-photo-film"></i>
-                <a href="../galeria/7.html">Galería</a>
-              </div>
-              <div class="caja10">
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <a href="../herramientas/7.html">Herramientas</a>
-              </div>
-            </div>
-          </div>
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="container">
+      <div class="div-content">
+        <div class="left">
+          <h2>Módulo de Gestión de Conocimiento Forestal y de Fauna Silvestre del SNIFFS</h2>
         </div>
-
-        
-        <div class="caja_Seccion_medio">
-          <div class="menu-toggle-container">
-            <button class="menu-toggle"><i class="fas fa-bars"></i> <span>Menu</span></button>
-        </div>    
-          <img src="../../img/logos/midagri.jpg" alt="Logo del Ministerio">
-          <p>Módulo de Gestión del Conocimiento</p>
-          <img src="../../img/logos/serfor.png" alt="Logo SERFOR">
-        </div>
-        
-        
-        
-        <div class="caja_seccion_abajo">
-          
-          <div class="menu-desplegable">
-            <h2 class="menu-title">REPORTES INTERACTIVOS</h2>
-            <ul>
-                <li>
-                  <a href="#"><i class="fas fa-home"></i>INICIO <span class="arrow-icon">&gt;</span></a>
-                    <ul class="submenu">
-                        <li><a href="#">Resultados Resumen de Panel 1 y 2</a></li>
-                        <li><a href="#">Resultados Ecozona Costa</a></li>
-                    </ul>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-home"></i>INTERVENCIONES GORES <span class="arrow-icon">&gt;</span></a>
-                    <ul class="submenu">
-                        <li><a href="#" onclick="showDiv('div1')">Amazonas</a></li>
-                        <li><a href="#" onclick="showDiv('div2')">Ayacucho</a></li>
-                        <li><a href="#" onclick="showDiv('div3')">Cajamarca</a></li>
-                        <li><a href="#">Cusco</a></li>
-                        <li><a href="#">Huanuco</a></li>
-                        <li><a href="#">La Libertad</a></li>
-                        <li><a href="#">Loreto</a></li>
-                        <li><a href="#">Madre de Dios</a></li>
-                        <li><a href="#">Piura</a></li>
-                        <li><a href="#">San Martin</a></li>
-                        <li><a href="#">Tumbes</a></li>
-                        <li><a href="#">Ucayali</a></li>
-                    </ul>
-                </li>
-                <li>
-                  <a href="#"><i class="fas fa-home"></i>CONFIGURACION <span class="arrow-icon">&gt;</span></a>
-                    <ul class="submenu">
-                        <li><a href="#">Submenu 1</a></li>
-                        <li><a href="#">Submenu 2</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-            <div class="caja12">
-                <div class="caja13">
-                    <div class="caja15">
-                      <div id="default">
-                        <p>Dale clic a una opción por favor</p>
-                      </div>
-                      <div id="div1" class="content">
-                        <p>Contenido del Div 1</p>
-                      </div>
-                      <div id="div2" class="content">
-                        <p>Contenido del Div 2</p>
-                      </div>
-                      <div id="div3" class="content">
-                        <p>Contenido del Div 3</p>
-                      </div>
-                    </div>
-                </div>
-                <div class="caja14">2024 © SERFOR - Dirección de Seguimiento</div>
+        <div class="right">
+          <div class="right-column">
+            <div>
+              <i class="fa-regular fa-chart-bar"></i>
+              <a href="../tableros/7.html">Reportes Interactivos</a>
             </div>
+            <div>
+              <i class="fa-solid fa-laptop-file"></i>
+              <a href="../resultados/7.html">Infografías</a>
+            </div>
+        </div>
+          <div class="right-column">
+            <div>
+              <i class="fa-regular fa-folder-open"></i>
+              <a href="../documentos/7.html">Documentos</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-photo-film"></i>
+              <a href="../galeria/7.html">Galería</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <a href="../herramientas/7.html">Herramientas</a>
+            </div>
+        </div>
         </div>
       </div>
+      <div class="div-content">
+        <div class="inline-content">
+          <div class="menu-toggle-container">
+            <button class="menu-toggle"><i class="fas fa-bars"></i> <span>Menu</span></button>
+          </div>    
+          <img src="../../img/logos/midagri.jpg" alt="Logo del Ministerio">
+          <h5>SNIFFS - Módulo de Gestión del Conocimiento</h5>
+          <img src="../../img/logos/serfor.png" alt="Logo SERFOR" style="width: 200px; height: 40px;">
+        </div>
+      </div>
+      <div class="div-content">
+        <div class="menu-desplegable">
+          <h2 class="menu-title">REPORTES INTERACTIVOS</h2>
+          <ul>
+            <li>
+              <a href="#" data-target="default" onclick="showContent(event)"><i class="fas fa-home"></i>INICIO</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-home"></i>INTERVENCIONES GORES <span class="arrow-icon">&gt;</span></a>
+                <ul class="submenu">
+                  <li><a href="#" data-target="amazonas" onclick="showContent(event)">Amazonas</a></li>
+                  <li><a href="#" data-target="ayacucho" onclick="showContent(event)">Ayacucho</a></li>
+                  <li><a href="#" data-target="cajamarca" onclick="showContent(event)">Cajamarca</a></li>
+                  <li><a href="#" data-target="cusco" onclick="showContent(event)">Cusco</a></li>
+                  <li><a href="#" data-target="huanuco" onclick="showContent(event)">Huanuco</a></li>
+                  <li><a href="#" data-target="ll" onclick="showContent(event)">La Libertad</a></li>
+                  <li><a href="#" data-target="loreto" onclick="showContent(event)">Loreto</a></li>
+                  <li><a href="#" data-target="mdd" onclick="showContent(event)">Madre de Dios</a></li>
+                  <li><a href="#" data-target="piura" onclick="showContent(event)">Piura</a></li>
+                  <li><a href="#" data-target="sm" onclick="showContent(event)">San Martin</a></li>
+                  <li><a href="#" data-target="tumbes" onclick="showContent(event)">Tumbes</a></li>
+                  <li><a href="#" data-target="ucayali" onclick="showContent(event)">Ucayali</a></li>
+              </ul>
+            </li>
+          </ul>
+          </div>
+        <div class="right-content">
+          <div class="inner-div">
+            <div id="default" class="content active">
+              <img src="../../img/2da_vista/reporte_interactivo/CLICK.jpg" alt="Placeholder Image" class="full-width-image">
+            </div>
+            <div id="amazonas" class="content">
+              <div class="iframe-container">
+                <h3 class="titulo-iframe">AVANCE DE META FISICA Y PRESUPUESTAL</h3><br>
+                <iframe class="graficos" width="567" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=30977336&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=G2:J14&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe class="graficos" width="562" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=1261799692&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="285" height="345" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=R2:U14&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <h3 class="titulo-iframe">AVANCE FISICO Y PRESUPUESTAL POR ACTIVIDAD PRESUPUESTAL</h3><br>
+                <iframe class="graficos" width="567" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=1226112056&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=G20:J26&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe class="graficos" width="562" height="350" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubchart?oid=181495025&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQN54TuQSoXGBswl_mD_OH_d8PxBsoRb6vqBdrbZTT6PBM34WVbrOlB48ChCWZo7k3JUZxLoQklk-PE/pubhtml?gid=1594606897&amp;range=R20:U26&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+              </div>
+            </div>
+            <div id="ayacucho" class="content">
+              <div class="iframe-container">
+                <h3 class="titulo-iframe">AVANCE DE META FISICA Y PRESUPUESTAL</h3><br>
+                <iframe class="graficos"  width="506" height="313" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubchart?oid=1293845126&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubhtml?gid=2046193646&amp;range=G2:J14&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe class="graficos"  width="506" height="313" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubchart?oid=77351171&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubhtml?gid=2046193646&amp;range=R2:U14&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <h3 class="titulo-iframe">AVANCE FISICO Y PRESUPUESTAL POR ACTIVIDAD PRESUPUESTAL</h3><br>
+                <iframe class="graficos"  width="506" height="313" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubchart?oid=1601305467&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubhtml?gid=2046193646&amp;range=G20:J21&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+                <iframe class="graficos"  width="506" height="313" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubchart?oid=1485270455&amp;format=interactive"></iframe>
+                <iframe class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSq3AQB6H2Drv5Bkrt5k2OUJAW-Luh6RVuI7hcBbhHOZAhFlHc-gXqYsp9cuu9iMoA2KVPfRL7RLfZ2/pubhtml?gid=2046193646&amp;range=R20:U21&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+              </div>
+            </div>
+            <div id="cajamarca" class="content">
+              PASO 1
+              
+              h3 
+              iframe class="graficos"
+              iframe class="graficos"
+              h3 
+              iframe class="graficos"
+              iframe class="graficos"
+
+              PASO 2 -> SE AGREGA LOS FRAME DE CLASE TABLAS
+
+              h3 
+              iframe class="graficos"
+              iframe  class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  
+              iframe class="graficos"
+              iframe  class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  
+              h3 
+              iframe class="graficos"
+              iframe  class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  
+              iframe class="graficos"
+              iframe  class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  
+
+              <!--iframe  class="tablas" width="280" height="340" seamless frameborder="0" scrolling="no"  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQCCsiby3y0G9ylJJwT5CBIaR2MUQ48QUTtsg2I96i98R6jXAZo4dzv_qUJzvq7prJna9Mf-neeZftJ/pubhtml?gid=1021259024&amp;range=G2:J14&amp;single=true&amp;widget=true&amp;headers=false"></iframe-->
+
+            </div>
+            <div id="cusco" class="content">
+              This is content for option 4.
+            </div>
+            <div id="huanuco" class="content">
+              This is content for option 5.
+            </div>
+            <div id="ll" class="content">
+              This is content for option 6.
+            </div>
+            <div id="loreto" class="content">
+              This is content for option 7.
+            </div>
+            <div id="mdd" class="content">
+              This is content for option 8.
+            </div>
+            <div id="piura" class="content">
+              This is content for option 9.
+            </div>
+            <div id="sm" class="content">
+              This is content for option 10.
+            </div>
+            <div id="tumbes" class="content">
+              This is content for option 11.
+            </div>
+            <div id="ucayali" class="content">
+              This is content for option 12.
+            </div>
+          </div>
+          <div class="inner-div">
+            <p id="referencia"></p>
+          </div>
+        </div>
+      </div>
+    </div>
     </main>
     <div id="footer"></div>
     <script src="../../js/headfoots.js"></script>
     <script src="../../js/menu-interactivo.js"></script>
-  </body>
+</body>
 </html>
