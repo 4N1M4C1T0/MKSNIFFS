@@ -477,7 +477,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     height: 15px;
     width: 15px;
     margin: 0 5px;
-    background-color: #bbb;
+    background-color: #717171;
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
@@ -485,7 +485,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 }
 
 .dot.active {
-    background-color: #717171;
+    background-color: #bbb;
     z-index: 3;
 }
 
