@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="89.489998"
+   height="86.510025"
+   viewBox="0 0 23.677563 22.889111"
+   version="1.1"
+   id="svg3420"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="mountains.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3422"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:zoom="4.3717439"
+     inkscape:cx="3.5454959"
+     inkscape:cy="69.308726"
+     inkscape:window-width="1920"
+     inkscape:window-height="976"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs3417" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-142.78979,-28.155441)">
+    <g
+       id="g3221"
+       transform="matrix(0.26458333,0,0,0.26458333,-46.776228,-192.40916)">
+      <path
+         class="st1"
+         d="m 761.19,835.43 c 9.54,0 17.31,7.76 17.31,17.31 0,10.41 -12.93,28.97 -17.31,34.95 -4.38,-5.98 -17.31,-24.54 -17.31,-34.95 0,-9.54 7.76,-17.31 17.31,-17.31 m 0,-1.8 c -10.55,0 -19.11,8.56 -19.11,19.11 0,13.23 19.11,37.97 19.11,37.97 0,0 19.11,-24.73 19.11,-37.97 0,-10.56 -8.56,-19.11 -19.11,-19.11 z"
+         id="path3209" />
+      <path
+         class="st1"
+         d="m 761.19,844.29 c 4.66,0 8.45,3.79 8.45,8.45 0,4.66 -3.79,8.45 -8.45,8.45 -4.66,0 -8.45,-3.79 -8.45,-8.45 -0.01,-4.66 3.78,-8.45 8.45,-8.45 m 0,-1.81 c -5.66,0 -10.26,4.59 -10.26,10.26 0,5.66 4.59,10.26 10.26,10.26 5.66,0 10.26,-4.59 10.26,-10.26 -0.01,-5.66 -4.6,-10.26 -10.26,-10.26 z"
+         id="path3211" />
+      <circle
+         class="st1"
+         cx="761.19"
+         cy="852.73999"
+         r="3.77"
+         id="circle3213" />
+      <path
+         class="st1"
+         d="m 805.96,920.14 -23.04,-36.88 -21.7,34.7 -21.68,-34.7 -23.07,36.88 h 2.13 l 10.12,-16.18 10.82,7.12 10.86,-7.04 10.06,16.1 h 0.73 0.79 l 10.12,-16.18 10.81,7.12 10.86,-7.04 10.06,16.1 z m -66.42,-11.21 -9.87,-6.5 9.86,-15.77 9.9,15.85 z m 43.38,0 -9.87,-6.5 9.86,-15.77 9.9,15.85 z"
+         id="path3215" />
+      <g
+         id="g3219">
+        <rect
+           x="718.59998"
+           y="918.34003"
+           class="st1"
+           width="85.239998"
+           height="1.8"
+           id="rect3217" />
+      </g>
+    </g>
+  </g>
+</svg>

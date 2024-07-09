@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="38.139999"
+   height="86.809998"
+   viewBox="0 0 10.091208 22.968479"
+   version="1.1"
+   id="svg4471"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="medal_dark.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4473"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px"
+     inkscape:zoom="0.56123737"
+     inkscape:cx="376.84589"
+     inkscape:cy="548.7874"
+     inkscape:window-width="1920"
+     inkscape:window-height="976"
+     inkscape:window-x="0"
+     inkscape:window-y="38"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs4468" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.3258267,-3.1300447)">
+    <g
+       id="g3239"
+       transform="matrix(0.26458333,0,0,0.26458333,-255.78617,-217.28639)">
+      <g
+         id="g3225">
+        <rect
+           x="992.40997"
+           y="837.66998"
+           class="st1"
+           width="1.8"
+           height="31.299999"
+           id="rect3223" />
+      </g>
+      <g
+         id="g3229">
+        <rect
+           x="1017.27"
+           y="837.66998"
+           class="st1"
+           width="1.8"
+           height="31.299999"
+           id="rect3227" />
+      </g>
+      <path
+         class="st1"
+         d="m 1005.95,870.3 v 0 c -1.59,0 -2.88,1.29 -2.88,2.88 v 0 c 0,1.59 1.29,2.88 2.88,2.88 v 0 c 1.59,0 2.88,-1.29 2.88,-2.88 v 0 c 0.01,-1.59 -1.28,-2.88 -2.88,-2.88 z"
+         id="path3231" />
+      <path
+         class="st1"
+         d="m 1005.95,883.54 c 9.52,0 17.27,7.75 17.27,17.27 0,9.52 -7.75,17.27 -17.27,17.27 -9.52,0 -17.27,-7.75 -17.27,-17.27 0.01,-9.53 7.75,-17.27 17.27,-17.27 m 0,-1.8 c -10.53,0 -19.07,8.54 -19.07,19.07 0,10.53 8.54,19.07 19.07,19.07 10.53,0 19.07,-8.54 19.07,-19.07 0,-10.54 -8.54,-19.07 -19.07,-19.07 z"
+         id="path3233" />
+      <path
+         class="st1"
+         d="m 1005.95,892.18 c 4.75,0 8.62,3.87 8.62,8.62 0,4.75 -3.87,8.62 -8.62,8.62 -4.75,0 -8.62,-3.87 -8.62,-8.62 0,-4.75 3.87,-8.62 8.62,-8.62 m 0,-1.8 c -5.76,0 -10.42,4.67 -10.42,10.42 0,5.75 4.67,10.42 10.42,10.42 5.76,0 10.42,-4.67 10.42,-10.42 0,-5.75 -4.66,-10.42 -10.42,-10.42 z"
+         id="path3235" />
+      <path
+         class="st1"
+         d="m 1023.22,834.87 v 35.27 l -17.27,9.54 -17.27,-9.54 v -35.27 h 34.54 m 1.8,-1.8 h -38.14 v 38.14 l 19.07,10.53 19.07,-10.53 z"
+         id="path3237" />
+    </g>
+  </g>
+</svg>

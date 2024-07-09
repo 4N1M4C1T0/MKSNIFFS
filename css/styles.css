@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 body{
@@ -33,11 +34,11 @@ main{
     font-size: 14px;
     line-height: 21px;
     overflow-x: hidden;
-    background-color: aqua;
+    background-color: beige;
 }
 
 .uno{
-    background-color: brown;
+
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -56,9 +57,10 @@ main{
 }
 
 .dos{
-    background-color: blueviolet;
+
     box-sizing: border-box;
-    display: block;
+    display: flex;
+    justify-content: center;
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
@@ -73,8 +75,14 @@ main{
 
 }
 
+.dos .imagen-logo img{
+    box-sizing: border-box;
+    height: 480px;
+    margin: 0 auto;
+}
+
 .tres{
-    background-color: yellow;
+
     box-sizing: border-box;
     display: block;
     flex-basis: auto;
@@ -83,7 +91,7 @@ main{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
     width: 150px;
-    height: 70px;
+    height: 60px;
     line-height: 21px;
     max-height: 100%;
     min-height: 0px;
@@ -91,23 +99,67 @@ main{
 }
 
 .cuatro{
-    background-color: green;
+    display: flex;
+    flex-wrap: wrap;
+    width: 750px;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .seccion-arriba{
-    
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    height: 80px;
+}
+
+.izquierda{
+
+}
+
+.derecha{
+
 }
 .seccion-abajo{
+
     align-items: center;
     box-sizing: border-box;
     display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 23px;
+    gap: 80px;
 }
-.contenedor-cinco{
 
+.seccion-abajo a{
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    color: black;
 }
 
-.contenedor-seis{
+figure{
+    text-align: center;
+}
 
+figure img{
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.cinco{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 
