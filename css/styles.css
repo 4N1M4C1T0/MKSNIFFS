@@ -1,19 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-body{
-    width: 100%;
+html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
-main{
+/* El contenedor principal ocupa el 100% de la altura y anchura de la pantalla */
+main {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -21,24 +16,17 @@ main{
 }
 
 .contenedor-principal{
-    width: 100%;
-    height: 100%;
-    min-width: 100%;
-    min-height: 100%;
-    align-items: center;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 14px;
-    line-height: 21px;
-    overflow-x: hidden;
-    background-color: beige;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: beige; /* Fondo del contenedor */
+    box-sizing: border-box;
 }
 
 .uno{
-
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -57,7 +45,6 @@ main{
 }
 
 .dos{
-
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -78,11 +65,12 @@ main{
 .dos .imagen-logo img{
     box-sizing: border-box;
     height: 480px;
-    margin: 0 auto;
+    width: 100%;
+    margin-left: 12px;
 }
 
-.tres{
 
+.tres{
     box-sizing: border-box;
     display: block;
     flex-basis: auto;
@@ -90,7 +78,7 @@ main{
     flex-shrink: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 14px;
-    width: 150px;
+    width: auto;
     height: 60px;
     line-height: 21px;
     max-height: 100%;
@@ -98,10 +86,15 @@ main{
     text-size-adjust: 100%;
 }
 
+.tres .texto-uno{
+    font-size: 18px;
+    margin-top: 25px;
+}
+
 .cuatro{
     display: flex;
     flex-wrap: wrap;
-    width: 750px;
+    width: 900px;
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
@@ -124,7 +117,6 @@ main{
 
 }
 .seccion-abajo{
-
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -154,6 +146,11 @@ figure img{
     cursor: pointer;
     display: block;
     margin: 0 auto;
+}
+
+figure figcaption{
+    font-size: 20px;
+    margin-top: 20px;
 }
 
 .cinco{
