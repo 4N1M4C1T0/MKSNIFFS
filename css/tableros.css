@@ -337,30 +337,44 @@ main{
     max-height: 50%;
 }
 .iframe-container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: repeat(auto-fit, minmax(450px, 10fr));
     gap: 10px;
+}
+
+.contenedor-titulo-iframe {
+    background: transparent;
 }
 
 .titulo-iframe {
     color: #1C6054;
 }
 
+.contenedor-grafico-tabla{
+    display: flex;
+    flex-wrap: wrap; /* Los contenedores flex se envuelven cuando no hay suficiente espacio */
+    justify-content: center; /* Los contenedores se alinean a la izquierda */
+    width: calc(100% - 5px);
+    max-width: calc(100% - 5px);
+}
+
 .iframe-container.collapsed {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-columns: repeat(auto-fit, minmax(500px, 10fr));
     gap: 10px;
 }
 
 .graficos {
     transform: scale(1);
-    width: 100%;
+    width: 50%;
     height: 350px;
 }
 
 .tablas {
     transform: scale(1);
-    width: 80%;
+    width: 30%;
     height: 350px;
 }
 
