@@ -279,15 +279,17 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     background-color: none; /* Solo para visualización */
     padding: 10px;
     font-size: 10px;
+    max-width: 40%;
 }
 
-.listado {
+.seccion2 .listado {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     flex: 1; /* El listado ocupa todo el espacio disponible */
     background-color: none; /* Solo para visualización */
     padding: 10px;
     font-size: 13px;
+    max-width: 60%;
 }
 
 .listado ul {
