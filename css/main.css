@@ -36,7 +36,8 @@ main{
 /*Propiedades del Slider*/
 
 .slider{
-    height: 55vh;
+    min-height: 50vh;
+    height: auto;
     margin: 0;
     padding: 0;
     position: relative;
@@ -234,7 +235,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 .boton-img {
     width: calc(50% - 10px); /* Cambia a un contenedor por fila */
     max-width: calc(50% - 10px);
-    display: flex; /* Para que tenga la propiedad flex */
+    display: flex;/* Para que tenga la propiedad flex */
     align-items: center; /* Centra verticalmente el contenido */
     margin-bottom: 5px;
     border-radius: 5px;

@@ -1,8 +1,5 @@
 @media screen and (max-width: 1600px) {
-    .slider{
-        height: 45vh;
-    }
-
+    
     .slider .list .item .content p{
         font-size: 12px;
     }
@@ -23,7 +20,7 @@
     }
 }
 
-@media screen and (max-width: 136px) {
+@media screen and (max-width: 1366px) {
     #header {
         width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(85% - 10px);
@@ -99,7 +96,7 @@
     }
 
     .slider{
-        height: 60vh;
+        min-height: 50vh;
     }
 
     .tematica-texto {
@@ -129,18 +126,22 @@
 
 @media screen and (max-width: 1280px) {
     #header {
-        width: calc(90% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-        max-width: calc(90% - 10px);
+        width: calc(95% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(95% - 10px);
     }
 
     #footer {
-        width: calc(90% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-        max-width: calc(90% - 10px);
+        width: calc(95% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(95% - 10px);
     }
 
     main{
-        width: calc(90% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-        max-width: calc(90% - 10px);
+        width: calc(95% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(95% - 10px);
+    }
+
+    .slider{
+        min-height: 45vh;
     }
 
     .slider .list .item .content{
@@ -148,11 +149,22 @@
     }
 
     .section.bottom-section.fixed {
-        width: 89.2%;
+        width: 94.2%;
+    }
+
+    .bottom-right nav ul li {
+        font-size: 13px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
+    .contenedor-cards .contenedor-card {
+        width: calc(33.33% - 20px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(33.33% - 20px);
+    }
+}
+
+@media screen and (max-width: 820px) {
     #header {
         width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(100% - 10px);
@@ -168,6 +180,14 @@
 
     .bottom-right {
         width: 70%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    }
+
+    .slider{
+        min-height: 35vh;
+    }
+
+    .bottom-right nav ul li {
+        font-size: 15px;
     }
 
     #footer {
@@ -197,8 +217,8 @@
     .slider .list .item .content .boton{
         font-size: 10px;
         padding: 3px 3px 1px 20px;
-        width:150px;
-        height:12px;
+        width:250px;
+        height:15px;
     }
 
     .circle .item{
@@ -207,5 +227,39 @@
 
     .circle .item i{
         font-size: 12px;
+    }
+
+    .texto {
+        font-size: 10px;
+    }
+
+    .icono {
+        font-size: 8px;
+    }
+
+    .seccion2 .titulo {
+        padding: 10px;
+    }
+    
+    .seccion2 .listado {
+        font-size: 10px;
+    }
+
+    .contenido-flex .izquierda  .label-izquierda {
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .texto-largo {
+        font-size: 10px; /* Reducir la letra a 14px */
+    }
+
+    .iconos {
+        gap: 3px;
+    }
+
+    .icono-compartir {
+        height: 30px;
+        padding: 4px;
     }
 }
