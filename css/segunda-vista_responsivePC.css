@@ -21,6 +21,14 @@
         max-width: calc(85% - 10px);
     }
 
+    .div-content .left h2{
+        font-size: 15px;
+    }
+
+    .right .right-column a{
+        font-size: 14px;
+    }
+    
     .section.bottom-section.fixed {
         width: 84.3%;
     }
@@ -57,6 +65,9 @@
         font-size: 18px;
     }
     
+    .right .right-column a{
+        font-size: 16px;
+    }
 
     .caja_Seccion_medio .titulo_imagen{
         transform: translate(-137%, -50%);
@@ -84,6 +95,17 @@
         max-width: calc(100% - 10px);
     }
 
+    .bottom-left {
+        width: 30%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    }
+
+    .bottom-right {
+        width: 70%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    }
+
+    .bottom-right nav ul li {
+        font-size: 15px;
+    }
     
     #footer {
         width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
@@ -104,8 +126,8 @@
     }
     
     .caja_Seccion_medio .titulo_imagen{
-        transform: translate(-108%, -50%);
-        font-size: 40px;
+        transform: translate(-110%, -50%);
+        font-size: 38px;
     }
 
     .section.bottom-section.fixed {
