@@ -169,3 +169,13 @@
         font-size: 12.6px;
     }
 }
+
+@media  screen and (max-width: 425px){
+    .caja_Seccion_medio .titulo_imagen{
+        
+    }
+    
+    .div-content .left h2{
+        
+    }
+}
