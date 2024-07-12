@@ -1,7 +1,7 @@
 @media screen and (max-width: 1920px) {
     
     .caja_Seccion_medio .titulo_imagen{
-        transform: translate(-180%, -50%);
+        transform: translate(-175%, -50%);
     }
     
 }
@@ -9,7 +9,7 @@
 @media screen and (max-width: 1600px) {
     
     .caja_Seccion_medio .titulo_imagen{
-        transform: translate(-230%, -50%);
+        transform: translate(-146%, -50%);
     }
     
 }
