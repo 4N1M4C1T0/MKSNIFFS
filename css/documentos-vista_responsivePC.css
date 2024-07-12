@@ -28,6 +28,10 @@
     .div-content .left h2{
         font-size: 19px;
     }
+
+    .section.bottom-section.fixed {
+        width: 79.4%;
+    }
 }
 
 
@@ -193,7 +197,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 84%;
+        width: 97.6%;
     }
 
     .contenedor-cards .contenedor-card{
@@ -207,7 +211,8 @@
         flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
         justify-content: space-between;
         padding: 0 10px;
-    } 
+    }
+
 
 }
 
@@ -242,6 +247,9 @@
 
     }
     
+    .section.bottom-section.fixed {
+        width: 97.3%;
+    }
 
 }
 
@@ -251,4 +259,14 @@
         font-size: 20px; 
     }
 
+    .top-footer .content-wrapper {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    
+    .section.bottom-section.fixed {
+        width: 94.1%;
+    }
 }
