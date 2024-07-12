@@ -202,6 +202,12 @@
 
     }
     
+    .top-footer .content-wrapper {
+        display: flex;
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+        justify-content: space-between;
+        padding: 0 10px;
+    } 
 
 }
 
@@ -227,7 +233,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 84%;
+        width: 79.3%;
     }
 
     .contenedor-cards .contenedor-card{
@@ -239,3 +245,10 @@
 
 }
 
+@media  screen and (max-width: 320px){
+    .caja_Seccion_medio .titulo_imagen{
+        transform: translate(-85%, -50%);
+        font-size: 20px; 
+    }
+
+}
