@@ -18,7 +18,7 @@ footer {
     justify-content: space-between;
     align-items: flex-start; /* Alinear elementos arriba */
     padding: 0 100px;
-}
+} 
 
 .top-footer .left-section,
 .top-footer .right-section {
