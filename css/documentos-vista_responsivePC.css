@@ -178,4 +178,8 @@
     .div-content .left h2{
         
     }
+
+    .section.bottom-section.fixed {
+        width: 83.5%;
+    }
 }
