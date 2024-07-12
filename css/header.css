@@ -158,3 +158,34 @@ header {
     }
 
 }
+
+@media  screen and (max-width: 425px){
+    .top-section{
+        width: 100%;
+    }
+    .inner-container{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .inner-container a{
+        max-height: 80px;
+        margin-right: 10px;
+    }
+
+}
+
+@media  screen and (max-width: 375px){
+    .top-section{
+        width: 100%;
+    }
+    .inner-container{
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .inner-container a{
+        max-height: 100px;
+    }
+
+}
