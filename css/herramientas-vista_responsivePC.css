@@ -324,4 +324,8 @@
     .bottom-footer p{
         font-size: 11px;
     }
+    
+    .left-section .bottom-container{
+        transform: translate(10%, 10%);
+    }
 }
