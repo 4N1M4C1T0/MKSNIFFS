@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
+.contenedor_vista_principal{
+    background-color: #ADBC70;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.div-content {
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word; /* Permitir división de palabras */
+    display: flex; /* Para alinear left y right en la misma línea */
+}
+
+.div-content:nth-child(3) {
+    background-color: #f3f6f8;
+}
+
+.left, .right {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Alinear contenido verticalmente al centro */
+}
+
+.left {
+    width: 20%;
+    background-color: #499c53; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+}
+
+.left h2 {
+    text-align: justify;
+    padding: 10px;
+    font-size: 16.3px;
+    margin: 0; /* Eliminar el margen predeterminado */
+    justify-content: start;
+}
+
+.right {
+    width: 80%;
+    display: flex;
+    flex-direction: column; /* Alinear los elementos de right-column en columna */
+}
+
+.right-column {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a la línea */
+    color: #edf0f4; /* Texto blanco */
+    background-color: #444; /* Fondo verde */
+    border: 1px solid #ccc; /* Borde para claridad */
+    width: 100%; /* Ocupar el 100% del ancho del contenedor */
+    font-size: 18px;
+}
+
+.right-column:nth-child(2) {
+    color: #444; /* Texto blanco */
+    background-color: #edf0f4; /* Color de fondo para la segunda .right-column */
+}
+
+.right-column > div {
+    display: flex;
+    flex: 1 1 auto; /* Ocupar todo el espacio disponible */
+    align-items: center; /* Alinear contenido verticalmente al centro */
+    justify-content: center; /* Alinear contenido horizontalmente al centro */
+    border-left: 1px solid #444;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Alinear texto al centro */
+}
+
+.right-column > div i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.right-column:nth-child(1) > div a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #edf0f4; /* Texto blanco */
+}
+
+.right-column:nth-child(2) > div a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #444; /* Texto blanco */
+}
+
+#optionSelect{
+    position: absolute;
+    top: 36.5%;
+    left: 250px;
+    transform: translateY(-15%);
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #444;
+    opacity: 0.5;
+    font-size: 20px;
+    color: white;
+    border: 2px white solid;
+    cursor: pointer;
+    z-index: 8; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+#contentDiv {
+    padding: 0;
+    margin: 0;
+}
+
+.inner-div {
+    position: relative;
+    background-color: transparent;
+    min-height: 400px;
+}
+
+#contentImage {
+    width: 100%;
+    height: 500px;
+    object-fit: cover; /* Ajusta la imagen para que cubra el área sin deformarse */
+}
+
+.overlay {
+    background-color: rgb(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; /* Color del texto */
+    text-align: center; /* Centra el texto */
+}
+
+#contentH1 {
+    font-size: 2em;
+    margin-bottom: 1px; /* Espaciado entre el texto superior y el título */
+}
+
+#contentH2 {
+    font-size: 4em; /* Tamaño del título */
+}
+
+.contenedor-inferior {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los items se envuelvan en una nueva línea */
+    justify-content: flex-start; /* Alinea los items al inicio de la línea */
+    padding: 0; /* Elimina el padding del contenedor inferior */
+}
+
+.item {
+    color: #ffffff; /* Color del texto */
+    flex: 0 0 calc(33.33% - 0px); /* Cada item ocupa un tercio del ancho del contenedor menos el margen */
+    margin: 0; /* Elimina el margen entre los items */
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    background-color: transparent; /* Fondo transparente */
+    box-sizing: border-box; /* Incluye el borde en el tamaño total del elemento */
+    text-align: center; /* Centra el texto dentro de cada item */
+}
+
+.subitem {
+    flex: 0 0; /* Los subitems no crecen ni se encogen */
+    background-color: transparent;
+}
+
+.subitem1, .subitem3 {
+    height: 50px;
+    font-size: 20px;
+}
+
+.subitem2 {
+    height: 70px;
+    font-size: 30px;
+}
+
+.caja_seccion_final{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+}
+
+.izquierda, .derecha{
+    padding: 10px;
+}

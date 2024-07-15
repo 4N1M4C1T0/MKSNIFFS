@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5;
+}
+
+#header {
+    margin: 0;
+    padding: 0;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
+main{
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(80% - 10px);
+}
+
+.div-content {
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word; /* Permitir división de palabras */
+    display: flex; /* Para alinear left y right en la misma línea */
+}
+
+.div-content:nth-child(3) {
+    background-color: #f3f6f8;
+}
+
+.left, .right {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center; /* Alinear contenido verticalmente al centro */
+}
+
+.left {
+    width: 20%;
+    
+    background-color: #499c53; /* Fondo verde */
+    color: #ffffff; /* Texto blanco */
+}
+
+.left h2 {
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0; /* Eliminar el margen predeterminado */
+}
+
+.right {
+    width: 80%;
+    display: flex;
+    flex-direction: column; /* Alinear los elementos de right-column en columna */
+}
+
+.right-column {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten a la línea */
+    color: #edf0f4; /* Texto blanco */
+    background-color: #444; /* Fondo verde */
+    border: 1px solid #ccc; /* Borde para claridad */
+    width: 100%; /* Ocupar el 100% del ancho del contenedor */
+    font-size: 18px;
+}
+
+.right-column:nth-child(2) {
+    color: #444; /* Texto blanco */
+    background-color: #edf0f4; /* Color de fondo para la segunda .right-column */
+}
+
+.right-column > div {
+    display: flex;
+    flex: 1 1 auto; /* Ocupar todo el espacio disponible */
+    align-items: center; /* Alinear contenido verticalmente al centro */
+    justify-content: center; /* Alinear contenido horizontalmente al centro */
+    border-left: 1px solid #444;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center; /* Alinear texto al centro */
+}
+
+.right-column > div i {
+    margin-right: 5px; /* Espacio entre el icono y el texto */
+}
+
+.right-column:nth-child(1) > div a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #edf0f4; /* Texto blanco */
+}
+
+.right-column:nth-child(2) > div a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #444; /* Texto blanco */
+}
+
+.caja_Seccion_medio{
+    position: relative;
+    background-color: #444;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+}
+
+.caja_Seccion_medio img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    object-fit: cover;
+}
+
+.titulo_imagen{
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-150%, -50%);
+
+}
+
+.caja_seccion_abajo{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/*Estilos parte de filtros*/
+.filtro_seccion2{
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 30px;
+    padding-left: 30px;
+    font-size: 17px;
+}
+
+.filtro_seccion2 label{
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.segmento-bloque{
+    flex-direction: column;
+    display: flex;
+}
+
+.lista-desplegable {
+    display: inline-block;
+    font-size: 17px;
+    border-radius: 10px;
+    width:auto;
+    cursor: pointer;
+}
+
+#seleccionar-categoria{
+    padding: 5px;
+    font-weight: bold;
+}
+
+/*Propiedades de tematicas*/
+
+.contenedor-centralizado {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    padding: 35px;
+}
+
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap; /* Los contenedores flex se envuelven cuando no hay suficiente espacio */
+    justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
+    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 10px);
+}
+
+.contenedor-cards .contenedor-card {
+ 
+    overflow: hidden;
+    position: relative;
+    width: calc(25% - 20px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(25% - 20px);
+    height: 400px;
+    border-radius: 10px; /* Agrega un borde redondeado de 5px al contenedor */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
+    margin-right: 20px; /* Espacio entre los contenedores */
+    margin-bottom: 20px; /* Espacio debajo de los contenedores */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave para la sombra y el movimiento */
+}
+
+.contenedor-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 15); /* Cambia la sombra al pasar el mouse por encima */
+    transform: translate(-5px, -5px); /* Mueve el contenedor hacia la esquina superior izquierda */
+}
+
+.contenedor-cards .contenedor-card .seccion1 {
+    height: 40%;
+}
+
+.seccion1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.seccion2 {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion2 .titulo{
+    height: 78%;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.seccion2 .titulo h4{
+    font-size: 15px;
+}
+
+.seccion2 .titulo p{
+    font-size: 14px;
+}
+
+.seccion2 .boton_texto{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 13px;
+    height: 25px;
+}
+
+.seccion2 .boton_texto a{
+    width: 100px;
+    height: 25px;
+    display: flex; /* Para que tenga la propiedad flex */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-bottom: 1px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    background-color: #099409a2;
+    color: white;
+    cursor: pointer;
+    justify-content: center;
+    border: 2px black solid;
+}
+

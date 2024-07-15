@@ -1,0 +1,182 @@
+@media screen and (max-width: 2560px){
+    .seccion-boton #optionSelect{
+        bottom: 72%;
+        position: absolute;
+    }
+
+    .div-content .left h2{
+        font-size: 22px;
+    }
+
+    .section.bottom-section.fixed {
+        width: 79.7%;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .section.bottom-section.fixed {
+        width: 79.6%;
+    }
+    
+    .seccion-boton #optionSelect{
+        bottom: 58%;
+    }
+
+    .div-content .left h2{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .section.bottom-section.fixed {
+        width: 79.4%;
+    }
+    
+    .seccion-boton #optionSelect{
+        bottom: 49%;
+    }
+    
+    .div-content .left h2{
+        font-size: 19px;
+    }
+}
+
+@media  screen and (max-width: 1440px){
+    
+}
+
+
+@media screen and (max-width: 1366px) {
+    .section.bottom-section.fixed {
+        width: 79.3%;
+    }
+    
+    .div-content .left h2{
+        font-size: 18px;
+    }
+    
+    .seccion-boton #optionSelect{
+        bottom: 39%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .div-content .left h2{
+        font-size: 17px;
+    }
+
+    .seccion-boton #optionSelect{
+        bottom: 34%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section.bottom-section.fixed {
+        width: 79.2%;
+    }
+    
+    .div-content .left{
+        width: 25%;
+    }
+    
+    .div-content .left h2{
+        font-size: 16px;
+    }
+
+    .seccion-boton #optionSelect{
+        bottom: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section.bottom-section.fixed {
+        width: 78.8%;
+    }
+    
+    .seccion-boton #optionSelect{
+        bottom: 5%;
+    }
+
+    .div-content .left{
+        width: 27%;
+    }
+
+    .div-content .left h2{
+        font-size: 12px;
+    }
+
+    .item{
+        flex: 0 0 calc(50% - 0px);
+    }
+}
+
+@media  screen and (max-width: 768px){
+    .div-content .left{
+        width: 31%;
+    }
+
+    .div-content .left h2{
+        font-size: 14px;
+    }
+
+    .seccion-boton #optionSelect{
+        bottom: 49%;
+    }
+
+    .item{
+        flex: 0 0 calc(50% - 0px);
+    }
+}
+
+@media  screen and (max-width: 425px){
+    .inner-container a img {
+        width: 140px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+    
+    .section.bottom-section.fixed {
+        width: 68.8%;
+    }
+
+    .div-content .left{
+        width: 22%;
+    }
+
+    .div-content .left h2{
+        font-size: 11px;
+        width: 100%;
+        height: 50%;
+        text-align: start;
+    }
+
+    .seccion-boton #optionSelect{
+        bottom: 32%;
+    }
+
+    .section.bottom-section.fixed {
+        width: 78%;
+    }
+
+    .item{
+        flex: 0 0 calc(100% - 0px);
+    }
+
+    .top-footer .content-wrapper {
+        padding: 0 10px;
+    }
+
+    .top-footer .left-section .bottom-container > div {
+        width: calc(33.33% - 20px); /* Ancho del contenedor, con margen entre elementos */
+        margin: 10px; /* Espacio entre elementos */
+        word-wrap: break-word; /* Dividir palabras largas */
+    }
+    
+}
+
+@media  screen and (max-width: 375px){
+
+}
+
+@media  screen and (max-width: 320px){
+
+}
