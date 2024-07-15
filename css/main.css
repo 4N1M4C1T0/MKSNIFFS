@@ -364,8 +364,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 
 .texto_sec_body{
     font-family: "Raleway", sans-serif;
-    max-width: calc(55% - 10px);
-    width: 55%;
+    max-width: calc(65% - 10px);
+    width: 65%;
     flex: 1;
     margin-right: 80px;
     padding: 20px;
@@ -655,10 +655,6 @@ details, .subtitulo-preguntas{
 .seccion {
     font-family: "Raleway", sans-serif;
     margin-bottom: 10px;
-}
-
-.rating {
-    color: gold;
 }
 
 .iconos {

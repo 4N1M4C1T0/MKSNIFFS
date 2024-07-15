@@ -1,6 +1,7 @@
 @media screen and (max-width: 2560px){
     .seccion-boton #optionSelect{
         bottom: 72%;
+        position: absolute;
     }
 
     .div-content .left h2{
@@ -161,15 +162,15 @@
     }
 
     .top-footer .content-wrapper {
-        display: flex;
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
-        justify-content: space-between;
         padding: 0 10px;
     }
 
-    .left-section .bottom-container{
-        transform: translate(9%, 10%);
+    .top-footer .left-section .bottom-container > div {
+        width: calc(33.33% - 20px); /* Ancho del contenedor, con margen entre elementos */
+        margin: 10px; /* Espacio entre elementos */
+        word-wrap: break-word; /* Dividir palabras largas */
     }
+    
 }
 
 @media  screen and (max-width: 375px){

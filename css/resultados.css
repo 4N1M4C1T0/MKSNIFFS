@@ -122,6 +122,12 @@ main{
     color: #444; /* Texto blanco */
 }
 
+.seccion-boton{
+    position: relative;
+    border: 2px solid black;
+
+}
+
 #optionSelect{
     position: absolute;
     bottom: 40%;
