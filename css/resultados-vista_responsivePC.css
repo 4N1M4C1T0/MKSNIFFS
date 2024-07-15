@@ -1,0 +1,55 @@
+@media screen and (max-width: 2560px){
+    .seccion-boton #optionSelect{
+        bottom: 72%;
+    }
+
+}
+
+@media screen and (max-width: 1920px) {
+    
+}
+
+@media screen and (max-width: 1600px) {
+    
+}
+
+@media  screen and (max-width: 1440px){
+    
+}
+
+
+@media screen and (max-width: 1366px) {
+    
+
+    
+}
+
+@media screen and (max-width: 1280px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .optionSelect{
+       position: relative;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+}
+
+@media  screen and (max-width: 768px){
+
+}
+
+@media  screen and (max-width: 425px){
+
+}
+
+@media  screen and (max-width: 375px){
+
+}
+
+@media  screen and (max-width: 320px){
+
+}
