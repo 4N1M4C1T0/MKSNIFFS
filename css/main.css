@@ -342,7 +342,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     margin: 10px;
     left: 2%;
     display: block;
-    max-width: calc(35% - 10px);
+    max-width: calc(30% - 10px);
     width: 35%;
     height: 250px;
     position: relative;
@@ -364,7 +364,7 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 
 .texto_sec_body{
     font-family: "Raleway", sans-serif;
-    max-width: calc(65% - 10px);
+    max-width: calc(60% - 10px);
     width: 65%;
     flex: 1;
     margin-right: 80px;
