@@ -289,6 +289,10 @@
     .left-section .bottom-container{
         transform: translate(20%);
     }
+
+    .left-section .top-container{
+        font-size: 14px;
+    }
 }
 
 @media  screen and (max-width: 320px){
@@ -311,7 +315,7 @@
     }
     
     .section.bottom-section.fixed {
-        width: 94.1%;
+        width: 96.9%;
     }
 
     .left-section{
@@ -328,6 +332,6 @@
     }
     
     .left-section .bottom-container{
-        transform: translate(10%, 10%);
+        transform: translate(20%);
     }
 }

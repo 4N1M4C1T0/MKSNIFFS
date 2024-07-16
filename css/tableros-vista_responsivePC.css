@@ -1,0 +1,117 @@
+@media screen and (max-width: 1600px) {
+    .graficos {
+        width: 65%;
+    }
+}
+
+@media  screen and (max-width: 1440px){
+    #header {
+        width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(85% - 10px);
+    }
+
+    #footer {
+        width: calc(800px - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(85% - 10px);
+    }
+
+    main{
+        width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(85% - 10px);
+    }
+    
+}
+
+@media screen and (max-width: 1280px) {
+    #header {
+        width: calc(95% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(95% - 10px);
+    }
+
+    #footer {
+        width: calc(95% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(95% - 10px);
+    }
+
+    main{
+        width: calc(95% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(95% - 10px);
+    }
+
+    .menu-desplegable ul li a {
+        font-size: 13px;
+    }
+
+    .contenedor-grafico-tabla{
+        justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .contenedor-grafico-tabla{
+        display: block;
+    }
+    .graficos {
+        width: 90%;
+    }
+    .tablas {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #header {
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+ 
+    #footer {
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+
+    main{
+        width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 10px);
+    }
+
+    .graficos {
+        width: 100%;
+    }
+
+    .tablas {
+        width: 70%;
+    }
+}
+
+@media  screen and (max-width: 500px){
+
+    .menu-desplegable ul li a {
+        font-size: 12px;
+    }
+
+    .submenu li a {
+        font-size: 10px;
+    }
+
+    .graficos {
+        margin-right: 15px;
+        transform: scale(0.6);
+        width: 130%;
+    }
+    
+    .tablas {
+        transform: scale(0.7);
+    }
+
+}
+
+@media  screen and (max-width: 375px){
+    
+}
+
+@media  screen and (max-width: 320px){
+    
+}

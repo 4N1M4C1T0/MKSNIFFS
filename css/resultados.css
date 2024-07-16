@@ -26,15 +26,14 @@ body{
 }
 
 main{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
     width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
     max-width: calc(80% - 10px);
 }
+
 
 .contenedor_vista_principal{
     background-color: #ADBC70;
@@ -122,16 +121,12 @@ main{
     color: #444; /* Texto blanco */
 }
 
-.seccion-boton{
-    position: relative;
-}
-
 #optionSelect{
     position: absolute;
-    top: 36.5%;
-    left: 80px;
-    transform: translateY(35%);
-    padding: 30px 30px;
+    top: 10%;
+    left: 60px;
+    transform: translateY(-8%);
+    padding: 5px 20px;
     font-weight: bold;
     background-color: #444;
     opacity: 0.5;
@@ -172,6 +167,7 @@ main{
     align-items: center;
     color: #ffffff; /* Color del texto */
     text-align: center; /* Centra el texto */
+    z-index: 7;
 }
 
 #contentH1 {

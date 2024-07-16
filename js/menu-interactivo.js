@@ -39,7 +39,27 @@ function showContent(event) {
 }
 
 const fechaActual = new Date();
-      const añoActual = fechaActual.getFullYear();
-      fechaActual.setMonth(fechaActual.getMonth() - 1);
-      const mesAnterior = fechaActual.toLocaleString('es-ES', { month: 'long' });
-      document.getElementById('referencia').textContent = `Datos de ${mesAnterior} del ${añoActual}  © SERFOR - Dirección de Seguimiento`;
+const añoActual = fechaActual.getFullYear();
+fechaActual.setMonth(fechaActual.getMonth() - 1);
+const mesAnterior = fechaActual.toLocaleString('es-ES', { month: 'long' });
+document.getElementById('referencia').textContent = `Datos de ${mesAnterior} del ${añoActual}  © SERFOR - Dirección de Seguimiento`;
+
+// Obtener todos los enlaces
+var enlaces = document.querySelectorAll('a[data-target]');
+
+// Obtener todos los encabezados
+var encabezados = document.querySelectorAll('h4[data-target]');
+
+// Añadir evento de clic a cada enlace
+enlaces.forEach(function(enlace) {
+    enlace.addEventListener('click', function() {
+        // Obtener el contenido del enlace clicado
+        var contenidoEnlace = enlace.innerText;
+
+        // Asignar el contenido a cada encabezado
+        encabezados.forEach(function(encabezado) {
+            encabezado.innerText =`Datos de ${mesAnterior} del ${añoActual} de la matriz de `+contenidoEnlace;
+        });
+    });
+});
+
