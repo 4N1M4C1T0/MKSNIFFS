@@ -122,12 +122,16 @@ main{
     color: #444; /* Texto blanco */
 }
 
+.seccion-boton{
+    position: relative;
+}
+
 #optionSelect{
     position: absolute;
     top: 36.5%;
-    left: 250px;
-    transform: translateY(-15%);
-    padding: 10px 20px;
+    left: 80px;
+    transform: translateY(35%);
+    padding: 30px 30px;
     font-weight: bold;
     background-color: #444;
     opacity: 0.5;
