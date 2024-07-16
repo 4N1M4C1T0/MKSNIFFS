@@ -1,17 +1,12 @@
 @media screen and (max-width: 1600px) {
-    .graficos {
-        width: 65%;
-    }
-}
 
-@media  screen and (max-width: 1440px){
     #header {
         width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(85% - 10px);
     }
 
     #footer {
-        width: calc(800px - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(85% - 10px);
     }
 
@@ -19,7 +14,6 @@
         width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(85% - 10px);
     }
-    
 }
 
 @media screen and (max-width: 1280px) {
@@ -86,7 +80,23 @@
     }
 }
 
-@media  screen and (max-width: 500px){
+@media  screen and (max-width: 690px){
+
+
+    .graficos {
+        position: relative;
+        left: -90px; /* Ajusta el valor según lo necesites */
+        transform: scale(0.9);
+        width: 130%;
+    }
+    
+    .tablas {
+        width: 90%;
+    }
+
+}
+
+@media  screen and (max-width: 550px){
 
     .menu-desplegable ul li a {
         font-size: 12px;
@@ -97,21 +107,36 @@
     }
 
     .graficos {
-        margin-right: 15px;
-        transform: scale(0.6);
-        width: 130%;
+        position: relative;
+        left: -90px; /* Ajusta el valor según lo necesites */
+        transform: scale(0.7);
+        width: 150%;
     }
     
     .tablas {
-        transform: scale(0.7);
+        width: 90%;
     }
 
 }
 
-@media  screen and (max-width: 375px){
-    
+@media  screen and (max-width: 475px){
+
+    .graficos {
+        position: relative;
+        left: -120px; /* Ajusta el valor según lo necesites */
+        transform: scale(0.5);
+        width: 180%;
+    }
+
 }
 
-@media  screen and (max-width: 320px){
-    
+@media  screen and (max-width: 425px){
+
+    .graficos {
+        position: relative;
+        left: -120px; /* Ajusta el valor según lo necesites */
+        transform: scale(0.5);
+        width: 200%;
+    }
+
 }
