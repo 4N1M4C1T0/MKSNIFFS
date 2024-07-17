@@ -218,10 +218,6 @@
         transform: translate(-105%, -50%);
         font-size: 25px; 
     }
-    
-    .left{
-        width: 22%;
-    }
 
     .div-content .left h2{
         font-size: 11px;
@@ -231,7 +227,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 97.6%;
+        width: 97.9%;
     }
 
     .contenedor-cards .contenedor-card{
@@ -256,7 +252,7 @@
     }
 
     .caja_Seccion_medio .titulo_imagen{
-        transform: translate(-95%, -50%);
+        transform: translate(-90%, -50%);
         font-size: 25px; 
     }
     
