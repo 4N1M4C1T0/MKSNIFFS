@@ -1,3 +1,6 @@
+@media screen and (max-width: 2560px){
+}
+
 @media screen and (max-width: 1600px) {
     #header {
         width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */

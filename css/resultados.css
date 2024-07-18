@@ -126,40 +126,22 @@ main{
     margin: 0;
 }
 
+
+/* Estilo para el contenedor de la imagen */
 .inner-div {
-    position: relative;
-    background-color: transparent;
-    min-height: 400px;
-}
-
-#mySelect{
-    position: absolute;
-    top: 10%;
-    left: 60px;
-    transform: translateY(-8%);
-    padding: 5px 20px;
-    font-weight: bold;
-    background-color: #444;
-    opacity: 0.5;
-    font-size: 20px;
-    color: white;
-    border: 2px white solid;
-    cursor: pointer;
-    z-index: 8; /* Asegura que el botón esté por encima de otros elementos */
+    position: relative; /* Permite que los elementos hijos se posicionen absolutamente */
+    width: 100%; /* Asegura que ocupe el ancho completo disponible */
+    height: 500px; /* Ajusta la altura según tus necesidades, o usa min-height si es variable */
+    overflow: hidden; /* Evita que la imagen se desborde del contenedor */
 }
 
 
-.inner-div > select {
-    width: 180px; /* Ajusta el ancho según tus necesidades */
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
+/* Asegura que la imagen abarque el 100% del contenedor y use object-fit */
 #contentImage {
-    width: 100%;
-    height: 500px;
-    object-fit: cover; /* Ajusta la imagen para que cubra el área sin deformarse */
+    width: 100%; /* Imagen ocupa el 100% del contenedor */
+    height: 100%; /* Altura completa del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+    display: block; /* Elimina cualquier espacio en blanco debajo de la imagen */
 }
 
 .overlay {
@@ -177,6 +159,57 @@ main{
     text-align: center; /* Centra el texto */
     z-index: 7;
 }
+
+/* Estilo para el div que contiene el select */
+.select-container {
+    position: absolute; /* Posiciona el div sobre la imagen */
+    top: 20px; /* Separación de 20px desde la parte superior del contenedor */
+    left: 20px; /* Separación de 20px desde la izquierda del contenedor */
+    z-index: 8; /* Asegura que esté encima del overlay */
+}
+
+/* Estilo para el select */
+.select2-container--default .select2-selection--single {
+    padding: 5px 20px;
+    font-weight: bold;
+    width: 200px; /* Ancho del select */
+    min-height: 45px; /* Altura del select */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #444; /* Color de fondo del select */
+    opacity: 0.8;
+    font-size: 16px;
+    color: white;
+    border: 2px white solid;
+    cursor: pointer;
+    display: flex; /* Permite que los elementos hijos se alineen en una fila */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: space-between; /* Espacia el contenido */
+  }
+
+/* Estilo para la flecha del select */
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    position: static; /* Elimina la posición absoluta */
+    height: auto; /* Ajusta la altura automáticamente */
+    margin-left: auto; /* Empuja la flecha hacia la derecha */
+    padding-left: 10px; /* Añade un pequeño margen a la izquierda */
+  }
+
+  /* Estilo para las opciones del select */
+  .select2-results__option {
+    max-width: 150px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Ajusta el ancho del dropdown */
+  .select2-container .select2-dropdown {
+    width: auto !important;
+    min-width: 100px;
+    box-sizing: border-box;
+  }
 
 #contentH1 {
     font-size: 2em;
