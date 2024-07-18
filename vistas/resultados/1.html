@@ -1,59 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../img/link/icono-foco.png">
-    <script src="https://kit.fontawesome.com/0391024a00.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/resultados.css" />
-    <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/resultados-vista_responsivePC.css">
-    <title>RESULTADOS</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
-    <style>
-        .select2-container--default .select2-selection--single {
-          position: absolute;
-          top: 10%;
-          left: 60px;
-          transform: translateY(-8%);
-          padding: 5px 20px;
-          font-weight: bold;
-          width: 200px; /* Ancho del select */
-          height: 45px; /* Altura del select */
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          background-color: #444;
-          opacity: 0.5;
-          font-size: 20px;
-          color: white;
-          border: 2px white solid;
-          cursor: pointer;
-          z-index: 8;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../../img/link/icono-foco.png">
+  <script src="https://kit.fontawesome.com/0391024a00.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../../css/resultados.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/resultados-vista_responsivePC.css">
+  <title>RESULTADOS</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <style>
+    /* Estilo para el contenedor de la imagen */
+    .inner-div {
+      position: relative; /* Permite que los elementos hijos se posicionen absolutamente */
+      width: 100%; /* Asegura que ocupe el ancho completo disponible */
+      height: 500px; /* Ajusta la altura según tus necesidades, o usa min-height si es variable */
+      overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+    }
 
-        .select2-container--default .select2-selection--single .select2-selection__arrow {
-            height: 100%;
-            position: absolute;
-            right: 5px;
-            display: flex;
-            align-items: center;
-        }
+    /* Asegura que la imagen abarque el 100% del contenedor y use object-fit */
+    #contentImage {
+      width: 100%; /* Imagen ocupa el 100% del contenedor */
+      height: 100%; /* Altura completa del contenedor */
+      object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+      display: block; /* Elimina cualquier espacio en blanco debajo de la imagen */
+    }
 
-        .select2-results__option {
-            max-width: 150px;
-            white-space: normal;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-        }
+    /* Estilo para el overlay */
+    .overlay {
+      position: absolute; /* Posiciona el overlay sobre la imagen */
+      top: 0; /* En la parte superior del contenedor */
+      left: 0; /* Alineado a la izquierda del contenedor */
+      width: 100%; /* Ancho completo del contenedor */
+      height: 100%; /* Altura completa del contenedor */
+      background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el overlay */
+      color: white; /* Color del texto del overlay */
+      z-index: 7; /* Asegura que esté encima de la imagen */
+      display: flex; /* Permite centrar el contenido del overlay */
+      flex-direction: column; /* Organiza el contenido en columna */
+      justify-content: center; /* Centra verticalmente */
+      padding: 20px; /* Espaciado interno */
+      box-sizing: border-box; /* Incluye padding en el ancho/alto total */
+    }
 
-        .select2-container .select2-dropdown {
-            width: auto !important;
-            min-width: 100px;
-            box-sizing: border-box;
-        }
-    </style>
+    /* Estilo para el div que contiene el select */
+    .select-container {
+      position: absolute; /* Posiciona el div sobre la imagen */
+      top: 20px; /* Separación de 20px desde la parte superior del contenedor */
+      left: 20px; /* Separación de 20px desde la izquierda del contenedor */
+      z-index: 8; /* Asegura que esté encima del overlay */
+    }
+
+    /* Estilo para el select */
+    .select2-container--default .select2-selection--single {
+      padding: 5px 20px;
+      font-weight: bold;
+      width: 200px; /* Ancho del select */
+      height: 45px; /* Altura del select */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      background-color: #444;
+      opacity: 0.8;
+      font-size: 16px;
+      color: white;
+      border: 2px white solid;
+      cursor: pointer;
+    }
+
+    /* Estilo para la flecha del select */
+    .select2-container--default .select2-selection--single .select2-selection__arrow {
+      height: 100%;
+      position: absolute;
+      right: 5px;
+      display: flex;
+      align-items: center;
+    }
+
+    /* Estilo para las opciones del select */
+    .select2-results__option {
+      max-width: 150px;
+      white-space: normal;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    /* Ajusta el ancho del dropdown */
+    .select2-container .select2-dropdown {
+      width: auto !important;
+      min-width: 100px;
+      box-sizing: border-box;
+    }
+  </style>
 </head>
 <body>
   <div id="header"></div>
@@ -85,21 +125,23 @@
             </div>
             <div>
               <i class="fa-solid fa-screwdriver-wrench"></i>
-              <a href="../herramientas/2.html">Herramientas</a>
+              <a href="../herramientas/2.html">asdasdasd</a>
             </div>
-        </div>
+          </div>
         </div>
       </div>
       <div class="contentDiv">
         <div class="inner-div">
-          <select id="mySelect">
-            <option value="option1">Esta es una opción con un texto muy largo que debería cortarse en el listado</option>
-            <option value="option2">Opción 2</option>
-          </select>
           <img id="contentImage" src="" alt="Imagen">
           <div class="overlay">
             <h1 id="contentH1"></h1>
             <h2 id="contentH2"></h2>
+          </div>
+          <div class="select-container">
+            <select id="mySelect">
+              <option value="option1">Esta es una opción con un texto muy largo que debería cortarse en el listado</option>
+              <option value="option2">Opción 2</option>
+            </select>
           </div>
         </div>
         <div class="inner-div contenedor-inferior" id="contenedorInferior">
@@ -117,10 +159,10 @@
         </div>
         <div class="caja_seccion_final">
           <div class="izquierda">
-              <span id="contentSpan1"></span>
+            <span id="contentSpan1"></span>
           </div>
           <div class="derecha">
-              <span id="contentSpan2"></span>
+            <span id="contentSpan2"></span>
           </div>
         </div>
       </div>
