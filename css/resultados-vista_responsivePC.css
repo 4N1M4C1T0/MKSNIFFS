@@ -194,6 +194,37 @@
     .item{
         flex: 0 0 calc(50% - 0px);
     }
+
+    .overlay #contentH1{
+        font-size: 28px;
+    }
+    
+    .overlay #contentH2{
+        font-size: 60px;
+    }
+
+    .subitem1{
+        font-size: 17px;
+    }
+
+    .subitem2{
+        font-size: 27px;
+    }
+    
+    .subitem3{
+        font-size: 17px;
+    }
+}
+
+@media  screen and (max-width: 550px){
+
+    .item{
+        flex: 0 0 calc(100% - 0px);
+    }
+    
+    .div-content .left h2{
+        font-size: 12px;
+    }
 }
 
 @media  screen and (max-width: 500px){
@@ -212,7 +243,27 @@
     .section.bottom-section.fixed {
         width: 97.9%;
     }
+
+    .overlay #contentH1{
+        font-size: 26px;
+    }
     
+    .overlay #contentH2{
+        font-size: 55px;
+    }
+    
+    .subitem1{
+        font-size: 15px;
+    }
+
+    .subitem2{
+        font-size: 25px;
+    }
+    
+    .subitem3{
+        font-size: 15px;
+    }
+
     .top-footer .content-wrapper {
         padding: 0 20px;
     }
@@ -253,7 +304,26 @@
     .left-section .bottom-container{
         transform: translate(42%);
     }
+
+    .overlay #contentH1{
+        font-size: 22px;
+    }
     
+    .overlay #contentH2{
+        font-size: 51px;
+    }
+
+    .subitem1{
+        font-size: 13px;
+    }
+
+    .subitem2{
+        font-size: 23px;
+    }
+    
+    .subitem3{
+        font-size: 13px;
+    }
 }
 
 @media  screen and (max-width: 375px){
@@ -291,6 +361,26 @@
     .left-section .top-container{
         font-size: 14px;
     }
+
+    .overlay #contentH1{
+        font-size: 20px;
+    }
+    
+    .overlay #contentH2{
+        font-size: 49px;
+    }
+
+    .subitem1{
+        font-size: 13px;
+    }
+
+    .subitem2{
+        font-size: 23px;
+    }
+    
+    .subitem3{
+        font-size: 13px;
+    }
 }
 
 @media  screen and (max-width: 320px){
@@ -326,5 +416,13 @@
     
     .left-section .bottom-container{
         transform: translate(20%);
+    }
+
+    .overlay #contentH1{
+        font-size: 18px;
+    }
+    
+    .overlay #contentH2{
+        font-size: 47px;
     }
 }

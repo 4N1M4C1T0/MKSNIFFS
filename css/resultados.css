@@ -121,7 +121,18 @@ main{
     color: #444; /* Texto blanco */
 }
 
-#optionSelect{
+#contentDiv {
+    padding: 0;
+    margin: 0;
+}
+
+.inner-div {
+    position: relative;
+    background-color: transparent;
+    min-height: 400px;
+}
+
+#mySelect{
     position: absolute;
     top: 10%;
     left: 60px;
@@ -137,15 +148,12 @@ main{
     z-index: 8; /* Asegura que el botón esté por encima de otros elementos */
 }
 
-#contentDiv {
-    padding: 0;
-    margin: 0;
-}
 
-.inner-div {
-    position: relative;
-    background-color: transparent;
-    min-height: 400px;
+.inner-div > select {
+    width: 180px; /* Ajusta el ancho según tus necesidades */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 #contentImage {
