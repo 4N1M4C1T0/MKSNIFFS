@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Inicializar select2
     $('#mySelect').select2({
         dropdownAutoWidth: true, /* Permite el ajuste automático del ancho del desplegable */
-        width: '100px' /* Ancho del select */
+        width: 'resolve' /* Resuelve el ancho automáticamente basado en el contenido */
     });
 
     const optionSelect = document.getElementById('mySelect');
@@ -50,9 +50,15 @@ $(document).ready(function() {
             const item = document.createElement('div');
             item.className = 'item';
             item.innerHTML = `
-                <div class="subitem1"><h3>${data.h3Text1[i]}</h3></div>
-                <div class="subitem2"><p>${data.pText[i]}</p></div>
-                <div class="subitem3"><h3>${data.h3Text2[i]}</h3></div>
+                <div class="subitem subitem1">
+                    <h3>${data.h3Text1[i]}</h3>
+                </div>
+                <div class="subitem subitem2">
+                    <p>${data.pText[i]}</p>
+                </div>
+                <div class="subitem subitem3">
+                    <h3>${data.h3Text2[i]}</h3>
+                </div>
             `;
             contenedorInferior.appendChild(item);
         }

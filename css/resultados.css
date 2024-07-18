@@ -132,28 +132,45 @@ main{
     min-height: 400px;
 }
 
-#mySelect{
+.select2-container--default .select2-selection--single {
     position: absolute;
-    top: 10%;
-    left: 60px;
-    transform: translateY(-8%);
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la izquierda */
     padding: 5px 20px;
     font-weight: bold;
+    width: 200px; /* Ancho del select */
+    height: 45px; /* Altura del select */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     background-color: #444;
-    opacity: 0.5;
-    font-size: 20px;
+    opacity: 0.8;
+    font-size: 16px;
     color: white;
     border: 2px white solid;
     cursor: pointer;
-    z-index: 8; /* Asegura que el botón esté por encima de otros elementos */
+    z-index: 8;
 }
 
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 100%;
+    position: absolute;
+    right: 5px;
+    display: flex;
+    align-items: center;
+}
 
-.inner-div > select {
-    width: 180px; /* Ajusta el ancho según tus necesidades */
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
+.select2-results__option {
+    max-width: 150px;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.select2-container .select2-dropdown {
+    width: auto !important;
+    min-width: 100px;
+    box-sizing: border-box;
 }
 
 #contentImage {
