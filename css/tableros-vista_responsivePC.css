@@ -81,6 +81,18 @@
         max-width: calc(95% - 10px);
     }
 
+    .section.bottom-section.fixed {
+        width: 94.2%;
+    }
+
+    .div-content .left h2{
+        font-size: 18px;
+    }
+    
+    .right .right-column a{
+        font-size: 16px;
+    }
+
     .menu-desplegable ul li a {
         font-size: 13px;
     }
@@ -89,6 +101,9 @@
         justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
     }
 
+    .div-content .left h2{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -109,7 +124,19 @@
         width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(100% - 10px);
     }
- 
+    
+    .bottom-left {
+        width: 30%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    }
+
+    .bottom-right {
+        width: 70%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    }
+
+    .bottom-right nav ul li {
+        font-size: 15px;
+    }
+
     #footer {
         width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(100% - 10px);
@@ -120,6 +147,18 @@
         max-width: calc(100% - 10px);
     }
 
+    .div-content .left h2{
+        font-size: 12px;
+    }
+    
+    .right .right-column a{
+        font-size: 13px;
+    }
+
+   .inline-content h5{
+    font-size: 15px;
+   }
+
     .graficos {
         width: 100%;
     }
@@ -129,8 +168,27 @@
     }
 }
 
-@media  screen and (max-width: 690px){
+@media  screen and (max-width: 768px){
 
+    .bottom-right nav ul .ocultar {
+        display: none;
+    }
+    
+    .div-content .left h2{
+        font-size: 12px;
+    }
+
+    .inline-content h5{
+        font-size: 14px;
+       }
+    
+}
+
+
+@media  screen and (max-width: 690px){
+    .inline-content h5{
+        font-size: 12px;
+       }
 
     .graficos {
         position: relative;
@@ -147,6 +205,10 @@
 
 @media  screen and (max-width: 550px){
 
+    .div-content .left h2{
+        font-size: 12px;
+    }
+    
     .menu-desplegable ul li a {
         font-size: 12px;
     }
@@ -166,6 +228,13 @@
         width: 90%;
     }
 
+    .top-footer .content-wrapper {
+        padding: 0 20px;
+    }
+
+    .top-footer .left-section .bottom-container {
+        margin-top: 35px;
+    }
 }
 
 @media  screen and (max-width: 475px){
