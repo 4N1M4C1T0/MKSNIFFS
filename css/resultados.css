@@ -177,11 +177,8 @@ main{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: #444; /* Color de fondo del select */
     opacity: 0.8;
     font-size: 16px;
-    color: white;
-    border: 2px white solid;
     cursor: pointer;
     display: flex; /* Permite que los elementos hijos se alineen en una fila */
     align-items: center; /* Centra verticalmente el contenido */
@@ -192,8 +189,6 @@ main{
 .select2-container--default .select2-selection--single .select2-selection__arrow {
     position: static; /* Elimina la posición absoluta */
     height: auto; /* Ajusta la altura automáticamente */
-    margin-left: auto; /* Empuja la flecha hacia la derecha */
-    padding-left: 10px; /* Añade un pequeño margen a la izquierda */
   }
 
   /* Estilo para las opciones del select */
