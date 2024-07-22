@@ -172,26 +172,29 @@ main{
 .select2-container--default .select2-selection--single {
     padding: 5px 20px;
     font-weight: bold;
-    width: 200px; /* Ancho del select */
-    min-height: 45px; /* Altura del select */
+    width: 160px; /* Ancho fijo */
+    height: 45px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     opacity: 0.8;
     font-size: 16px;
+    color: white;
+    border: 2px white solid;
     cursor: pointer;
-    display: flex; /* Permite que los elementos hijos se alineen en una fila */
-    align-items: center; /* Centra verticalmente el contenido */
-    justify-content: space-between; /* Espacia el contenido */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
 /* Estilo para la flecha del select */
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-    position: static; /* Elimina la posición absoluta */
-    height: auto; /* Ajusta la altura automáticamente */
+    position: static;
+    height: auto;
+    margin-left: auto;
+    padding-left: 10px;
   }
 
-  /* Estilo para las opciones del select */
   .select2-results__option {
     max-width: 150px;
     white-space: normal;
@@ -199,10 +202,9 @@ main{
     overflow-wrap: break-word;
   }
 
-  /* Ajusta el ancho del dropdown */
   .select2-container .select2-dropdown {
-    width: auto !important;
-    min-width: 100px;
+    width: 150px !important; /* Ancho fijo */
+    min-width: 150px;
     box-sizing: border-box;
   }
 
