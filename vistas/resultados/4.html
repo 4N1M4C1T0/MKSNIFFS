@@ -1,89 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../../img/link/icono-foco.png">
-    <script src="https://kit.fontawesome.com/0391024a00.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../../css/resultados.css" />
-    <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/resultados-vista_responsivePC.css">
-    <title>RESULTADOS</title>
-  </head>
-  <body>
-    <div id="header"></div>
-    <main>
-      <div class="contenedor_vista_principal">
-        <div class="div-content">
-          <div class="left">
-            <h2>Módulo de Gestión de Conocimiento Forestal y de Fauna Silvestre del SNIFFS</h2>
-          </div>
-          <div class="right">
-            <div class="right-column">
-              <div>
-                <i class="fa-regular fa-chart-bar"></i>
-                <a href="../tableros/4.html">Tableros de Control</a>
-              </div>
-              <div>
-                <i class="fa-solid fa-laptop-file"></i>
-                <a href="../resultados/4.html">Resultados</a>
-              </div>
-            </div>
-            <div class="right-column">
-              <div>
-                <i class="fa-regular fa-folder-open"></i>
-                <a href="../documentos/4.html">Documentos</a>
-              </div>
-              <div>
-                <i class="fa-solid fa-photo-film"></i>
-                <a href="../galeria/4.html">Galería</a>
-              </div>
-              <div>
-                <i class="fa-solid fa-screwdriver-wrench"></i>
-                <a href="../herramientas/4.html">Herramientas</a>
-              </div>
-          </div>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../../img/link/icono-foco.png">
+  <script src="https://kit.fontawesome.com/0391024a00.js" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../../css/resultados.css">
+  <link rel="stylesheet" href="../../css/header.css">
+  <link rel="stylesheet" href="../../css/footer.css">
+  <link rel="stylesheet" href="../../css/resultados-vista_responsivePC.css">
+  <title>RESULTADOS</title>
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <div class="contenedor_vista_principal">
+      <div class="div-content">
+        <div class="left">
+          <h2>Módulo de Gestión de Conocimiento Forestal y de Fauna Silvestre del SNIFFS</h2>
         </div>
-        <div id="contentDiv">
-          <div class="inner-div">
-            <select id="optionSelect">
-              <option value="option1" selected>Opción 1</option>
-              <option value="option2">Opción 2</option>
-            </select>
-            <img id="contentImage" src="" alt="Imagen">
-            <div class="overlay">
-              <h1 id="contentH1"></h1>
-              <h2 id="contentH2"></h2>
+        <div class="right">
+          <div class="right-column">
+            <div>
+              <i class="fa-regular fa-chart-bar"></i>
+              <a href="../tableros/4.html">Tableros de Control</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-laptop-file"></i>
+              <a href="../resultados/4.html">Resultados</a>
             </div>
           </div>
-          <div class="inner-div contenedor-inferior" id="contenedorInferior">
-              <div class="item">
-                  <div class="subitem subitem1">
-                      <h3 id="contentH3_1"></h3>
-                  </div>
-                  <div class="subitem subitem2">
-                      <p id="contentP_1"></p>
-                  </div>
-                  <div class="subitem subitem3">
-                      <h3 id="contentH3_2"></h3>
-                  </div>
-              </div>
-          </div>
-          <div class="caja_seccion_final">
-              <div class="izquierda">
-                  <span id="contentSpan1"></span>
-              </div>
-              <div class="derecha">
-                  <span id="contentSpan2"></span>
-              </div>
+          <div class="right-column">
+            <div>
+              <i class="fa-regular fa-folder-open"></i>
+              <a href="../documentos/4.html">Documentos</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-photo-film"></i>
+              <a href="../galeria/4.html">Galería</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <a href="../herramientas/4.html">asdasdasd</a>
+            </div>
           </div>
         </div>
       </div>
-    </main>
-    <div id="footer"></div>
-    <script src="../../js/headfoots.js"></script>
-    <script src="../../js/resultados/4.js"></script>
-  </body>
+      <div class="contentDiv">
+        <div class="inner-div">
+          <img id="contentImage" src="" alt="Imagen">
+          <div class="overlay">
+            <h1 id="contentH1"></h1>
+            <h2 id="contentH2"></h2>
+          </div>
+          <div class="select-container">
+            <select id="mySelect">
+              <option value="option1">Opción 1</option>
+              <option value="option2">Opción 2</option>
+            </select>
+          </div>
+        </div>
+        <div class="inner-div contenedor-inferior" id="contenedorInferior">
+          <div class="item">
+            <div class="subitem subitem1">
+              <h3 id="contentH3_1"></h3>
+            </div>
+            <div class="subitem subitem2">
+              <p id="contentP_1"></p>
+            </div>
+            <div class="subitem subitem3">
+              <h3 id="contentH3_2"></h3>
+            </div>
+          </div>
+        </div>
+        <div class="caja_seccion_final">
+          <div class="izquierda">
+            <span id="contentSpan1"></span>
+          </div>
+          <div class="derecha">
+            <span id="contentSpan2"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="../../js/headfoots.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <script src="../../js/resultados/4.js"></script>
+</body>
 </html>
