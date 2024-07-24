@@ -116,6 +116,9 @@ header {
 }
 
 .bottom-right nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     list-style: none;
     padding: 0 5px 0 5px;
     margin: 0;
@@ -139,7 +142,6 @@ header {
     border-radius: 5px;
     padding: 5px 10px;
 }
-
 /* Estilos para el menú desplegable */
 .dropdown {
     float: left;
@@ -147,13 +149,10 @@ header {
 }
 
 .dropdown .dropbtn {
-    display: flex;
-    top: 15%;
     font-size: 20px;  
     border: none;
     outline: none;
     color: rgb(37, 156, 26); /* Ajusta el color del texto según tus necesidades */
-    padding: 10px 0 0 0;
     background-color: inherit;
     font-family: inherit;
     cursor: pointer;
@@ -161,6 +160,9 @@ header {
 
 .dropdown-content {
     display: none;
+    font-family: "Raleway", sans-serif;
+    color: #499c53 !important;
+    font-weight: 400;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
