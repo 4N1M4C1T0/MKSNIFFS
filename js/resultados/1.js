@@ -2,7 +2,7 @@ $(document).ready(function() {
     // Inicializar select2
     $('#mySelect').select2({
         dropdownAutoWidth: true, /* Permite el ajuste automático del ancho del desplegable */
-        width: '160px' /* Ancho del select */
+        width: '250px' /* Ancho del select */
     });
 
     const optionSelect = document.getElementById('mySelect');
