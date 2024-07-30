@@ -53,6 +53,10 @@ main{
     background-color: #f3f6f8;
 }
 
+.contenedor_vista_principal .div-content .left h2{
+    font-size: 18px;
+}
+
 .left, .right {
     box-sizing: border-box;
     display: flex;
@@ -228,12 +232,12 @@ main{
 }
 
 #contentH1 {
-    font-size: 2em;
+    font-size: 21px;
     margin-bottom: 1px; /* Espaciado entre el texto superior y el título */
 }
 
 #contentH2 {
-    font-size: 4em; /* Tamaño del título */
+    font-size: 45px; /* Tamaño del título */
 }
 
 .contenedor-inferior {
@@ -260,13 +264,13 @@ main{
 }
 
 .subitem1, .subitem3 {
-    height: 50px;
-    font-size: 20px;
+    height: 40px;
+    font-size: 15px;
 }
 
 .subitem2 {
-    height: 70px;
-    font-size: 30px;
+    height: 90px;
+    font-size: 40px;
 }
 
 .caja_seccion_final{

@@ -46,6 +46,10 @@ main{
     background-color: #f3f6f8;
 }
 
+.contenedor_vista_principal .div-content .left h2{
+    font-size: 18px;
+}
+
 .left, .right {
     box-sizing: border-box;
     display: flex;
