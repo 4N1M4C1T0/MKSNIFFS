@@ -220,6 +220,7 @@ main{
 }
 
 .select2-container--open .select2-dropdown--below {
+    font-family: "Raleway", sans-serif;
     border-top: none;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -228,7 +229,7 @@ main{
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
     background-color: #499c53;
-    color: white
+    color: white;
 }
 
 #contentH1 {

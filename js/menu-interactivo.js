@@ -58,7 +58,7 @@ enlaces.forEach(function(enlace) {
 
         // Asignar el contenido a cada encabezado
         encabezados.forEach(function(encabezado) {
-            encabezado.innerText =`Datos de ${mesAnterior} del ${añoActual} de la matriz de `+contenidoEnlace;
+            encabezado.innerText =`Gobierno Regional `+contenidoEnlace+` (a Junio del ${añoActual})`;
         });
     });
 });
