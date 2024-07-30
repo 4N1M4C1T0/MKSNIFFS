@@ -51,6 +51,9 @@ main{
     background-color: #f3f6f8;
 }
 
+.container .div-content .left h2{
+    font-size: 21px;
+}
 .left, .right {
     box-sizing: border-box;
     display: flex;
@@ -59,15 +62,14 @@ main{
 
 .left {
     width: 20%;
-    
     background-color: #499c53; /* Fondo verde */
     color: #ffffff; /* Texto blanco */
+    display: flex;
 }
 
 .left h2 {
     text-align: justify;
     padding: 10px;
-    font-size: 20px;
     margin: 0; /* Eliminar el margen predeterminado */
 }
 
