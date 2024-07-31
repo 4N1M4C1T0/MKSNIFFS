@@ -243,6 +243,7 @@ main{
 
 .contenedor-inferior {
     display: flex;
+    height: auto;
     flex-wrap: wrap; /* Permite que los items se envuelvan en una nueva línea */
     justify-content: flex-start; /* Alinea los items al inicio de la línea */
     padding: 0; /* Elimina el padding del contenedor inferior */
@@ -257,21 +258,24 @@ main{
     background-color: transparent; /* Fondo transparente */
     box-sizing: border-box; /* Incluye el borde en el tamaño total del elemento */
     text-align: center; /* Centra el texto dentro de cada item */
+    height: auto;
+    padding: 0 10px;
 }
 
 .subitem {
-    flex: 0 0; /* Los subitems no crecen ni se encogen */
     background-color: transparent;
 }
 
 .subitem1, .subitem3 {
-    height: 40px;
+    min-height: 20px;
     font-size: 15px;
+    font-weight: 300;
 }
 
 .subitem2 {
-    height: 90px;
-    font-size: 40px;
+    min-height: 40px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 80px;
 }
 
 .caja_seccion_final{
