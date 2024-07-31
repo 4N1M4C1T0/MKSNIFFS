@@ -18,9 +18,9 @@ $(document).ready(function() {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
             h1Text: 'Título 1',
             h2Text: 'Subtítulo 1',
-            h3Text1: ['Encabezado 1.1', 'Encabezado 1.2', 'Encabezado 1.3', 'Encabezado 1.4', 'Encabezado 1.5', 'Encabezado 1.6'],
-            h3Text2: ['Encabezado 1.1.1', 'Encabezado 1.2.2', 'Encabezado 1.3.3', 'Encabezado 1.4.4', 'Encabezado 1.5.5', 'Encabezado 1.6.6'],
-            pText: ['Parrafo 1.1', 'Parrafo 1.2', 'Parrafo 1.3', 'Parrafo 1.4', 'Parrafo 1.5', 'Parrafo 1.6'],
+            h3Text1: ['asdasasfjasfh ajshajshjashjasf jahsdjhasdjafsjasd ajfhjsfhasjhdjsadf asjfhasjhdajsd ajfhasjdsjdhjh asdasdasdasdas asda sd asd asd asd asdasdasdasdasdas asdasdasd asdasdasdas dasd asdasdas asdasdasdasd asdasdas dasdas asd asf adfdsad assad', 'Encabezado 1.2', 'Encabezado 1.3', 'Encabezado 1.4', 'Encabezado 1.5', 'Encabezado 1.6'],
+            h3Text2: ['asdasasfjasfh ajshajshjashjasf jahsdjhasdjafsjasd ajfhjsfhasjhdjsadf asjfhasjhdajsd ajfhasjdsjdhjh asdasdasdasdas asda sd asd asd asd asdasdasdasdasdas asdasdasd asdasdasdas dasd asdasdas asdasdasdasd asdasdas dasdas asd asf adfdsad assad', 'Encabezado 1.2.2', 'Encabezado 1.3.3', 'Encabezado 1.4.4', 'Encabezado 1.5.5', 'Encabezado 1.6.6'],
+            pText: ['asdasasfjasfh ajshajshjashjasf jahsdjhasdjafsjasd ajfhjsfhasjhdjsadf asjfhasjhdajsd ajfhasjdsjdhjh asdasdasdasdas asda sd asd asd asd asdasdasdasdasdas asdasdasd asdasdasdas dasd asdasdas asdasdasdasd asdasdas dasdas asd asf adfdsad assad', 'Parrafo 1.2', 'Parrafo 1.3', 'Parrafo 1.4', 'Parrafo 1.5', 'Parrafo 1.6'],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
             spanText2: 'Datos 2024'
         },
