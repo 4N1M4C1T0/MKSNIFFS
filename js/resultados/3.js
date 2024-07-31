@@ -18,9 +18,9 @@ $(document).ready(function() {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
             h1Text: 'INTERVENCIONES EN',
             h2Text: 'MATERIA FORESTAL Y DE FAUNA SILVESTRE',
-            h3Text1: ['Número de intervenciones que dirige el SERFOR', 'Número de intervenciones que se ejecutan', 'Encabezado 1.3', 'Encabezado 1.4', 'Encabezado 1.5', 'Encabezado 1.6'],
-            h3Text2: ['Intervenciones', 'Intervenciones', 'Encabezado 1.3.3', 'Encabezado 1.4.4', 'Encabezado 1.5.5', 'Encabezado 1.6.6'],
-            pText: ['43', '24', 'Parrafo 1.3', 'Parrafo 1.4', 'Parrafo 1.5', 'Parrafo 1.6'],
+            h3Text1: ['Número de intervenciones que dirige el SERFOR', 'Número de intervenciones que se ejecutan', 'Intervenciones que se encuentran alineadas a las PNFS', 'Encabezado 1.4', 'Encabezado 1.5', 'Encabezado 1.6'],
+            h3Text2: ['Intervenciones', 'Intervenciones', 'Intervención', 'Encabezado 1.4.4', 'Encabezado 1.5.5', 'Encabezado 1.6.6'],
+            pText: ['43', '24', '1', 'Parrafo 1.4', 'Parrafo 1.5', 'Parrafo 1.6'],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
             spanText2: 'Datos 2024'
         },
