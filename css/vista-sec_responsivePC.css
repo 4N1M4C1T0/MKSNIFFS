@@ -1,27 +1,5 @@
-@media screen and (max-width: 2560px){
-    .caja_Seccion_medio .titulo_imagen{
-        transform: translate(-240%, -50%);
-    }
-}
-
-@media screen and (max-width: 1920px) {
-    
-    .caja_Seccion_medio .titulo_imagen{
-        transform: translate(-180%, -50%);
-    }
-
-    .div-content .left h2{
-        font-size: 16px;
-    }
-    
-}
-
 @media screen and (max-width: 1600px) {
-    
-    .caja_Seccion_medio .titulo_imagen{
-        transform: translate(-148%, -50%);
-    }
-    
+
     .div-content .left h2{
         font-size: 16px;
     }

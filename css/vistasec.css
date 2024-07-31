@@ -148,10 +148,9 @@ main{
     font-weight: bold;
     position: absolute;
     width: 500px;
-    top: 50%;
-    left: 65%;
+    top: 40%;
+    left: 5%;
     color: white;
-
 }
 
 .caja_seccion_abajo{
@@ -198,7 +197,7 @@ main{
 }
 
 
-/*Propiedades de tematicas*/
+/*Propiedades de cajas*/
 
 .contenedor-centralizado {
     display: flex;
