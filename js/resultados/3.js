@@ -18,19 +18,19 @@ $(document).ready(function() {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
             h1Text: 'INTERVENCIONES EN',
             h2Text: 'MATERIA FORESTAL Y DE FAUNA SILVESTRE',
-            h3Text1: ['Número de intervenciones que dirige el SERFOR', 'Número de intervenciones que se ejecutan', 'Intervenciones que se encuentran alineadas a las PNFS', 'Encabezado 1.4', 'Encabezado 1.5', 'Encabezado 1.6'],
-            h3Text2: ['Intervenciones', 'Intervenciones', 'Intervención', 'Encabezado 1.4.4', 'Encabezado 1.5.5', 'Encabezado 1.6.6'],
-            pText: ['43', '24', '1', 'Parrafo 1.4', 'Parrafo 1.5', 'Parrafo 1.6'],
+            h3Text1: ['Número de intervenciones que dirige el SERFOR', 'Número de intervenciones que se ejecutan', 'Intervenciones que se encuentran alineadas a las PNFS', 'Número de intervenciones que dirige y participa el SERFOR'],
+            h3Text2: ['Intervenciones', 'Intervenciones', 'Intervención', 'Intervenciones'],
+            pText: ['43', '24', '1', '57'],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
             spanText2: 'Datos 2024'
         },
         option2: {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
-            h1Text: 'Título 2',
-            h2Text: 'Subtítulo 2',
-            h3Text1: ['Encabezado 2.1', 'Encabezado 2.2', 'Encabezado 2.3', 'Encabezado 2.4', 'Encabezado 2.5', 'Encabezado 2.6'],
-            h3Text2: ['Encabezado 2.1.1', 'Encabezado 2.2.2', 'Encabezado 2.3.3', 'Encabezado 2.4.4', 'Encabezado 2.5.5', 'Encabezado 2.6.6'],
-            pText: ['Parrafo 2.1', 'Parrafo 2.2', 'Parrafo 2.3', 'Parrafo 2.4', 'Parrafo 2.5', 'Parrafo 2.6'],
+            h1Text: 'FORTALECIMIENTO',
+            h2Text: 'INSTITUCIONAL',
+            h3Text1: ['Avance Global Programado Junio 2024', 'Avance Fisico Programado Junio 2024', 'Las actividades presupuestales con mejor desempeño presupuestal hasta junio 2024 fueron; la 5006322 (control transporte) y 5005174 (información) con un', 'Avance Global Ejecutado Junio 2024', 'Avance Fisico Ejecutado Junio 2024', 'La actividad presupuestal con menor desempeño presupuestal fue la 5000276 (gestión del programa)'],
+            h3Text2: ['Del presupuesto asignado', 'Del presupuesto asignado', 'De avance en su ejecución presupuestal', 'Del presupuesto asignado', 'Del presupuesto asignado', 'De avance en su ejecución presupuestal'],
+            pText: ['44%', '35%', '56% y 52%', '34%', '22%', '16%'],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
             spanText2: 'Datos 2024'
         }
