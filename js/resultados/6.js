@@ -18,9 +18,9 @@ $(document).ready(function() {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
             h1Text: 'MEJORA CONTINUA',
             h2Text: 'EN MATERIA FORESTAL Y DE FAUNA SILVESTRE',
-            h3Text1: ['Encabezado 1.1', 'Encabezado 1.2', 'Encabezado 1.3', 'Encabezado 1.4', 'Encabezado 1.5', 'Encabezado 1.6'],
-            h3Text2: ['Encabezado 1.1.1', 'Encabezado 1.2.2', 'Encabezado 1.3.3', 'Encabezado 1.4.4', 'Encabezado 1.5.5', 'Encabezado 1.6.6'],
-            pText: ['Parrafo 1.1', 'Parrafo 1.2', 'Parrafo 1.3', 'Parrafo 1.4', 'Parrafo 1.5', 'Parrafo 1.6'],
+            h3Text1: ['Madera Comercializada', 'Aprovechamiento y comercialización de productos forestales maderables y no maderables Amazonas', 'Inclusión en la cartera de inversiones de la Municipalidad Distrital de Parinacochas-Ucayali', 'Guías de manejo Forestal Comunitario en Awajun y Castellano', 'Microprogramas Radiales de Manejo Forestal Comunitario', 'Pasantía Internacional Perú y Bolivia Manejo Forestal Comunitario'],
+            h3Text2: ['N° de especies', 'Comunidades Capacitadas', 'Proyecto de Inversión Publica en Huito', '', 'Ediciones', ''],
+            pText: ['218', '45', '1', '5', '6', ''],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
             spanText2: 'Datos 2024'
         },
