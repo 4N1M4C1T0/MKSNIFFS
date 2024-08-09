@@ -18,8 +18,8 @@ $(document).ready(function() {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
             h1Text: 'MEJORA CONTINUA',
             h2Text: 'EN MATERIA FORESTAL Y DE FAUNA SILVESTRE',
-            h3Text1: ['Madera Comercializada (R.D. Nº 241-2016-SERFOR-DE)', 'Taller para el Aprovechamiento y comercialización de productos forestales maderables y no maderables Amazonas (DGECO - 2018)', 'Inclusión en la cartera de inversiones de la Municipalidad Distrital de Parinacochas-Ucayali (DGECO - 2019).', 'Guías de manejo Forestal Comunitario en Awajun y Castellano (DGECO - 2020)', 'Microprogramas Radiales de Manejo Forestal Comunitario (DGECO - 2021)', 'Pasantía Internacional Perú y Bolivia Manejo Forestal Comunitario (DGECO - 2022)'],
-            h3Text2: ['Especies de Madera comercializada en el año 2016', 'Comunidades Nativas Capacitadas', 'Proyecto de Inversión Publica en Huito', 'Ediciones', 'Ediciones', ''],
+            h3Text1: ['Especies de Madera comercializada (R.D. Nº 241-2016-SERFOR-DE)', 'Taller para el Aprovechamiento y comercialización de productos forestales maderables y no maderables Amazonas (DGECO - 2018)', 'Inclusión en la cartera de inversiones de la Municipalidad Distrital de Parinacochas-Ucayali (DGECO - 2019).', 'Guías de manejo Forestal Comunitario en Awajun y Castellano (DGECO - 2020)', 'Microprogramas Radiales de Manejo Forestal Comunitario (DGECO - 2021)', 'Pasantía Internacional Perú y Bolivia Manejo Forestal Comunitario (DGECO - 2022)'],
+            h3Text2: ['Especies', 'Comunidades Nativas Capacitadas', 'Proyecto de Inversión Publica en Huito', 'Ediciones', 'Ediciones', ''],
             pText: ['218', '45', '1', '5', '6', ''],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
             spanText2: 'Datos 2024'

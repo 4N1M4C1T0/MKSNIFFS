@@ -171,9 +171,9 @@ main{
 
 .menu-desplegable{
     width: 20%;
-    height: 100%;
+    height: auto;
     min-height: 800px;
-    max-height: 800px; /* Altura máxima del menú */
+    max-height: 1200px;
     background-color: rgb(28, 96, 84);
     overflow-y: auto; /* Scroll vertical cuando se excede el alto máximo */
     position: relative;
