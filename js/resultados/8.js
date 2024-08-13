@@ -18,9 +18,9 @@ $(document).ready(function() {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
             h1Text: 'Comunidades de',
             h2Text: 'Práctica',
-            h3Text1: ['16 Talleres a Nivel Nacional', 'Viernes de Manejo Forestal Comunitario', 'Viernes de Manejo Forestal Comunitario', 'Viernes de Manejo Forestal Comunitario', 'Viernes de Manejo Forestal Comunitario', ''],
+            h3Text1: ['Viernes de Manejo Forestal Comunitario (DGECO - 2023)', 'Viernes de Manejo Forestal Comunitario (DGECO - 2022)', 'Viernes de Manejo Forestal Comunitario (DGECO - 2021)', 'Viernes de Manejo Forestal Comunitario (DGECO - 2020)', '16 Talleres a Nivel Nacional (DGECO - 2019)', ''],
             h3Text2: ['Participantes', 'Participantes', 'Participantes', 'Participantes', 'Participantes', ''],
-            pText: ['392', '42', '71', '126', '367', ''],
+            pText: ['367', '126', '71', '42', '392', ''],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
             spanText2: 'Datos 2024'
         },
