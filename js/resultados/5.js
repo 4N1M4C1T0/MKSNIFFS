@@ -16,9 +16,9 @@ $(document).ready(function() {
     const contentData = {
         option1: {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
-            h1Text: 'SISTEMATIZACION DE',
+            h1Text: 'SISTEMATIZACIÓN DE',
             h2Text: 'CONOCIMIENTOS',
-            h3Text1: ['Lima (DGECO - 2023)', 'Loreto (DGECO - 2019)', 'Junin (DGECO - 2018)', 'Junin (DGECO - 2017)', 'San Martín (DGECO - 2016)'],
+            h3Text1: ['Lima (DGECO - 2023)', 'Loreto (DGECO - 2019)', 'Junín (DGECO - 2018)', 'Junín (DGECO - 2017)', 'San Martín (DGECO - 2016)'],
             h3Text2: ['Número de Sistematizaciones', 'Número de Sistematizaciones', 'Número de Sistematizaciones', 'Número de Sistematizaciones', 'Número de Sistematizaciones'],
             pText: ['5', '1', '1', '2', '1'],
             spanText1: 'Fuente: DGGCFFS - SERFOR ©',
