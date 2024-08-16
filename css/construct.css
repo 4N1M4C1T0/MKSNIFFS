@@ -1,0 +1,22 @@
+.heredable-main {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.heredable-main .contenedor-imagen {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.heredable-main .contenedor-imagen img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
