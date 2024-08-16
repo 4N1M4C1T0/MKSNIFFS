@@ -42,7 +42,7 @@ const fechaActual = new Date();
 const añoActual = fechaActual.getFullYear();
 fechaActual.setMonth(fechaActual.getMonth() - 1);
 const mesAnterior = fechaActual.toLocaleString('es-ES', { month: 'long' });
-document.getElementById('referencia').textContent = `Datos de ${mesAnterior} del ${añoActual}  © SERFOR - Dirección de Seguimiento`;
+document.getElementById('referencia').textContent = `Datos hasta el mes de Julio del ${añoActual}  © SERFOR - DGGCFFS`;
 
 // Obtener todos los enlaces
 var enlaces = document.querySelectorAll('a[data-target]');
