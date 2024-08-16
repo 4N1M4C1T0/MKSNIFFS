@@ -289,7 +289,7 @@
 }
 
 @media  screen and (max-width: 320px){
-    .div-content .left h2{
+    .contenedor_vista_principal .div-content .left h2{
         font-size: 15px;
 
     }
