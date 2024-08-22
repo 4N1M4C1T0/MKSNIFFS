@@ -17,7 +17,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 30px 0 30px 0;
-    height: 20px; /* Ajusta la altura según sea necesario */
+    height: 22px; /* Ajusta la altura según sea necesario */
 }
 
 .inner-container {
@@ -27,8 +27,14 @@ header {
     justify-content: space-between;
 }
 
-.inner-container a img {
-    width: 200px; /* Ajusta el ancho de las imágenes según tus necesidades */
+.inner-container a .imgser {
+    margin-top: 20px;
+    width: 180px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto;
+}
+
+.inner-container a .imgmid {
+    width: 270px; /* Ajusta el ancho de las imágenes según tus necesidades */
     height: auto;
 }
 
@@ -39,6 +45,7 @@ header {
     align-items: center;
     overflow: hidden; /* Asegura que el contenido no se desborde */
     padding: 2px 0 2px 0;
+    min-height: 33px;
 }
 
 .middle-content {
@@ -51,7 +58,7 @@ header {
 .icon-container {
     display: flex;
     align-items: center;
-    margin-right: 15px;
+    margin-right: 35px;
 }
 
 .icon {
@@ -75,7 +82,7 @@ header {
 }
 
 .bottom-section {
-    background-color: rgba(255, 255, 255, 0.7); /* Blanco con transparencia */
+    background-color: rgba(255, 255, 255, 0.75); /* Blanco con transparencia */
     display: flex;
     justify-content: center; /* Centra el contenido de bottom-content */
     width: 100%;
@@ -85,7 +92,7 @@ header {
 }
 
 .section.bottom-section.fixed {
-    width: 79.5%;
+    width: 71.75%;
     position: fixed;
     top: 0;
 }
@@ -100,6 +107,7 @@ header {
 
 .bottom-left, .bottom-right {
     width: 50%; /* Cada sección ocupa el 50% del ancho de bottom-content */
+    padding: 0 20px 0 15px;
 }
 
 .bottom-left {

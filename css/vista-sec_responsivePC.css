@@ -1,14 +1,33 @@
+@media screen and (max-width: 2560px){
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 22px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1920px) {
+    .contenedor_vista_principal .div-content .left{
+        padding: 15px 18px 15px 20px;
+    }
+
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 22px;
+        width: 250px;
+    }
+}
+
 @media screen and (max-width: 1600px) {
 
     .div-content .left h2{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
 @media  screen and (max-width: 1440px){
     
     .div-content .left h2{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .section.bottom-section.fixed {
@@ -33,7 +52,7 @@
     }
 
     .div-content .left h2{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .right .right-column a{
@@ -76,7 +95,7 @@
     }
 
     .div-content .left h2{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .right .right-column a{
@@ -90,7 +109,7 @@
     }
 
     .div-content .left h2{
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .contenedor-cards .contenedor-card{
@@ -129,7 +148,7 @@
     }
 
     .div-content .left h2{
-        font-size: 12px;
+        font-size: 19px;
     }
     
     .right .right-column a{
@@ -156,7 +175,7 @@
     }
     
     .div-content .left h2{
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .contenedor-card .seccion2 .titulo p{
@@ -189,6 +208,12 @@
         width: calc(100% - 20px); /* Ancho máximo de cada contenedor (100% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(100% - 20px);
 
+    }
+}
+
+@media  screen and (max-width: 690px){
+       .container .div-content .left h2{
+        font-size: 15px;
     }
 }
 

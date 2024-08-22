@@ -1,25 +1,30 @@
 @media screen and (max-width: 2560px){
     .container .div-content .left h2{
-        font-size: 20px;
+        font-size: 22px;
     }
 }
 
 
 @media screen and (max-width: 1920px) {
+    .container .div-content .left{
+        padding: 15px 18px 15px 20px;
+    }
+    
     .container .div-content .left h2{
-        font-size: 16px;
+        font-size: 22px;
+        width: 250px;
     }
 }
 
 @media screen and (max-width: 1600px) {   
     .container .div-content .left h2{
-        font-size: 16px;
+        font-size: 20px;
     }
 }
 
 @media  screen and (max-width: 1440px){
     .container .div-content .left h2{
-        font-size: 19px;
+        font-size: 20px;
     }
 
     .section.bottom-section.fixed {
@@ -52,7 +57,7 @@
     }
 
     .container .div-content .left h2{
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .right .right-column a{
@@ -81,7 +86,7 @@
     }
 
     .container .div-content .left h2{
-        font-size: 16px;
+        font-size: 20px;
     }
     
     .right .right-column a{
@@ -96,15 +101,12 @@
         justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
     }
 
-    .div-content .left h2{
-        font-size: 16px;
-    }
 }
 
 @media screen and (max-width: 1024px) {
 
     .container .div-content .left h2{
-        font-size: 16px;
+        font-size: 20px;
     }
     .contenedor-grafico-tabla{
         display: block;
@@ -150,7 +152,7 @@
     }
 
     .container .div-content .left h2{
-        font-size: 12px;
+        font-size: 19px;
     }
     
     .right .right-column a{
@@ -177,7 +179,7 @@
     }
     
     .container .div-content .left h2{
-        font-size: 12px;
+        font-size: 18px;
     }
 
     .inline-content h5{
@@ -192,7 +194,11 @@
         font-size: 12px;
        }
 
-    .graficos {
+       .container .div-content .left h2{
+        font-size: 15px;
+    }
+    
+       .graficos {
         position: relative;
         left: -90px; /* Ajusta el valor según lo necesites */
         transform: scale(0.9);
@@ -207,7 +213,7 @@
 
 @media screen and(max-width: 606px) {
     .container .div-content .left h2{
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 

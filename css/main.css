@@ -14,29 +14,30 @@ body{
 #header {
     margin: 0;
     padding: 0;
-    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(80% - 10px);
+    width: calc(72.2% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(72.2% - 10px);
 }
 
 #footer {
     margin: 0;
     padding: 0;
-    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(80% - 10px);
+    width: calc(72.2% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(72.2% - 10px);
 }
 
 main{
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    width: calc(80% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(80% - 10px);
+    width: calc(72.2% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(72.2% - 10px);
+    margin-top: -3.55%;
 }
 
 /*Propiedades del Slider*/
 
 .slider{
-    min-height: 50vh;
+    min-height: 58.5vh;
     height: auto;
     margin: 0;
     padding: 0;
@@ -66,15 +67,15 @@ main{
     left: 0;
     bottom: 0;
     background-image: linear-gradient(
-        to top, #000 28%, transparent
+        to right, #000 1%, transparent
     );
 }
 
 .slider .list .item .content{
     position: absolute;
-    left: 10%;
-    top: 10%;
-    width: 500px;
+    left: 5%;
+    top: 17%;
+    width: 400px;
     max-width: 80%;
     z-index: 1;
     text-align: justify;
@@ -100,12 +101,12 @@ main{
     font-family: "Raleway", sans-serif;
     position: relative;
     font-size: 15px;
-    margin: 1px 0 3px 0;
-    padding: 8px 6px 1px 24px;
+    margin: 2px 0 15px 0;
+    padding: 10px 6px 0.1px 15px;
     border-radius: 20px;
     width:320px;
-    height:35px;
-    border: 2px #F1F3F1 solid;
+    height:30px;
+    border: 4px #F1F3F1 solid;
     background-color: transparent;
     color: #F1F3F1;
     display: block;
@@ -181,144 +182,161 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
 .tematica-texto {
     font-family: "Raleway", sans-serif;
     text-align: center;
-    font-size: 36px;
+    font-size: 29.5px;
+    margin-top: 80px;
+    font-weight: 300;
 }
 
-.contenedor-centralizado {
+.container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    padding: 15px;
-}
-
-.contenedor-cards {
-    display: flex;
-    flex-wrap: wrap; /* Los contenedores flex se envuelven cuando no hay suficiente espacio */
-    justify-content: flex-start; /* Los contenedores se alinean a la izquierda */
+    flex-wrap: wrap;
+    padding-left: 15px;
     width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
     max-width: calc(100% - 10px);
 }
 
-.contenedor-cards .contenedor-card {
-    width: calc(25% - 20px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(25% - 20px);
-    border-radius: 10px; /* Agrega un borde redondeado de 5px al contenedor */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
-    margin-right: 20px; /* Espacio entre los contenedores */
-    margin-bottom: 30px; /* Espacio debajo de los contenedores */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave para la sombra y el movimiento */
+.container .card {
+    width: calc(25% - 5px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(25% - 5px);
+    max-height: 400px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
-.contenedor-card:hover {
+.container .card .card-content {
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Agrega una transición suave para la sombra y el movimiento */
+
+}
+
+.container .card .card-content:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 15); /* Cambia la sombra al pasar el mouse por encima */
     transform: translate(-5px, -5px); /* Mueve el contenedor hacia la esquina superior izquierda */
 }
 
-.contenedor-cards .contenedor-card .seccion1 {
-    height: 250px;
-    position: relative;
-    overflow: hidden;
-    max-height: 50%;
-    border-radius: 10px 10px 0px 0px; /* Agrega un borde redondeado de 5px al contenedor */
-}
-
-.botones {
-    position: absolute; /* Posiciona los botones absolutamente dentro del contenedor */
-    top: 15%; /* Centra verticalmente los botones */
-    left: -10px;
-    transform: translateY(-15%); /* Corrige el centrado vertical */
+.container .card .card-content .top-section {
+    height: 270px;
+    background-color: #d9e6f2;
+    padding: 20px;
     display: flex;
-    align-items: center; /* Centra verticalmente el contenido */
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.container .card .card-content .top-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0; /* Asegura que la imagen esté detrás de los botones */
+}
+
+.container .card .card-content .top-section .buttons {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
     flex-direction: column;
+    gap: 5px;
+    z-index: 1; /* Asegura que los botones estén por encima de la imagen */
 }
 
-.boton-img {
-    width: calc(50% - 10px); /* Cambia a un contenedor por fila */
-    max-width: calc(50% - 10px);
-    display: flex;/* Para que tenga la propiedad flex */
-    align-items: center; /* Centra verticalmente el contenido */
-    margin-bottom: 5px;
-    border-radius: 5px;
-    padding: 2px 25px;
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: white;
-    background-color: #000000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 1); /* Añade una sombra */
-    align-items: center; /* Centra verticalmente el contenido */
-}
-
-.boton-img:hover{
-    background-color: #505050;
-    cursor: pointer;
-}
-
-.texto {
+.container .card .card-content .top-section .buttons a {
     font-family: "Raleway", sans-serif;
     font-weight: bold;
     font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 5px 4px;
+    border-radius: 10px; /* Borde redondeado para simular un botón */
+    background-color: #000000;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, opacity 0.3s;
+    word-break: break-word; /* Permite que el texto largo se divida en múltiples líneas */
+    max-width: 140px; /* Ajusta el ancho máximo del botón según sea necesario */
+    min-height: 30px;
 }
 
-.icono {
-    margin-left: -20px;
-    margin-right: 2px;
-    font-size: 10px;
+.container .card .card-content .top-section .buttons a:hover {
+    background-color: #505050; /* Cambio de color al pasar el ratón */
+    cursor: pointer;
 }
 
-.seccion1 img {
-    width: 100%; /* La imagen ocupa todo el ancho de la sección */
-    height: auto; /* La altura se ajusta automáticamente */
-    min-height: 100%;
+.container .card .card-content .top-section .buttons i {
+    margin-right: 8px;
+    font-size: 25px;
 }
 
-.contenedor-cards .contenedor-card .seccion2 {
+.container .card .card-content .bottom-section {
+    height: 130px;
+    background-color: #ffffff;
     display: flex;
 }
 
-.seccion2 .titulo {
-    font-family: "Raleway", sans-serif;
-    flex: 1; /* El título ocupa todo el espacio disponible */
-    background-color: none; /* Solo para visualización */
-    padding: 10px;
-    font-size: 10px;
-    max-width: 40%;
+.container .card .card-content .bottom-section .left-section {
+    width: 45%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 
-.seccion2 .listado {
+.container .card .card-content .bottom-section .left-section h3 {
     font-family: "Raleway", sans-serif;
-    font-weight: bold;
-    flex: 1; /* El listado ocupa todo el espacio disponible */
-    background-color: none; /* Solo para visualización */
-    padding: 10px;
-    font-size: 13px;
-    max-width: 60%;
-}
-
-.listado ul {
-    padding: 0;
+    padding: 2px;
+    color: #333;
+    font-size: 14px;
     margin: 0;
+    text-align: left;
 }
 
-.listado li {
+.container .card .card-content .bottom-section .right-section {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container .card .card-content .bottom-section .right-section ul {
     list-style: none;
-    margin-bottom: 5px;
+    margin: 0;
+    padding: 0;
+    text-align: left;
 }
 
-.boton-listado {
-    width: calc(70% - 10px); /* Cambia a un contenedor por fila */
-    max-width: calc(70% - 10px);
-    display: flex; /* Para que tenga la propiedad flex */
-    align-items: center; /* Centra verticalmente el contenido */
-    margin-bottom: 1px;
-    border-radius: 5px;
-    padding: 5px 2px;
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: black;
-    cursor: pointer;
-    align-items: center; /* Centra verticalmente el contenido */
+.container .card .card-content .bottom-section .right-section ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px; /* Espaciado entre los elementos de la lista */
 }
 
-.icono-listado {
-    margin-right: 5px;
+.container .card .card-content .bottom-section .right-section ul li i {
+    margin-right: 4px; /* Espaciado consistente entre el icono y el texto */
+    flex-shrink: 0; /* Evita que el icono se reduzca */
+    color: #000;
+}
+
+.container .card .card-content .bottom-section .right-section ul li a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 750;
+    font-size: 11px;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
 }
 
 /*PROPIEDADES ACERCA DE*/
@@ -379,8 +397,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 10px);
+    width: calc(100% - 5px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 5px);
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -472,8 +490,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     text-align: center;
     padding: 10px;
     background-color: rgba(0,0,0,0.5);
-    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 10px);
+    width: calc(100% - 5px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 5px);
     box-sizing: border-box;
 }
 
@@ -502,29 +520,33 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     margin: 0 auto;
     padding: 0;
     background-color: #000000;
-    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 10px);
-    box-sizing: border-box;
+    width: calc(100% - 3px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 3px);
+
 }
     
 details, .subtitulo-preguntas{
     font-family: sans-serif;
-    font-size: 17px;
-    font-weight: 300;
-    background: #97BEA0;
+    font-size: 18px;
+    background: #72856a;
     color: #ffffff;
     margin: auto;
-    padding: 0.5rem;
+    padding: 30px;
     box-sizing: border-box;
     cursor: pointer;
-    border: 1px solid white;
+    border: 0.5px solid white;
+    border-top: none;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .subtitulo-preguntas{
+    font-family: "Raleway", sans-serif;
     text-align: center;
-    padding: 20px;
+    font-size: 33.5px;
+    font-weight: 300;
     border-bottom: none;
-    font-size: 25px;
+    padding: 65px;
 }
 
 .primero{
@@ -541,8 +563,8 @@ details, .subtitulo-preguntas{
     margin: 0 auto;
     padding: 25px;
     border: 1px solid #ccc;
-    width: calc(100% - 10px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 10px);
+    width: calc(100% - 3px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 3px);
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -565,30 +587,15 @@ details, .subtitulo-preguntas{
     border: none; /* Quitar el borde del contenedor del título */
     padding-bottom: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .titulo .titulo-contacto {
-    margin: 0;
+    margin-top: 60px;
     color: #ffffff;
-}
-
-.hr-container {
-    display: flex;
-    width: 30%;
-}
-
-.hr-izquierda {
-    width: 50%;
-    margin: 0;
-    border: none;
-    border-top: 1px solid #4bc51b;
-}
-
-.hr-derecha {
-    width: 50%;
-    margin: 0;
-    border: none;
-    border-top: 1px solid #ffffff;
+    font-size: 33px;
+    font-weight: 300;
 }
 
 .contenido-flex {
@@ -616,6 +623,7 @@ details, .subtitulo-preguntas{
     font-family: "Raleway", sans-serif;
     text-align: left;
     width: 48%; /* Ajustar el ancho */
+    padding-left: 90px;
 }
 
 .derecha {
@@ -628,11 +636,12 @@ details, .subtitulo-preguntas{
 }
 
 .texto-largo {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     max-width: 50%; /* Limitar a 50% del contenedor */
-    font-size: 14px; /* Reducir la letra a 14px */
+    font-size: 16px; /* Reducir la letra a 14px */
     text-align: left; /* Alinear a la izquierda */
-    margin-top: 5%; /* Agregar margen superior de 15% */
+    margin-top: 1%; /* Agregar margen superior de 15% */
+    margin-bottom: 15%;
     color: #ffffff;
 }
 
@@ -733,6 +742,11 @@ label {
     border-radius: 4px;
     width: 100%; /* Ocupa el 100% del ancho disponible */
     box-sizing: border-box; /* Incluir el padding y borde en el ancho total */
+}
+
+.un-boton {
+    margin-left: 70%;
+    width: 30%; /* Ocupa el 100% del ancho disponible */
 }
 
 .campo-flex {
