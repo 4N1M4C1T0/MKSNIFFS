@@ -106,7 +106,7 @@
 @media screen and (max-width: 1024px) {
 
     .container .div-content .left h2{
-        font-size: 20px;
+        font-size: 18px;
     }
     .contenedor-grafico-tabla{
         display: block;
@@ -152,7 +152,7 @@
     }
 
     .container .div-content .left h2{
-        font-size: 19px;
+        font-size: 17px;
     }
     
     .right .right-column a{
@@ -179,7 +179,7 @@
     }
     
     .container .div-content .left h2{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .inline-content h5{
@@ -195,7 +195,7 @@
        }
 
        .container .div-content .left h2{
-        font-size: 15px;
+        font-size: 13px;
     }
     
        .graficos {
@@ -209,12 +209,6 @@
         width: 90%;
     }
 
-}
-
-@media screen and(max-width: 606px) {
-    .container .div-content .left h2{
-        font-size: 15px;
-    }
 }
 
 @media  screen and (max-width: 550px){
