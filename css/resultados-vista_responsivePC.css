@@ -7,27 +7,6 @@
     .contenedor_vista_principal .div-content .left h2{
         font-size: 22px;
     }
-
-    
-}
-
-@media screen and (max-width: 1920px) {
-    .section.bottom-section.fixed {
-        width: 71.7%;
-    }
-    
-    .seccion-boton #optionSelect{
-        bottom: 58%;
-    }
-
-    .contenedor_vista_principal .div-content .left{
-        padding: 15px 18px 15px 20px;
-    }
-
-    .contenedor_vista_principal .div-content .left h2{
-        font-size: 22px;
-        width: 250px;
-    }
 }
 
 @media screen and (max-width: 1600px) {

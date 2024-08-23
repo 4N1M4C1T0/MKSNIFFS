@@ -4,18 +4,6 @@
     }
 }
 
-
-@media screen and (max-width: 1920px) {
-    .container .div-content .left{
-        padding: 15px 18px 15px 20px;
-    }
-    
-    .container .div-content .left h2{
-        font-size: 22px;
-        width: 250px;
-    }
-}
-
 @media screen and (max-width: 1600px) {   
     .container .div-content .left h2{
         font-size: 20px;
@@ -248,10 +236,17 @@
 @media screen and(max-width: 500px) {
     .container .div-content .left h2{
         font-size: 13px;
+        padding: 2px;
+        width: 100%;
     }
 }
 
 @media  screen and (max-width: 475px){
+    .container .div-content .left h2{
+        font-size: 13px;
+        padding: 2px;
+        width: 100%;
+    }
 
     .graficos {
         position: relative;
@@ -266,19 +261,12 @@
 /*desde aqui falta configurar las imagenes*/
 /*en 425 esta la solucion*/
 @media  screen and (max-width: 425px){
-    .container .div-content{
-        text-align: justify;
-        overflow: hidden;
-        position: relative;
-        border: 2px solid black;
-    }
-    
-    .container .div-content .left{
-        text-align: center;
-    }
+   
 
     .container .div-content .left h2{
         font-size: 12px;
+        padding: 2px;
+        width: 100%;
     }
 
     .inner-container a .imgmid {
@@ -304,6 +292,8 @@
 @media  screen and (max-width: 375px){
     .container .div-content .left h2{
         font-size: 12px;
+        padding: 2px;
+        width: 100%;
     }
 
     .inner-container a .imgmid {
@@ -322,6 +312,8 @@
 @media  screen and (max-width: 320px){
     .container .div-content .left h2{
         font-size: 12px;
+        padding: 2px;
+        width: 100%;
     }
 
     .inner-container a .imgmid {

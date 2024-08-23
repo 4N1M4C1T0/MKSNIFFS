@@ -1,4 +1,8 @@
 @media screen and (max-width: 1600px) {
+
+    .slider{
+        min-height: 45vh;
+    }
     
     .slider .list .item .content p{
         font-size: 12px;
@@ -20,6 +24,13 @@
     }
 }
 
+@media screen and (max-width: 1480px) {
+
+    main{
+        margin-top: -5.5%; 
+    }
+}
+
 @media screen and (max-width: 1366px) {
     #header {
         width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
@@ -28,7 +39,7 @@
 
     .top-section {
         padding: 17px 0 17px 0;
-        height: 10px; /* Ajusta la altura según sea necesario */
+        height: 50px; /* Ajusta la altura según sea necesario */
     }
 
     .inner-container a img {
@@ -144,10 +155,6 @@
         min-height: 45vh;
     }
 
-    .slider .list .item .content{
-        top: 3%;
-    }
-
     .section.bottom-section.fixed {
         width: 94.2%;
     }
@@ -158,9 +165,32 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .contenedor-cards .contenedor-card {
-        width: calc(33.33% - 20px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-        max-width: calc(33.33% - 20px);
+
+    main{
+        margin-top: -6.5%; 
+    }
+
+    .container .card {
+        width: calc(33.33% - 5px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(33.33% - 5px);
+    }
+
+    .top-footer .left-section{
+        width: 80%;
+    }
+    
+    .top-footer .right-section {
+        width: 20%;
+    }
+
+    .top-footer .right-section {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .top-footer .right-section img {
+        max-width: 150px; /* Imágenes responsivas */
     }
 }
 
@@ -182,10 +212,6 @@
         width: 70%; /* Cada sección ocupa el 50% del ancho de bottom-content */
     }
 
-    .slider{
-        min-height: 45vh;
-    }
-
     .bottom-right nav ul li {
         font-size: 15px;
     }
@@ -200,9 +226,12 @@
         max-width: calc(100% - 10px);
     }
 
+    .slider{
+        min-height: 45vh;
+    }
+
     .slider .list .item .content{
         left: 8%;
-        top: 3%;
         width: 350px;
     }
 
@@ -264,7 +293,20 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+
+    main{
+        margin-top: -7.5%; 
+    }
+
+}
+
 @media screen and (max-width: 768px) {
+
+    main{
+        margin-top: -8%; 
+    }
+
     .section.bottom-section.fixed {
         width: 99%;
         position: fixed;
@@ -275,74 +317,38 @@
         display: none;
     }
 
-    .top-footer .content-wrapper {
-        width: 70%; /* Contenedor que ocupa el 70% del ancho en pantallas más grandes */
-        margin: 0 auto; /* Centrar el contenido */
-    }
-
-    .top-footer .left-section,
-    .top-footer .right-section {
-        width: 48%;
-    }
-
-    .top-footer .left-section .bottom-container > div {
-        width: calc(33.33% - 20px); /* Ancho del contenedor, con margen entre elementos */
-        margin: 10px; /* Espacio entre elementos */
-        word-wrap: break-word; /* Dividir palabras largas */
-    }
-
-    .contenedor-cards .contenedor-card {
-        width: calc(50% - 20px); /* Cambia a un contenedor por fila */
-        max-width: calc(50% - 20px);
-    }
-
-    .contenedor-cards .contenedor-card .seccion1 {
-        height: 200px;
+    .container .card {
+        width: calc(50% - 5px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(50% - 5px);
     }
 
     details,h3{
         font-size: 15px;
     }
-
-    .contenedor {
-        align-items: center;
-    }
-
+    
     .contenido-flex {
         flex-direction: column;
         align-items: center;
-    }
-
-    .hr-container {
-        display: flex;
-        width: 30%;
-    }
-    
-    .hr-izquierda {
-        width: 50%;
-        margin: 0;
-        border: none;
-        border-top: 1px solid #4bc51b;
-    }
-    
-    .hr-derecha {
-        width: 50%;
-        margin: 0;
-        border: none;
-        border-top: 1px solid #ffffff;
     }
 
     .contenido-flex::before {
         content: none; /* Elimina la línea vertical en pantallas pequeñas */
     }
 
-    .izquierda, .derecha {
-        width: 90%;
-        margin-bottom: 10px;
+    .izquierda {
+        width: 100%; /* Ajustar el ancho */
+        padding-left: 15px;
+    }
+    
+    .derecha {
+        width: 100%; /* Ajustar el ancho */
     }
 
-    .derecha {
+    .texto-largo {
+        margin-left: 180px;
         margin-bottom: 0;
+        font-size: 16px; /* Reducir la letra a 14px */
+        text-align: center; /* Alinear a la izquierda */
     }
 
     .contenedor-inferior {
@@ -358,11 +364,65 @@
 
 }
 
+@media  screen and (max-width: 730px){
+
+    main{
+        margin-top: -10%; 
+    }
+
+    .texto-largo {
+        margin-left: 150px;
+    }
+}
+
+@media  screen and (max-width: 600px){
+
+    main{
+        margin-top: -12%; 
+    }
+
+    .top-footer .left-section{
+        width: 100%;
+    }
+    
+    .top-footer .right-section {
+        width: 100%;
+        margin-bottom: 0;
+        min-height: 0;
+    }
+
+    .top-footer .content-wrapper {
+        padding: 0 20px;
+    }
+
+    .top-footer .left-section .bottom-container {
+        margin-top: 5px;
+        flex-direction: column; /* Permitir que los elementos se envuelvan */
+    }
+
+    .top-footer .left-section .bottom-container > div {
+        width: calc(100% - 40px); /* Ancho del contenedor, con margen entre elementos */
+    }
+}
+
 @media  screen and (max-width: 500px){
 
-    .contenedor-cards .contenedor-card {
-        width: calc(100% - 20px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
-        max-width: calc(100% - 20px);
+    .inner-container a .imgser {
+        margin-top: 13px;
+        width: 150px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    }
+    
+    .inner-container a .imgmid {
+        width: 220px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    }
+
+    main{
+        margin-top: -14%; 
+    }
+
+    .container .card {
+        width: calc(100% - 5px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
+        max-width: calc(100% - 5px);
     }
 
     .section.bottom-section.fixed {
@@ -383,14 +443,9 @@
         padding: 10px;
     }
 
-    .top-footer .content-wrapper {
-        padding: 0 20px;
+    .texto-largo {
+        margin-left: 120px;
     }
-
-    .top-footer .left-section .bottom-container {
-        margin-top: 35px;
-    }
-
 }
 
 @media  screen and (max-width: 425px){
