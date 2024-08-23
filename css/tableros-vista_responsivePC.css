@@ -179,7 +179,7 @@
     }
     
     .container .div-content .left h2{
-        font-size: 17px;
+        font-size: 16px;
     }
 
     .inline-content h5{
@@ -214,7 +214,7 @@
 @media  screen and (max-width: 550px){
 
     .container .div-content .left h2{
-        font-size: 15px;
+        font-size: 14px;
     }
     
     .menu-desplegable ul li a {
@@ -247,7 +247,7 @@
 
 @media screen and(max-width: 500px) {
     .container .div-content .left h2{
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 
@@ -267,7 +267,7 @@
 /*en 425 esta la solucion*/
 @media  screen and (max-width: 425px){
     .container .div-content .left h2{
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .inner-container a .imgmid {
@@ -292,12 +292,39 @@
 
 @media  screen and (max-width: 375px){
     .container .div-content .left h2{
-        font-size: 13px;
+        font-size: 12px;
     }
+
+    .inner-container a .imgmid {
+        width: 170px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
+    .inner-container a .imgser {
+        margin-top: 9px;
+        width: 110px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
 }
 
 @media  screen and (max-width: 320px){
     .container .div-content .left h2{
-        font-size: 11px;
+        font-size: 12px;
+    }
+
+    .inner-container a .imgmid {
+        width: 150px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
+    .inner-container a .imgser {
+        margin-top: 9px;
+        width: 90px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
+    .section.bottom-section .bottom-content .bottom-left a img{
+        width: 200px;        
     }
 }
