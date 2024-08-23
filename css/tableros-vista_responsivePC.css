@@ -266,6 +266,17 @@
 /*desde aqui falta configurar las imagenes*/
 /*en 425 esta la solucion*/
 @media  screen and (max-width: 425px){
+    .container .div-content{
+        text-align: justify;
+        overflow: hidden;
+        position: relative;
+        border: 2px solid black;
+    }
+    
+    .container .div-content .left{
+        text-align: center;
+    }
+
     .container .div-content .left h2{
         font-size: 12px;
     }

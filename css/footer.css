@@ -1,7 +1,7 @@
 /* Estilos para el footer */
 footer {
     font-family: "Raleway", sans-serif;
-    background-color: #363636; /* Color de fondo para la sección superior del footer */
+    background-color: #212529; /* Color de fondo para la sección superior del footer */
     padding: 0; /* Espaciado interno */
     text-align: justify;
     color: #ffffff;
@@ -9,7 +9,7 @@ footer {
 
 .footer-section {
     width: 100%;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .top-footer .content-wrapper {
@@ -17,15 +17,22 @@ footer {
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
     justify-content: space-between;
     align-items: flex-start; /* Alinear elementos arriba */
-    padding: 0 100px;
+    padding: 10px 50px;
 } 
 
-.top-footer .left-section,
+.top-footer .left-section{
+    width: 60%;
+    text-align: center; /* Alinear texto al centro */
+    margin-bottom: 10px; /* Espacio entre elementos */
+}
+
 .top-footer .right-section {
-    width: 50%;
+    width: 40%;
     text-align: center; /* Alinear texto al centro */
     margin-bottom: 20px; /* Espacio entre elementos */
+    min-height: 200px;
 }
+
 
 .top-footer .left-section {
     display: flex;
@@ -33,17 +40,26 @@ footer {
     align-items: flex-start; /* Alinear elementos a la izquierda */
 }
 
+.top-footer .left-section .top-container > h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 .top-footer .left-section .bottom-container {
     display: flex;
     justify-content: space-around; /* Distribuir elementos en línea */
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    font-size: 12px;
+    font-size: 15px;
 }
 
 .top-footer .left-section .bottom-container > div {
-    width: calc(33.33% - 20px); /* Ancho del contenedor, con margen entre elementos */
-    margin: 10px; /* Espacio entre elementos */
+    width: calc(33.33% - 40px); /* Ancho del contenedor, con margen entre elementos */
+    margin: 5px; /* Espacio entre elementos */
     word-wrap: break-word; /* Dividir palabras largas */
+}
+
+.top-footer .left-section .bottom-container > div > h4 {
+    text-align: justify;
 }
 
 .top-footer .left-section .bottom-container > div > p {
@@ -52,29 +68,15 @@ footer {
 
 .top-footer .right-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: flex-end; /* Centrar horizontalmente */
+    gap: 50px;
 }
 
 .top-footer .right-section img {
-    max-width: 100%; /* Imágenes responsivas */
+    max-width: 200px; /* Imágenes responsivas */
     margin-top: 20px;
     margin-bottom: 20px;
+    height: auto;
 }
-
-.bottom-footer {
-    background-color: #292929; /* Color de fondo para la sección inferior del footer */
-    height: 10px; /* Altura de 10px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 12px;
-}
-
-.divider {
-    width: 70%;
-    margin: 0 auto;
-    border-top: 1px solid rgba(255, 255, 255, 0.8); /* Línea divisoria con transparencia */
-}
-

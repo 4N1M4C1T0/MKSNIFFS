@@ -397,8 +397,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     margin: 0 auto;
     padding: 0;
     position: relative;
-    width: calc(100% - 5px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 5px);
+    width: calc(100% - 2px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 2px);
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -490,8 +490,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     text-align: center;
     padding: 10px;
     background-color: rgba(0,0,0,0.5);
-    width: calc(100% - 5px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 5px);
+    width: calc(100% - 2px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 2px);
     box-sizing: border-box;
 }
 
@@ -520,8 +520,8 @@ animation: showContent .5s .7s ease-in-out 1 forwards;
     margin: 0 auto;
     padding: 0;
     background-color: #000000;
-    width: calc(100% - 3px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 3px);
+    width: calc(100% - 1px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 1px);
 
 }
     
@@ -562,9 +562,8 @@ details, .subtitulo-preguntas{
 .contenedor {
     margin: 0 auto;
     padding: 25px;
-    border: 1px solid #ccc;
-    width: calc(100% - 3px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
-    max-width: calc(100% - 3px);
+    width: calc(100% - 1px); /* Ancho máximo de cada contenedor (33.33% del ancho del padre menos el espacio entre ellos) */
+    max-width: calc(100% - 1px);
     display: flex;
     flex-direction: column;
     padding: 10px;
