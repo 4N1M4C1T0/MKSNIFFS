@@ -1,21 +1,21 @@
 @media screen and (max-width: 1600px) {
 
     .slider{
-        min-height: 45vh;
+        min-height: 55vh;
     }
     
     .slider .list .item .content p{
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .slider .list .item .content h2{
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .slider .list .item .content .boton{
         font-size: 13px;
         padding: 4px 3px 1px 24px;
-        width:300px;
+        width:320px;
         height:20px;
     }
 
@@ -106,10 +106,6 @@
         font-size: 15px;
     }
 
-    .slider{
-        min-height: 50vh;
-    }
-
     .tematica-texto {
         font-size: 25px;
     }
@@ -149,10 +145,6 @@
     main{
         width: calc(95% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(95% - 10px);
-    }
-
-    .slider{
-        min-height: 45vh;
     }
 
     .section.bottom-section.fixed {
@@ -224,10 +216,6 @@
     main{
         width: calc(100% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(100% - 10px);
-    }
-
-    .slider{
-        min-height: 45vh;
     }
 
     .slider .list .item .content{

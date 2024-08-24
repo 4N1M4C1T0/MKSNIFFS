@@ -58,7 +58,7 @@ enlaces.forEach(function(enlace) {
 
         // Asignar el contenido a cada encabezado
         encabezados.forEach(function(encabezado) {
-            encabezado.innerText =`Gobierno Regional `+contenidoEnlace+` (a Junio del ${añoActual})`;
+            encabezado.innerText =contenidoEnlace+` (a Julio del ${añoActual})`;
         });
     });
 });

@@ -16,7 +16,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 79.4%;
+        width: 72%;
     }
 
     .contenedor-card .seccion2 .titulo p{
@@ -93,6 +93,11 @@
 
 @media screen and (max-width: 1024px) {
 
+    .bottom-right nav ul li,
+    .bottom-right nav ul li .dropbtn{
+        font-size: 15px;
+    }
+    
     .container .div-content .left h2{
         font-size: 18px;
     }
@@ -197,6 +202,9 @@
         width: 90%;
     }
 
+    .section.bottom-section.fixed {
+        width: 92%;
+    }
 }
 
 @media  screen and (max-width: 550px){
@@ -255,6 +263,9 @@
         width: 180%;
     }
 
+    .section.bottom-section.fixed {
+        width: 85%;
+    }
 }
 
 

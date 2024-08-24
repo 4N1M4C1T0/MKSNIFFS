@@ -54,7 +54,7 @@ main{
 }
 
 .contenedor_vista_principal .div-content .left h2{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .left, .right {
@@ -70,11 +70,10 @@ main{
 }
 
 .left h2 {
+    word-wrap: break-word;
     text-align: justify;
-    padding: 10px;
-    font-size: 16.3px;
+    padding: 19px;
     margin: 0; /* Eliminar el margen predeterminado */
-    justify-content: start;
 }
 
 .right {
