@@ -17,7 +17,7 @@ $(document).ready(function() {
         option1: {
             imgSrc: '../../img/vistas/politica_nacional.jpg',
             h1Text: 'FORTALECIMIENTO',
-            h2Text: 'INSTITUCIONAL',
+            h2Text: 'INSTITUCIONAL GOREs',
             h3Text1: ['Avance Global Programado Junio 2024', 'Avance Fisico Programado Junio 2024', 'Las actividades presupuestales con mejor desempeño presupuestal hasta junio 2024 fueron; la 5006322 (control transporte) y 5005174 (información) con un', 'Avance Global Ejecutado Junio 2024', 'Avance Fisico Ejecutado Junio 2024', 'La actividad presupuestal con menor desempeño presupuestal fue la 5000276 (gestión del programa)'],
             h3Text2: ['Del presupuesto asignado', 'Del presupuesto asignado', 'De avance en su ejecución presupuestal', 'Del presupuesto asignado', 'Del presupuesto asignado', 'De avance en su ejecución presupuestal'],
             pText: ['44%', '35%', '56% y 52%', '34%', '22%', '16%'],

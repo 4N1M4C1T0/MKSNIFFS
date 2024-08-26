@@ -8,6 +8,10 @@
     .container .div-content .left h2{
         font-size: 20px;
     }
+
+    .section.bottom-section.fixed {
+        width: 71.6%;
+    }
 }
 
 @media  screen and (max-width: 1440px){
@@ -16,7 +20,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 72%;
+        width: 71.5%;
     }
 
     .contenedor-card .seccion2 .titulo p{
@@ -110,6 +114,10 @@
     .tablas {
         width: 50%;
     }
+
+    .section.bottom-section.fixed {
+        width: 94%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -131,7 +139,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 98.7%;
+        width: 95.2%;
     }
 
     #footer {
@@ -179,6 +187,9 @@
         font-size: 14px;
        }
     
+       .section.bottom-section.fixed {
+        width: 94.3%;
+    }
 }
 
 
@@ -187,11 +198,11 @@
         font-size: 12px;
        }
 
-       .container .div-content .left h2{
+    .container .div-content .left h2{
         font-size: 15px;
     }
     
-       .graficos {
+    .graficos {
         position: relative;
         left: -90px; /* Ajusta el valor según lo necesites */
         transform: scale(0.9);
@@ -203,7 +214,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 92%;
+        width: 91.6%;
     }
 }
 
@@ -239,6 +250,10 @@
     .top-footer .left-section .bottom-container {
         margin-top: 35px;
     }
+
+    .section.bottom-section.fixed {
+        width: 80.6%;
+    }
 }
 
 @media screen and(max-width: 500px) {
@@ -249,6 +264,7 @@
     }
 }
 
+/* EL TITULO SE DESCUADRA A PARTIR DE ESTA RESOLUCION*/
 @media  screen and (max-width: 475px){
     .container .div-content .left h2{
         font-size: 13px;
@@ -264,7 +280,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 85%;
+        width: 79%;
     }
 }
 
@@ -298,6 +314,9 @@
         width: 200%;
     }
 
+    .section.bottom-section.fixed {
+        width: 75.7%;
+    }
 }
 
 @media  screen and (max-width: 375px){
@@ -316,6 +335,10 @@
         margin-top: 9px;
         width: 110px; /* Ajusta el ancho de las imágenes según tus necesidades */
         height: auto;
+    }
+
+    .section.bottom-section.fixed {
+        width: 71.7%;
     }
 
 }
@@ -340,5 +363,8 @@
 
     .section.bottom-section .bottom-content .bottom-left a img{
         width: 200px;        
+    }
+    .section.bottom-section.fixed {
+        width: 66.8%;
     }
 }

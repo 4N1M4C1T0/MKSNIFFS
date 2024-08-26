@@ -10,14 +10,16 @@
 }
 
 @media screen and (max-width: 1600px) {
-
-    
     .seccion-boton #optionSelect{
         bottom: 49%;
     }
     
     .contenedor_vista_principal .div-content .left h2{
         font-size: 20px;
+    }
+
+    .section.bottom-section.fixed {
+        width: 71.6%;
     }
 }
 
@@ -27,14 +29,13 @@
     }
 
     .section.bottom-section.fixed {
-        width: 72%;
+        width: 71.5%;
     }
 
     .contenedor-card .seccion2 .titulo p{
         font-size: 14px;
     }
 }
-
 
 @media screen and (max-width: 1366px) {
     #header {
@@ -116,6 +117,10 @@
     .seccion-boton #optionSelect{
         bottom: 40%;
     }
+
+    .section.bottom-section.fixed {
+        width: 94%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -143,14 +148,12 @@
     }
     
     .section.bottom-section.fixed {
-        width: 98.7%;
+        width: 95.2%;
     }
     
     .seccion-boton #optionSelect{
         bottom: 5%;
     }
-
-    
 
     .contenedor_vista_principal .div-content .left h2{
         font-size: 17px;
@@ -205,20 +208,27 @@
     .subitem3{
         font-size: 17px;
     }
+
+    .section.bottom-section.fixed {
+        width: 94.3%;
+    }
 }
 
 @media  screen and (max-width: 690px){
-    .container .div-content .left h2{
-     font-size: 15px;
+    .inline-content h5{
+        font-size: 12px;
+       }
+    
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 15px;
     }
 
     .section.bottom-section.fixed {
-        width: 92%;
+        width: 91.6%;
     }
 }
 
-@media  screen and (max-width: 606px){
-
+@media  screen and (max-width: 550px){
     .item{
         flex: 0 0 calc(100% - 0px);
     }
@@ -226,19 +236,10 @@
     .contenedor_vista_principal .div-content .left h2{
         font-size: 14px;
     }
-}
 
-@media  screen and (max-width: 550px){
-
-    .item{
-        flex: 0 0 calc(100% - 0px);
-    }
-    
-    .div-content .left h2{
-        font-size: 14px;
-    }
-
-    
+    .section.bottom-section.fixed {
+        width: 85.7%;
+    }    
 }
 
 @media  screen and (max-width: 500px){
@@ -248,13 +249,12 @@
     }
 
     .contenedor_vista_principal .div-content .left h2{
-        font-size: 13px;
-        padding: 2px;
+        font-size: 14px;
         width: 100%;
     }
 
     .section.bottom-section.fixed {
-        width: 97.9%;
+        width: 80.6%;
     }
 
     .overlay #contentH1{
@@ -295,8 +295,9 @@
     }
 
     .section.bottom-section.fixed {
-        width: 97.9%;
+        width: 79%;
     }
+
 }
 
 @media  screen and (max-width: 425px){
@@ -309,9 +310,7 @@
         width: 97.6%;
     }
 
-    .div-content .left{
-        width: 22%;
-    }
+
 
     .contenedor_vista_principal .div-content .left h2{
         font-size: 12px;
@@ -334,7 +333,7 @@
         bottom: 32%;
     }
     .section.bottom-section.fixed {
-        width: 97.6%;
+        width: 75.8%;
     }
 
     .left-section .bottom-container{
@@ -389,7 +388,7 @@
 
 
     .section.bottom-section.fixed {
-        width: 97.3%;
+        width: 77.6%;
     }
 
     .top-footer .content-wrapper{
@@ -427,7 +426,7 @@
 
 @media  screen and (max-width: 320px){
     .contenedor_vista_principal .div-content .left h2{
-        font-size: 14px;
+        font-size: 12px;
 
     }
 
@@ -440,7 +439,7 @@
     }
     
     .section.bottom-section.fixed {
-        width: 96.9%;
+        width: 91.1%;
     }
 
     .left-section{

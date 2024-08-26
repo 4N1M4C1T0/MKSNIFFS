@@ -5,20 +5,23 @@
 }
 
 @media screen and (max-width: 1600px) {
-
-    .div-content .left h2{
+    .contenedor_vista_principal .div-content .left h2{
         font-size: 20px;
+    }
+
+    .section.bottom-section.fixed {
+        width: 71.6%;
     }
 }
 
 @media  screen and (max-width: 1440px){
     
-    .div-content .left h2{
+    .contenedor_vista_principal .div-content .left h2{
         font-size: 20px;
     }
 
     .section.bottom-section.fixed {
-        width: 79.4%;
+        width: 71.5%;
     }
 
     .contenedor-card .seccion2 .titulo p{
@@ -38,7 +41,7 @@
         max-width: calc(85% - 10px);
     }
 
-    .div-content .left h2{
+    .contenedor_vista_principal .div-content .left h2{
         font-size: 20px;
     }
 
@@ -81,7 +84,7 @@
         width: 94.2%;
     }
 
-    .div-content .left h2{
+    .contenedor_vista_principal .div-content .left h2{
         font-size: 20px;
     }
     
@@ -91,12 +94,17 @@
 }
 
 @media screen and (max-width: 1024px) {
+    .bottom-right nav ul li,
+    .bottom-right nav ul li .dropbtn{
+        font-size: 15px;
+    }
+    
     .section.bottom-section.fixed {
         width: 94%;
     }
 
-    .div-content .left h2{
-        font-size: 20px;
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 18px;
     }
     
     .contenedor-cards .contenedor-card{
@@ -134,8 +142,8 @@
         max-width: calc(100% - 10px);
     }
 
-    .div-content .left h2{
-        font-size: 19px;
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 17px;
     }
     
     .right .right-column a{
@@ -147,7 +155,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 98.7%;
+        width: 95.2%;
     }
 
     .contenedor-card .seccion2 .titulo p{
@@ -161,22 +169,32 @@
         display: none;
     }
     
-    .div-content .left h2{
-        font-size: 18px;
-    }
-
-    .contenedor-card .seccion2 .titulo p{
-        font-size: 12px;
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 16px;
     }
 
     .contenedor-card .seccion2 .titulo p{
         font-size: 13px;
     }
+
+    .section.bottom-section.fixed {
+        width: 94.3%;
+    }
+}
+
+@media  screen and (max-width: 690px){
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 15px;
+    }
+
+    .section.bottom-section.fixed {
+        width: 91.6%;
+    }
 }
 
 @media  screen and (max-width: 550px){
-    .div-content .left h2{
-        font-size: 12px;
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 14px;
     }
 
     .contenedor-card .seccion2 .titulo p{
@@ -196,13 +214,13 @@
         max-width: calc(100% - 20px);
 
     }
-}
 
-@media  screen and (max-width: 690px){
-       .container .div-content .left h2{
-        font-size: 15px;
+    .section.bottom-section.fixed {
+        width: 83.3%;
     }
 }
+
+
 
 @media  screen and (max-width: 500px){
     .inner-container a img {
@@ -214,15 +232,12 @@
         font-size: 25px; 
     }
 
-    .div-content .left h2{
-        font-size: 11px;
-        width: 100%;
-        height: 50%;
-        text-align: start;
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 14px;
     }
 
     .section.bottom-section.fixed {
-        width: 97.9%;
+        width: 80.6%;
     }
     
     .top-footer .content-wrapper {
@@ -232,6 +247,21 @@
     .top-footer .left-section .bottom-container {
         margin-top: 35px;
     }
+}
+
+
+@media  screen and (max-width: 475px){
+
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 13px;
+        padding: 2px;
+        width: 100%;
+    }
+
+    .section.bottom-section.fixed {
+        width: 79%;
+    }
+
 }
 
 @media  screen and (max-width: 425px){
@@ -244,15 +274,22 @@
         font-size: 25px; 
     }
     
-    .left{
-        width: 22%;
+
+    .contenedor_vista_principal .div-content .left h2{
+        font-size: 12px;
+        padding: 2px;
+        width: 100%;
     }
 
-    .div-content .left h2{
-        font-size: 11px;
-        width: 100%;
-        height: 50%;
-        text-align: start;
+    .inner-container a .imgmid {
+        width: 180px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
+    .inner-container a .imgser {
+        margin-top: 9px;
+        width: 120px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
     }
 
     .section.bottom-section.fixed {
@@ -269,18 +306,21 @@
     .caja_Seccion_medio .titulo_imagen{
         font-size: 20px; 
     }
-    
-    .left{
-        width: 40%;
-    }
 
     .div-content .left h2{
         font-size: 17px;
 
     }
 
-    .right {
-        width: 60%;
+    .inner-container a .imgmid {
+        width: 170px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
+    .inner-container a .imgser {
+        margin-top: 9px;
+        width: 110px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
     }
 
     .section.bottom-section.fixed {
@@ -302,10 +342,26 @@
 
 @media  screen and (max-width: 320px){
     .contenedor_vista_principal .div-content .left h2{
-        font-size: 15px;
-
+        font-size: 12px;
+        padding: 2px;
+        width: 100%;
     }
     
+    .inner-container a .imgmid {
+        width: 150px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
+    .inner-container a .imgser {
+        margin-top: 9px;
+        width: 90px; /* Ajusta el ancho de las imágenes según tus necesidades */
+        height: auto;
+    }
+
+    .section.bottom-section .bottom-content .bottom-left a img{
+        width: 200px;        
+    }
+
     .caja_Seccion_medio .titulo_imagen{
         font-size: 20px; 
     }
