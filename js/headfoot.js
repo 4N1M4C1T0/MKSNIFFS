@@ -64,6 +64,6 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
     // Cargar el contenido del header y footer
-    loadContent('../template/header.html', 'header');
-    loadContent('../template/footer.html', 'footer');
+    loadContent('template/header.html', 'header');
+    loadContent('template/footer.html', 'footer');
 });

@@ -1,11 +1,7 @@
 @media screen and (max-width: 1600px) {
 
-    .slider{
-        min-height: 55vh;
-    }
-    
     .slider .list .item .content p{
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .slider .list .item .content h2{
@@ -29,9 +25,7 @@
     main{
         margin-top: -5.5%; 
     }
-}
 
-@media screen and (max-width: 1366px) {
     #header {
         width: calc(85% - 10px); /* Ancho máximo de cada contenedor (25% del ancho del padre menos el espacio entre ellos) */
         max-width: calc(85% - 10px);
@@ -59,7 +53,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 84.2%;
+        width: 84.3%;
     }
 
     .bottom-left a img {
@@ -285,6 +279,36 @@
 
     main{
         margin-top: -7.5%; 
+    }
+
+    .slider{
+        min-height: 75vh;
+    }
+
+    .slider .list .item .content{
+        width: 280px;
+    }
+
+    .slider .list .item .content p{
+        font-size: 10px;
+    }
+
+    .slider .list .item .content h2{
+        font-size: 20px;
+    }
+
+    .slider .list .item .content .boton{
+        font-size: 9px;
+        margin: 2px 0 4px 0;
+        padding: 6px 6px 0.1px 15px;
+        width:250px;
+        height:15px;
+        border: 2px #F1F3F1 solid;
+        background-color: transparent;
+        color: #F1F3F1;
+        display: block;
+        text-align: left;
+        text-decoration: none;
     }
 
 }

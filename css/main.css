@@ -39,7 +39,7 @@ main{
 /*Propiedades del Slider*/
 
 .slider{
-    min-height: 58.5vh;
+    min-height: 64vh;
     height: auto;
     margin: 0;
     padding: 0;
