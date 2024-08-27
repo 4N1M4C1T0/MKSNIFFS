@@ -282,7 +282,7 @@
     }
 
     .slider{
-        min-height: 75vh;
+        min-height: 50vh;
     }
 
     .slider .list .item .content{
@@ -461,6 +461,11 @@
 }
 
 @media  screen and (max-width: 425px){
+
+    main{
+        margin-top: -16%; 
+    }
+
     .inner-container a .imgmid {
         width: 180px; /* Ajusta el ancho de las imágenes según tus necesidades */
         height: auto;
@@ -475,6 +480,11 @@
 }
 
 @media  screen and (max-width: 375px){
+
+    main{
+        margin-top: -18%; 
+    }
+
     .inner-container a .imgmid {
         width: 170px; /* Ajusta el ancho de las imágenes según tus necesidades */
         height: auto;
