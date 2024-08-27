@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 /* Estilos para el encabezado */
 header {
     display: flex;
@@ -77,10 +80,27 @@ header {
 .translate-container {
     display: flex;
     flex-direction: row;
+    gap: 1px;
 }
 
 #google_translate_element {
     display: none;
+    flex-direction: row;
+}
+
+#google_translate_element .goog-te-gadget-simple {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#google_translate_element .goog-te-combo { 
+    width: 200px !important;
+    height: 50px !important;
+    font-size: 20px !important;
 }
 
 .separator {
