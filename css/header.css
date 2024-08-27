@@ -88,19 +88,13 @@ header {
     flex-direction: row;
 }
 
-#google_translate_element .goog-te-gadget-simple {
+#google_translate_element .goog-te-gadget .goog-te-gadget-simple {
     font-family: "Raleway", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px;
     border-radius: 5px;
-}
-
-#google_translate_element .goog-te-combo { 
-    width: 200px !important;
-    height: 50px !important;
-    font-size: 20px !important;
 }
 
 .separator {
