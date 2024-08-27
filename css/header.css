@@ -74,6 +74,15 @@ header {
     text-decoration: none;
 }
 
+.translate-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#google_translate_element {
+    display: none;
+}
+
 .separator {
     height: 24px; /* Altura de la línea vertical */
     width: 1px;

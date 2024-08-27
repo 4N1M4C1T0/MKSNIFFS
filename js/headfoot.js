@@ -1,3 +1,12 @@
+// Función para inicializar Google Translate
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'es',
+        includedLanguages: 'es,en,fr,de,it,pt',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     // Función para cargar el contenido del header y footer
     function loadContent(url, elementId) {
@@ -18,8 +27,43 @@ document.addEventListener("DOMContentLoaded", function() {
                     topSection.classList.add('visible');
                     middleSection.classList.add('visible');
                 }
+
+                // Inicializar Google Translate después de cargar el header
+                if (elementId === 'header') {
+                    initializeTranslateWidget();
+                }
             })
             .catch(error => console.error('Error al cargar el archivo:', error));
+    }
+
+    // Función para inicializar el widget de traducción
+    function initializeTranslateWidget() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+        document.body.appendChild(script);
+
+        // Configurar eventos después de cargar el contenido del header
+        script.onload = function() {
+            var translateLink = document.getElementById('translateLink');
+            var googleTranslateElement = document.getElementById('google_translate_element');
+
+            translateLink.addEventListener('mouseover', function() {
+                googleTranslateElement.style.display = 'block';
+            });
+
+            translateLink.addEventListener('mouseout', function() {
+                googleTranslateElement.style.display = 'none';
+            });
+
+            googleTranslateElement.addEventListener('mouseover', function() {
+                googleTranslateElement.style.display = 'block';
+            });
+
+            googleTranslateElement.addEventListener('mouseout', function() {
+                googleTranslateElement.style.display = 'none';
+            });
+        };
     }
 
     // Función para actualizar el año en el footer

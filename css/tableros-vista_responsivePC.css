@@ -118,6 +118,25 @@
     .section.bottom-section.fixed {
         width: 94%;
     }
+
+    .top-footer .left-section{
+        width: 80%;
+    }
+    
+    .top-footer .right-section {
+        width: 20%;
+    }
+
+    .top-footer .right-section {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+    }
+
+    .top-footer .right-section img {
+        max-width: 150px; /* Imágenes responsivas */
+    }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -139,7 +158,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 95.2%;
+        width: 98.7%;
     }
 
     #footer {
@@ -187,8 +206,8 @@
         font-size: 14px;
        }
     
-       .section.bottom-section.fixed {
-        width: 94.3%;
+    .section.bottom-section.fixed {
+        width: 98.7%;
     }
 }
 
@@ -214,7 +233,33 @@
     }
 
     .section.bottom-section.fixed {
-        width: 91.6%;
+        width: 98.5%;
+    }
+}
+
+@media  screen and (max-width: 600px){
+
+    .top-footer .left-section{
+        width: 100%;
+    }
+    
+    .top-footer .right-section {
+        width: 100%;
+        margin-bottom: 0;
+        min-height: 0;
+    }
+
+    .top-footer .content-wrapper {
+        padding: 0 20px;
+    }
+
+    .top-footer .left-section .bottom-container {
+        margin-top: 5px;
+        flex-direction: column; /* Permitir que los elementos se envuelvan */
+    }
+
+    .top-footer .left-section .bottom-container > div {
+        width: calc(100% - 40px); /* Ancho del contenedor, con margen entre elementos */
     }
 }
 
@@ -252,7 +297,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 80.6%;
+        width: 98.1%;
     }
 }
 
@@ -280,7 +325,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 79%;
+        width: 96.2%;
     }
 }
 
@@ -315,7 +360,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 75.7%;
+        width: 97.6%;
     }
 }
 
@@ -338,7 +383,7 @@
     }
 
     .section.bottom-section.fixed {
-        width: 71.7%;
+        width: 97.2%;
     }
 
 }
@@ -365,6 +410,6 @@
         width: 200px;        
     }
     .section.bottom-section.fixed {
-        width: 66.8%;
+        width: 96.8%;
     }
 }
