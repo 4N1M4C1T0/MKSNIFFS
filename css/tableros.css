@@ -386,3 +386,9 @@ main{
     font-weight: bold;
     color: #98a6ad;; /* Texto blanco */
 }
+
+.lookerstudio{
+    width: 980px;
+    height: 750px;
+    border: 0px;
+}
